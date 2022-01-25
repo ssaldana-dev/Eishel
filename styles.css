@@ -1,0 +1,42 @@
+:root {
+    --eishel-green: green;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+    padding: 15px;
+}
+header img {
+    height: 75px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 60px;
+    border: white 2px solid;
+    border-radius: 5px;
+}
+.header__nav--img {
+    height: 60px;
+}
+
+header nav ul {
+    display: none;
+}
+
+body {
+    background-color: black;
+}
