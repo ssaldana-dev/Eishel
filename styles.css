@@ -1,6 +1,10 @@
 :root {
     --eishel-green: #3c9426;
     --eishel-blue: #06082e;
+    --platinum: #F5F5F5;
+    --ligth-grey: #E1E0E1;
+    --davys-grey: #5E5A5E;
+    --eerie-black: #1F1E1F;
 }
 * {
     box-sizing: border-box;
@@ -10,6 +14,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    background-color: var(--platinum);
 }
 header {
     position: absolute;
@@ -19,20 +24,21 @@ header {
     min-width: 320px;
     padding: 15px;
 }
-header img {
+.header__img {
     height: 75px;
 }
 header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65px;
-    height: 60px;
+    margin-top: 10px;
+    width: 52px;
+    height: 47.5px;
     border: white 2px solid;
     border-radius: 5px;
 }
 .header__nav--img {
-    height: 60px;
+    height: 45px;
 }
 
 header nav ul {
@@ -51,17 +57,19 @@ header nav ul {
     padding: 20px;
     width: 90vw;
     height: 200px;
-    background-color: rgb(230, 230, 230);
+    background-color: var(--ligth-grey);
     border-radius: 10px;
 }
-.main__flyer--container h2 {
+.main__flyer--container h1 {
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
+    color: var(--eerie-black);
 }
 .main__flyer--container p {
     font-size: 1.7rem;
     text-align: justify;
+    color: var(--davys-grey);
 }
 .main__flyer--container button {
     position: absolute;
@@ -80,4 +88,50 @@ header nav ul {
     color: white;
     font-weight: bold;
     text-decoration: none;
+}
+.main__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+}
+.main__services--h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--eishel-green);
+}
+.main__services--p {
+    font-size: 2.4rem;
+}
+.main__services--card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 75vw;
+    height: 320px;
+    border-radius: 25px;
+    background-color: var(--ligth-grey);
+}
+.main__services--card--logo-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: red;
+}
+.main__services--card--logo-container img {
+    display: block;
+    width: 100px;
+}
+.main__services--card h3 {
+    font-size: 2.2rem;
+}
+.main__services--card p {
+    font-size: 1.7rem;
 }
