@@ -44,6 +44,9 @@ header nav {
 header nav ul {
     display: none;
 }
+main {
+    min-width: 320px;
+}
 .main__flyer {
     display: flex;
     justify-content: center;
