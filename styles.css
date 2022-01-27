@@ -63,6 +63,7 @@ main {
     padding: 20px;
     width: 90vw;
     min-width: 280px;
+    max-width: 337.5px;
     height: 200px;
     background-color: var(--ligth-grey);
     border-radius: 10px;
@@ -123,6 +124,7 @@ main {
     margin-bottom: 75px;
     width: 75vw;
     min-width: 240px;
+    max-width: 281.25px;
     height: 320px;
     border-radius: 25px;
     background-color: var(--ligth-grey);
