@@ -16,6 +16,13 @@ html {
     font-family: 'DM Sans', sans-serif;
     background-color: var(--platinum);
 }
+/* body {
+    background-image: url(./assets/img/bugambilia.jpg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: sticky;
+    z-index: 0;
+} */
 header {
     position: absolute;
     display: flex;
@@ -144,4 +151,20 @@ main {
 }
 .main__services--card p {
     font-size: 1.7rem;
+}
+.main__thrust {
+    width: 100%;
+    min-width: 320px;
+    height: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--eishel-blue);
+    color: var(--platinum);
 }
