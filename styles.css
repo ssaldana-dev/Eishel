@@ -16,13 +16,6 @@ html {
     font-family: 'DM Sans', sans-serif;
     background-color: var(--platinum);
 }
-/* body {
-    background-image: url(./assets/img/bugambilia.jpg);
-    background-position: left;
-    background-size: contain;
-    background-repeat: sticky;
-    z-index: 0;
-} */
 header {
     position: absolute;
     display: flex;
@@ -151,17 +144,45 @@ main {
 }
 .main__services--card p {
     font-size: 1.7rem;
+    color: var(--davys-grey);
 }
 .main__thrust {
+    position: relative;
     width: 100%;
     min-width: 320px;
     height: 500px;
+    background-image: url(./assets/img/bugambilia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main__thrust--container {
+    position: absolute;
+    top: 50px;
+    left: 35vw;
+    padding: 20px 10px 20px 20px;
+    width: 65vw;
+    height: 380px;
+    background-color: var(--ligth-grey);
+    color: var(--davys-grey);
+    border-radius: 20px 0 0 20px;
+}
+.main__thrust--container h2 {
+    font-size: 2.5rem;
+    text-align: right;
+    margin-bottom: 20px;
+    color: var(--eerie-black);
+}
+.main__thrust--container p {
+    font-size: 1.8rem;
+    text-align: justify;
 }
 
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 80px;
     height: 80px;
     width: 100%;
     min-width: 320px;
