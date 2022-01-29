@@ -155,6 +155,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 20px;
 }
 .main__thrust--container {
     position: absolute;
@@ -176,6 +177,9 @@ main {
 .main__thrust--container p {
     font-size: 1.8rem;
     text-align: justify;
+}
+.main__thrust--container-p {
+    margin-top: 10px;
 }
 
 footer {
