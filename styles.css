@@ -15,3 +15,35 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    min-width: 320px;
+    height: 87px;
+    background-color: var(--eishel-green);
+}
+.header-logo {
+    height: 70px;
+    width: 70px;
+    background-image: url(./assets/icons/eishel_logo_fondo-blanco.png);
+    background-origin: center;
+    background-size: contain;
+}
+.header-menu {
+    width: 75px;
+    height: 75px;
+    background-image: url(./assets/icons/icon_nav-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-aboutUs {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+}
