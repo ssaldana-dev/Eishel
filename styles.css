@@ -1,10 +1,8 @@
 :root {
-    --eishel-green: #3c9426;
-    --eishel-blue: #06082e;
-    --platinum: #F5F5F5;
-    --ligth-grey: #E1E0E1;
-    --davys-grey: #5E5A5E;
-    --eerie-black: #1F1E1F;
+    --grayish-cyan:#82C6B9;
+    --light-grayish-cyan: #C2E4DE;
+    --very-dark-gray: #464646;
+    --ligth-gray: #888888;
 }
 * {
     box-sizing: border-box;
@@ -13,37 +11,88 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
     width: 100%;
     min-width: 320px;
     height: 87px;
-    background-color: var(--eishel-green);
+    background-color: var(--light-grayish-cyan);
 }
 .header-logo {
-    height: 70px;
-    width: 70px;
-    background-image: url(./assets/icons/eishel_logo_fondo-blanco.png);
-    background-origin: center;
+    height: 87px;
+    width: 87px;
+    background-image: url(./assets/icons/logo-eishel.svg);
     background-size: contain;
+    background-origin: center;
+    background-repeat: no-repeat;
 }
 .header-menu {
-    width: 75px;
     height: 75px;
-    background-image: url(./assets/icons/icon_nav-white.svg);
+    background-image: url(./assets/icons/icon_nav.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 55px;
 }
-.main-aboutUs {
-    position: relative;
+main {
     width: 100%;
     min-width: 320px;
+}
+.main-aboutUs {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 500px;
+}
+.main-aboutUs-img {
+    width: 100%;
+    height: 200px;
+    background-image: url(./assets/img/bugambilia-dia\(563x300\).jpg);
+    background-size: cover;
+    background-color: #A5A7A7;
+}
+.main-aboutUs h1 {
+    margin-top: 46px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--very-dark-gray);
+}
+.main-aboutUs-span {
+    width: 180px;
+    height: 180px;
+    margin-top: 14px;
+    border-radius: 26px;
+    background-image: url(./assets/img/sra-emma-\(180x180\).jpg);
+    background-size: cover;
+    background-color: var(--grayish-cyan);
+}
+menu {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: calc(100vh - 75px);
+    width: 100%;
+    height: 75px;
+    border: var(--ligth-gray) solid 1px;
+}
+menu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.29%;
+    border-left: var(--ligth-gray) solid 1px;
+}
+.menu__first-div {
+    border: none;
+}
+menu div span {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
