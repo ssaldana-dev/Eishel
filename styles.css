@@ -138,19 +138,21 @@ main {
     position: relative;
     flex-wrap: nowrap;
     padding-right: 20px;
+    padding-bottom: 15px;
     width: 375px;
-    height: 121px;
+    height: calc(121px + 20px);
     overflow-x: scroll;
 }
 .carousel-item {
     width: 78px;
     min-width: 78px;
     height: 78px;
-    margin-left: 20px;
+    margin-left: 10vw;
     border-radius: 8px;
     background-color: var(--grayish-cyan);
+    cursor: pointer;
 }
-.carousel-item:active {
+.carousel-item:hover {
     transition: 500ms;
     width: 121px;
     min-width: 121px;
