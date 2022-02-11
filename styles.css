@@ -49,11 +49,12 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 39px;
+    min-width: 320px;
 }
 .main-aboutUs-img {
     width: 100%;
     height: 200px;
-    background-image: url(./assets/img/bugambilia-dia\(563x300\).jpg);
+    /* background-image: url(./assets/img/bugambilia-dia\(563x300\).jpg); */
     background-size: cover;
     background-color: #A5A7A7;
 }
@@ -69,7 +70,7 @@ main {
     height: 180px;
     margin-top: 14px;
     border-radius: 26px;
-    background-image: url(./assets/img/sra-emma-\(180x180\).jpg);
+    /* background-image: url(./assets/img/sra-emma-\(180x180\).jpg); */
     background-size: cover;
     background-color: var(--grayish-cyan);
 }
@@ -78,6 +79,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 26px;
+    min-width: 320px;
 }
 .main-donations h2 {
     margin-bottom: 22px;
@@ -107,6 +109,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    min-width: 320px;
 }
 .main-work h3 {
     margin-bottom: 22px;
@@ -125,6 +128,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-width: 320px;
 }
 .main-gallery h4 {
     margin-bottom: 43px;
@@ -139,11 +143,17 @@ main {
     flex-wrap: nowrap;
     padding-right: 20px;
     padding-bottom: 15px;
-    width: 375px;
+    width: 100%;
+    min-width: 320px;
     height: calc(121px + 20px);
     overflow-x: scroll;
 }
 .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
     width: 78px;
     min-width: 78px;
     height: 78px;
@@ -152,12 +162,25 @@ main {
     background-color: var(--grayish-cyan);
     cursor: pointer;
 }
+
+/* Se quita el display del objeto */
+.carousel-item span {
+    display: none;
+    color: #FFF;
+}
+/* Se devuelve el display cuando está sobrepuesto */
+.carousel-item:hover span {
+    display: block;
+}
 .carousel-item:hover {
     transition: 500ms;
     width: 121px;
     min-width: 121px;
     height: 121px;
     min-height: 121px;
+    box-shadow: 1px -191px 93px -82px rgba(0,0,0,0.8) inset;
+    -webkit-box-shadow: 1px -174px 43px -101px rgba(0,0,0,0.8) inset;
+    -moz-box-shadow: 1px -191px 93px -82px rgba(0,0,0,0.8) inset;
 }
 
 footer {
