@@ -48,7 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 500px;
+    margin-bottom: 39px;
 }
 .main-aboutUs-img {
     width: 100%;
@@ -60,6 +60,7 @@ main {
 .main-aboutUs h1 {
     margin-top: 46px;
     font-size: 2.5rem;
+    line-height: 3rem;
     font-weight: 600;
     color: var(--very-dark-gray);
 }
@@ -72,6 +73,95 @@ main {
     background-size: cover;
     background-color: var(--grayish-cyan);
 }
+.main-donations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.main-donations h2 {
+    margin-bottom: 22px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: var(--very-dark-gray);
+}
+.main-donations-article {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.main-donations-article-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 26px;
+    background-color: var(--grayish-cyan);
+}
+.main-donations-article-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main-work h3 {
+    margin-bottom: 22px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--very-dark-gray);
+}
+.main-work-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 26px;
+    background-color: var(--grayish-cyan);
+}
+.main-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main-gallery h4 {
+    margin-bottom: 43px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--very-dark-gray);
+}
+.main-gallery-carousel {
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    flex-wrap: nowrap;
+    padding-right: 20px;
+    width: 375px;
+    height: 121px;
+    overflow-x: scroll;
+}
+.carousel-item {
+    width: 78px;
+    min-width: 78px;
+    height: 78px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: var(--grayish-cyan);
+}
+.carousel-item:active {
+    transition: 500ms;
+    width: 121px;
+    min-width: 121px;
+    height: 121px;
+    min-height: 121px;
+}
+
+footer {
+    margin-bottom: 85px;
+}
+
 menu {
     display: flex;
     justify-content: space-between;
@@ -88,6 +178,7 @@ menu div {
     justify-content: space-around;
     width: 33.29%;
     border-left: var(--ligth-gray) solid 1px;
+    background-color: #FFF;
 }
 .menu__first-div {
     border: none;
