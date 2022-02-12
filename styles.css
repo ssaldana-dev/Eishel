@@ -148,7 +148,7 @@ main {
 .main-gallery h4 {
     margin-bottom: 14px;
 }
-.main-gallery h2 {
+.main-gallery-h2 {
     align-self: flex-start;
     margin-left: calc((100vw / 100) * 4.8);
     font-size: 1.8rem;
