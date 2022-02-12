@@ -145,6 +145,16 @@ main {
     width: 100%;
     min-width: 320px;
 }
+.main-gallery h4 {
+    margin-bottom: 14px;
+}
+.main-gallery h5 {
+    align-self: flex-start;
+    margin-left: calc((100vw / 100) * 4.8);
+    font-size: 1.8rem;
+    line-height: 22px;
+    color: var(--very-dark-gray);
+}
 .main-gallery-carousel {
     display: flex;
     align-items:flex-end;
@@ -154,6 +164,7 @@ main {
     padding-bottom: 15px;
     width: 100%;
     min-width: 320px;
+    margin-bottom: 18px;
     height: calc((var(--gallery-item-width) * 1.5) + 20px);
     overflow-x: scroll;
 }
