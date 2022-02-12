@@ -75,7 +75,7 @@ main {
     align-items: center;
     width: 100%;
     height: 200px;
-    /* background-image: url(./assets/img/bugambilia-dia\(563x300\).jpg); */
+    background-image: url(./assets/img/bugambilia-dia\(563x300\).jpg);
     background-size: cover;
     background-color: #A5A7A7;
 }
@@ -91,7 +91,7 @@ main {
     width: 210px;
     height: 210px;
     border-radius: 26px;
-    /* background-image: url(./assets/img/sra-emma-\(180x180\).jpg); */
+    background-image: url(./assets/img/malania-pirinola\(210x210\).jpg);
     background-size: cover;
     background-color: var(--grayish-cyan);
 }
@@ -114,11 +114,12 @@ main {
     width: 100%;
 }
 .main-donations-article-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 26px;
-    background-color: var(--grayish-cyan);
+    width: 210px;
+    height: 210px;
     margin-bottom: 25px;
+    border-radius: 26px;
+    background-image: url(./assets/img/rosa-landao\(210x210\).jpg);
+    background-color: var(--grayish-cyan);
 }
 .main-donations-article-buttons {
     display: flex;
@@ -133,9 +134,10 @@ main {
     margin-bottom: 30px;
 }
 .main-work-img {
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
     border-radius: 26px;
+    background-image: url(./assets/img/jovenes-colegio\(210x210\).jpg);
     background-color: var(--grayish-cyan);
 }
 .main-gallery {
@@ -160,7 +162,6 @@ main {
     align-items:flex-end;
     position: relative;
     flex-wrap: nowrap;
-    padding-right: 20px;
     padding-bottom: 15px;
     width: 100%;
     min-width: 320px;
@@ -184,6 +185,39 @@ main {
 }
 .img1 {
     margin-left: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2) ;
+    background-image: url(./assets/img/actividades/actividad-1\(150x150\).jpg);
+}
+.img2 {
+    background-image: url(./assets/img/actividades/actividad-2\(150x150\).jpg);
+}
+.img3 {
+    background-image: url(./assets/img/actividades/actividad-3\(150x150\).jpg);
+}
+.img4 {
+    background-image: url(./assets/img/actividades/actividad-4\(150x150\).jpg);
+}
+.img5 {
+    background-image: url(./assets/img/actividades/actividad-5\(150x150\).jpg);
+}
+.img6 {
+    background-image: url(./assets/img/actividades/actividad-6\(150x150\).jpg);
+}
+.img7 {
+    background-image: url(./assets/img/actividades/actividad-7\(150x150\).jpg);
+}
+.img8 {
+    background-image: url(./assets/img/actividades/actividad-8\(150x150\).jpg);
+}
+.img9 {
+    background-image: url(./assets/img/actividades/actividad-9\(150x150\).jpg);
+}
+.img10 {
+    margin-right: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2) !important;
+    background-image: url(./assets/img/actividades/actividad-10\(150x150\).jpg);
+}
+.base-image-styles {
+    background-size: cover;
+    background-origin: center;
 }
 
 /* Se quita el display del objeto */
