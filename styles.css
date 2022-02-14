@@ -22,7 +22,7 @@ header {
     align-items: center;
     position: relative;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     width: 100%;
     min-width: 320px;
     height: 87px;
@@ -87,6 +87,10 @@ main {
     line-height: 30.48px;
     font-weight: 600;
     color: #FFF;
+}
+.main-aboutUs a {
+    width: 100%;
+    text-decoration: none;
 }
 .main-aboutUs-span {
     width: 210px;

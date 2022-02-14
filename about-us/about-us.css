@@ -1,0 +1,177 @@
+:root {
+    --grayish-cyan:#82C6B9;
+    --light-grayish-cyan: #C2E4DE;
+    --very-dark-gray: #464646;
+    --ligth-gray: #888888;
+
+    --item-width: 50vw;
+    --item-height: calc(var(--item-width) * 1.1428);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    min-width: 320px;
+    height: 87px;
+    background-color: var(--light-grayish-cyan);
+}
+.header-logo {
+    height: 87px;
+    width: 87px;
+    background-image: url(../assets/icons/logo-eishel.svg);
+    background-size: contain;
+    background-origin: center;
+    background-repeat: no-repeat;
+}
+.header-menu {
+    height: 75px;
+    width: 75px;
+    background-image: url(../assets/icons/nav-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px;
+}
+main {
+    width: 100%;
+    min-width: 320px;
+}
+.base-title-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 65px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: var(--very-dark-gray);
+    background-color: var(--light-grayish-cyan);
+}
+main {
+    width: 100%;
+    min-width: 320px;
+}
+.main-objective {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - (87px + 75px));
+    margin-bottom: 30px;
+}
+.main-objective-mision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--grayish-cyan);
+}
+.main-objective-mision h1 {
+    margin-bottom: 10px;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--very-dark-gray);
+}
+.main-objective-mision p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.main-objective-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--light-grayish-cyan);
+}
+.main-objective-vision h2 {
+    margin-bottom: 10px;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--very-dark-gray);
+}
+.main-objective-vision p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.main-aboutUs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.main-aboutUs figure {
+    display: flex;
+    width: 100%;
+}
+.main-aboutUs figure img {
+    width: var(--item-width);
+    height: var(--item-height);
+    background-color: var(--very-dark-gray);
+}
+.main-aboutUs figure figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--item-width);
+    height: var(--item-height);
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--very-dark-gray);
+}
+.change-position {
+    order: 2;
+}
+
+footer {
+    margin-bottom: 85px;
+}
+
+menu {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: calc(100vh - 75px);
+    width: 100%;
+    height: 75px;
+    border: var(--ligth-gray) solid 1px;
+}
+menu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.29%;
+    border-left: var(--ligth-gray) solid 1px;
+    background-color: #FFF;
+}
+.menu__first-div {
+    border: none;
+}
+menu div span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
