@@ -217,6 +217,38 @@ main {
     margin-right: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2);
     background-image: url(./assets/img/actividades/actividad-10\(150x150\).jpg);
 }
+.i-img1 {
+    margin-left: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2) ;
+    background-image: url(./assets/img/Instalaciones/club-social\(210x210\).jpg);
+}
+.i-img2 {
+    background-image: url(./assets/img/Instalaciones/dalia-azalea\(dia\)\(210x210\).jpg);
+}
+.i-img3 {
+    background-image: url(./assets/img/Instalaciones/dalia-azalea\(210x210\).jpg);
+}
+.i-img4 {
+    background-image: url(./assets/img/Instalaciones/salon-social\(210x210\).jpg);
+}
+.i-img5 {
+    background-image: url(./assets/img/Instalaciones/sinagoga\(210x210\).jpg);
+}
+.i-img6 {
+    background-image: url(./assets/img/Instalaciones/clinica\(210x210\).jpg);
+}
+.i-img7 {
+    background-image: url(./assets/img/Instalaciones/jardin-central\(210x210\).jpg);
+}
+.i-img8 {
+    background-image: url(./assets/img/Instalaciones/sala-davidof\(210x210\).jpg);
+}
+.i-img9 {
+    background-image: url(./assets/img/Instalaciones/jardin-benefactores\(210x210\).jpg);
+}
+.i-img10 {
+    margin-right: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2);
+    background-image: url(./assets/img/Instalaciones/auditorio\(210x210\).jpg);
+}
 .base-image-styles {
     background-size: cover;
     background-origin: center;
