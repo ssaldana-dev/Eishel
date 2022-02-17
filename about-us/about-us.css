@@ -59,8 +59,8 @@ main {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 600;
-    color: var(--very-dark-gray);
-    background-color: var(--light-grayish-cyan);
+    color: #FFF;
+    background-color: var(--grayish-cyan);
 }
 main {
     width: 100%;
@@ -120,6 +120,10 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+}
+.main-aboutUs h2 {
+    margin-bottom: 0;
 }
 .main-aboutUs figure {
     display: flex;
@@ -141,6 +145,7 @@ main {
     font-weight: 600;
     text-align: center;
     color: var(--very-dark-gray);
+    background-color: var(--light-grayish-cyan);
 }
 .change-position {
     order: 2;

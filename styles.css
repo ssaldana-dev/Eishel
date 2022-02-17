@@ -59,8 +59,8 @@ main {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 600;
-    color: var(--very-dark-gray);
-    background-color: var(--light-grayish-cyan);
+    color: #FFF;
+    background-color: var(--grayish-cyan);
 }
 .main-aboutUs {
     position: relative;
@@ -153,10 +153,12 @@ main {
     margin-bottom: 30px;
 }
 .main-work-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 210px;
     height: 210px;
     border-radius: 26px;
-    background-image: url(./assets/img/jovenes-colegio\(210x210\).jpg);
     background-color: var(--grayish-cyan);
 }
 .main-gallery {
@@ -173,6 +175,7 @@ main {
     align-self: flex-start;
     margin-left: calc((100vw / 100) * 4.8);
     font-size: 1.8rem;
+    font-weight: 500;
     line-height: 22px;
     color: var(--very-dark-gray);
 }
@@ -295,6 +298,22 @@ main {
     transform: scale(1.5);
     opacity: 1;
 }
+.main-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-services-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 8px;
+    background-color: var(--grayish-cyan);
+}
 
 footer {
     display: flex;
@@ -319,12 +338,6 @@ footer p {
 footer span {
     font-size: 1.4rem;
     font-weight: 400;
-}
-.footer-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 91px;
 }
 
 menu {
