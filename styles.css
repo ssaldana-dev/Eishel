@@ -77,6 +77,7 @@ main {
     align-items: center;
     margin-bottom: 30px;
     min-width: 320px;
+    
 }
 .main-aboutUs-img {
     display: flex;
@@ -115,6 +116,7 @@ main {
     align-items: center;
     margin-bottom: 15px;
     min-width: 320px;
+    
 }
 .main-donations h2 {
     margin-bottom: 20px;
@@ -155,6 +157,7 @@ main {
     align-items: center;
     min-width: 320px;
     margin-bottom: 30px;
+    
 }
 .main-work-img {
     display: flex;
@@ -188,6 +191,7 @@ main {
     align-items:center;
     position: relative;
     flex-wrap: nowrap;
+    white-space: nowrap;
     width: 100%;
     min-width: 320px;
     margin-bottom: 18px;
@@ -200,15 +204,19 @@ main {
     justify-content: flex-end;
     align-items: flex-end;
     padding: 10px;
-    width: var(--gallery-item-width);
     min-width: var(--gallery-item-width);
+    max-width: 150px;
     height: var(--gallery-item-width);
+    max-height: 150px;
     margin-right: calc( ( (100vw - (var(--gallery-item-width) * 3) ) / 3) );
     border-radius: 8px;
     background-color: var(--grayish-cyan);
     cursor: pointer;
     transition: 450ms all;
     transform-origin: center left;
+}
+.main-gallery-carousel .carousel-item {
+    max-width: 150px;
 }
 .img1 {
     margin-left: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2) ;
@@ -300,13 +308,14 @@ main {
 }
 .main-gallery-carousel:hover .carousel-item:hover {
     transform: scale(1.5);
-    opacity: 1;
 }
 .main-services {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    min-width: 320px;
+    
 }
 .main-services-button {
     display: flex;
@@ -324,6 +333,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
+    min-width: 320px;
     height: 165px;
     margin-bottom: 75px;
     text-align: center;
@@ -368,4 +379,37 @@ menu div {
 menu div span {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+@media (min-width: 480px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-aboutUs-button {
+        display: none;
+    }
+    .main-gallery-carousel {
+        height: calc((150px * 1.5) + 20px);
+    }
+    .carousel-item{
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .carousel-item:hover ~ .carousel-item {
+        transform: translate3d(calc( (150px * 1.5) / 3 ), 0, 0);
+    }
+    .img1 {
+        margin-left: 25px;
+    }
+    .img10 {
+        margin-right: 25px;
+    }
+    .i-img1 {
+        margin-left: 25px;
+    }
+    .i-img10 {
+        margin-right: 25px;
+    }
 }

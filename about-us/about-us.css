@@ -150,6 +150,27 @@ main {
 .change-position {
     order: 2;
 }
+.main-staff-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 320px;
+    height: 300px;
+}
+.main-staff-person-img {
+    height: 210px;
+    width: 210px;
+    border-radius: 8px;
+    background-color: var(--ligth-gray);
+}
+.main-staff-person-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--very-dark-gray);
+    text-align: center;
+}
 
 footer {
     display: flex;
