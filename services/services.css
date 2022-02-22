@@ -55,12 +55,45 @@ main {
     width: 100%;
     min-width: 320px;
     height: 65px;
-    margin-bottom: 30px;
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 600;
     color: #FFF;
     background-color: var(--grayish-cyan);
+}
+
+.services-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    font-size: 1.2rem;
+    background-color: var(--light-grayish-cyan);
+}
+.services-description p {
+    font-weight: 400;
+    width: 90vw;
+    text-align: center;
+}
+.services-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grayish-cyan);
+}
+.services-promo--article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-promo--article-img {
+    margin: 15px 0;
+}
+.services-promo--article p{
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFF;
 }
 
 footer {

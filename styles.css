@@ -306,7 +306,7 @@ main {
     box-shadow: 1px -55px 18px -15px rgba(0,0,0,0.85) inset;
     -webkit-box-shadow: 1px -55px 18px -15px rgba(0,0,0,0.85) inset;
 }
-.main-gallery-carousel:hover .carousel-item:hover {
+.main-gallery-carousel:hover .carousel-item:hover, .carousel-item:focus{
     transform: scale(1.5);
 }
 .main-services {
