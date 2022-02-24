@@ -105,11 +105,6 @@ main {
     background-size: cover;
     background-color: var(--grayish-cyan);
 }
-.main-aboutUs-button {
-    position: absolute;
-    top: calc(200px + 60px);
-    left: calc((100vw / 3) * 2);
-}
 .main-donations {
     display: flex;
     flex-direction: column;
@@ -167,6 +162,9 @@ main {
     height: 210px;
     border-radius: 26px;
     background-color: var(--grayish-cyan);
+}
+.main-work-img img {
+    margin-left: 30px;
 }
 .main-gallery {
     display: flex;
@@ -404,12 +402,19 @@ menu div span {
         margin-left: 25px;
     }
     .img10 {
-        margin-right: 25px;
+        margin-right: 150px;
     }
     .i-img1 {
         margin-left: 25px;
     }
     .i-img10 {
-        margin-right: 25px;
+        margin-right: 150px;
+    }
+}
+@media (min-width: 1024px) {
+    .main-aboutUs-img {
+        background-image: url(./assets/img/jovenes-colegio\(210x210\).jpg);
+        background-size: cover;
+        background-color: #A5A7A7;
     }
 }

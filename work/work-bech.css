@@ -148,3 +148,23 @@ menu div span {
     font-size: 1.2rem;
     font-weight: 500;
 }
+@media(min-width: 768px) {
+    .main-board {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .main-board-vacant {
+        margin: 0 5px 30px 5px;
+    }
+}
+@media(min-width: 1024px) {
+    .main-board {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .main-board-vacant {
+        margin: 0 5px 30px 5px;
+    }
+}

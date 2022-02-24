@@ -1,0 +1,56 @@
+<svg width="173" height="166" viewBox="0 0 173 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2.5" y="2.5" width="138" height="161" rx="8.5" stroke="white" stroke-width="5"/>
+<path d="M10 61C56.8629 61 83.1371 61 130 61" stroke="white" stroke-width="4"/>
+<path d="M10 73C56.8629 73 83.1371 73 130 73" stroke="white" stroke-width="4"/>
+<path d="M10 87C56.8629 87 83.1371 87 130 87" stroke="white" stroke-width="4"/>
+<path d="M10 99C56.8629 99 83.1371 99 130 99" stroke="white" stroke-width="4"/>
+<path d="M10 124C56.8629 124 83.1371 124 130 124" stroke="white" stroke-width="4"/>
+<path d="M10 111C56.8629 111 83.1371 111 130 111" stroke="white" stroke-width="4"/>
+<g filter="url(#filter0_d_320_196)">
+<circle cx="109.5" cy="88.5" r="39.5" fill="white"/>
+</g>
+<path d="M142.5 89.5C142.5 107.746 127.929 122.5 110 122.5C92.0713 122.5 77.5 107.746 77.5 89.5C77.5 71.2539 92.0713 56.5 110 56.5C127.929 56.5 142.5 71.2539 142.5 89.5Z" fill="white" stroke="#82C6B9" stroke-width="3"/>
+<g filter="url(#filter1_d_320_196)">
+<path d="M127.909 125.644C135.924 121.823 139.458 118.547 144.186 110.844L162.694 131.2L146.417 146L127.909 125.644Z" fill="white"/>
+</g>
+<g filter="url(#filter2_d_320_196)">
+<path d="M163.5 132.5L147.5 147C150.5 151 157.571 156 165 149.5C170.5 144.688 167.667 135 163.5 132.5Z" fill="white"/>
+<path d="M163.5 132.5L147.5 147C150.5 151 157.571 156 165 149.5C170.5 144.688 167.667 135 163.5 132.5Z" stroke="white"/>
+</g>
+<path d="M31.2701 30.003C42.3435 30.2972 52.1209 50.9754 41.2987 50.9754C30.4766 50.9754 35.4749 51.0308 31.2701 50.9754C27.0652 50.9199 32.4126 50.9754 20.925 50.9754C9.43741 50.9754 20.1966 29.7088 31.2701 30.003Z" fill="white"/>
+<path d="M27 46L31.5 35L35.5 46L31.5 48L27 46Z" fill="#66A599" stroke="#66A599"/>
+<circle cx="31.5" cy="19.5" r="9.5" fill="white"/>
+<path d="M31.453 35L28.4537 30.4295C28.4537 30.4295 28.4537 29.9295 31.453 29.9295C34.4523 29.9295 34.5757 30.5631 34.5757 30.5631L31.453 35Z" fill="#66A599"/>
+<defs>
+<filter id="filter0_d_320_196" x="66" y="49" width="87" height="87" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_320_196"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_320_196" result="shape"/>
+</filter>
+<filter id="filter1_d_320_196" x="123.909" y="110.844" width="42.7855" height="43.1557" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_320_196"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_320_196" result="shape"/>
+</filter>
+<filter id="filter2_d_320_196" x="142.827" y="131.88" width="29.7213" height="29.2543" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_320_196"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_320_196" result="shape"/>
+</filter>
+</defs>
+</svg>
