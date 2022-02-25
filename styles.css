@@ -62,6 +62,24 @@ main {
     color: #FFF;
     background-color: var(--grayish-cyan);
 }
+.base-button-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 210px;
+    height: 210px;
+    border-radius: 26px;
+    background-color: var(--grayish-cyan);
+}
+.base-section-styles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+}
 .base-title-anchor {
     width: 100%;
     height: 100%;
@@ -69,15 +87,6 @@ main {
 }
 .span-anchor {
     width: auto;
-}
-.main-aboutUs {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    min-width: 320px;
-    
 }
 .main-aboutUs-img {
     display: flex;
@@ -98,20 +107,12 @@ main {
     color: #FFF;
 }
 .main-aboutUs-span {
-    width: 210px;
-    height: 210px;
-    border-radius: 26px;
     background-image: url(./assets/img/malania-pirinola\(210x210\).jpg);
     background-size: cover;
     background-color: var(--grayish-cyan);
 }
 .main-donations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 15px;
-    min-width: 320px;
-    
 }
 .main-donations h2 {
     margin-bottom: 20px;
@@ -146,237 +147,8 @@ main {
     font-size: 1.2rem;
     font-weight: 500;
 }
-.main-work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 320px;
-    margin-bottom: 30px;
-    
-}
-.main-work-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 210px;
-    height: 210px;
-    border-radius: 26px;
-    background-color: var(--grayish-cyan);
-}
 .main-work-img img {
     margin-left: 30px;
-}
-.main-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-width: 320px;
-}
-.main-gallery h4 {
-    margin-bottom: 14px;
-}
-.main-gallery-h2 {
-    align-self: flex-start;
-    margin-left: calc((100vw / 100) * 4.8);
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 22px;
-    color: var(--very-dark-gray);
-}
-.main-gallery-carousel {
-    display: flex;
-    align-items:center;
-    position: relative;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    width: 100%;
-    min-width: 320px;
-    margin-bottom: 18px;
-    height: calc((var(--gallery-item-width) * 1.5) + 20px);
-    overflow-x: scroll;
-}
-.carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 10px;
-    min-width: var(--gallery-item-width);
-    max-width: 150px;
-    height: var(--gallery-item-width);
-    max-height: 150px;
-    margin-right: calc( ( (100vw - (var(--gallery-item-width) * 3) ) / 3) );
-    border-radius: 8px;
-    background-color: var(--grayish-cyan);
-    cursor: pointer;
-    transition: 450ms all;
-    transform-origin: center left;
-}
-.main-gallery-carousel .carousel-item {
-    max-width: 150px;
-}
-.img1 {
-    margin-left: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2) ;
-    background-image: url(./assets/img/actividades/actividad-1\(150x150\).jpg);
-}
-.img2 {
-    background-image: url(./assets/img/actividades/actividad-2\(150x150\).jpg);
-}
-.img3 {
-    background-image: url(./assets/img/actividades/actividad-3\(150x150\).jpg);
-}
-.img4 {
-    background-image: url(./assets/img/actividades/actividad-4\(150x150\).jpg);
-}
-.img5 {
-    background-image: url(./assets/img/actividades/actividad-5\(150x150\).jpg);
-}
-.img6 {
-    background-image: url(./assets/img/actividades/actividad-6\(150x150\).jpg);
-}
-.img7 {
-    background-image: url(./assets/img/actividades/actividad-7\(150x150\).jpg);
-}
-.img8 {
-    background-image: url(./assets/img/actividades/actividad-8\(150x150\).jpg);
-}
-.img9 {
-    background-image: url(./assets/img/actividades/actividad-9\(150x150\).jpg);
-}
-.img10 {
-    margin-right: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2);
-    background-image: url(./assets/img/actividades/actividad-10\(150x150\).jpg);
-}
-.i-img1 {
-    margin-left: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2) ;
-    background-image: url(./assets/img/Instalaciones/club-social\(210x210\).jpg);
-}
-.i-img2 {
-    background-image: url(./assets/img/Instalaciones/dalia-azalea\(dia\)\(210x210\).jpg);
-}
-.i-img3 {
-    background-image: url(./assets/img/Instalaciones/dalia-azalea\(210x210\).jpg);
-}
-.i-img4 {
-    background-image: url(./assets/img/Instalaciones/salon-social\(210x210\).jpg);
-}
-.i-img5 {
-    background-image: url(./assets/img/Instalaciones/sinagoga\(210x210\).jpg);
-}
-.i-img6 {
-    background-image: url(./assets/img/Instalaciones/clinica\(210x210\).jpg);
-}
-.i-img7 {
-    background-image: url(./assets/img/Instalaciones/jardin-central\(210x210\).jpg);
-}
-.i-img8 {
-    background-image: url(./assets/img/Instalaciones/sala-davidof\(210x210\).jpg);
-}
-.i-img9 {
-    background-image: url(./assets/img/Instalaciones/jardin-benefactores\(210x210\).jpg);
-}
-.i-img10 {
-    margin-right: calc(((100vw - (var(--gallery-item-width) * 3)) / 3) / 2);
-    background-image: url(./assets/img/Instalaciones/auditorio\(210x210\).jpg);
-}
-.base-image-styles {
-    background-size: cover;
-    background-origin: center;
-}
-.carousel-item-details {
-    font-size: 0.8rem;
-    color: #FFF;
-    opacity: 0;
-}
-.carousel-item:hover .carousel-item-details {
-    transition: 450ms;
-    opacity: 1;
-}
-.carousel-item:hover span ~ a {
-    display: block;
-}
-.carousel-item:hover ~ .carousel-item {
-    transform: translate3d(calc( (var(--gallery-item-width) * 1.5) / 3 ), 0, 0);
-}
-.carousel-item:hover {
-    opacity: 1;
-    box-shadow: 1px -55px 18px -15px rgba(0,0,0,0.85) inset;
-    -webkit-box-shadow: 1px -55px 18px -15px rgba(0,0,0,0.85) inset;
-}
-.main-gallery-carousel:hover .carousel-item:hover, .carousel-item:focus{
-    transform: scale(1.5);
-}
-.main-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    min-width: 320px;
-    
-}
-.main-services-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 210px;
-    height: 210px;
-    border-radius: 8px;
-    background-color: var(--grayish-cyan);
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    min-width: 320px;
-    height: 165px;
-    margin-bottom: 75px;
-    text-align: center;
-    background-color: var(--grayish-cyan);
-    color: #FFF;
-}
-footer h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 24px;
-}
-footer p {
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-footer span {
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-menu {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: calc(100vh - 75px);
-    width: 100%;
-    height: 75px;
-    border: var(--ligth-gray) solid 1px;
-}
-menu div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 33.29%;
-    border-left: var(--ligth-gray) solid 1px;
-    background-color: #FFF;
-}
-.menu__first-div {
-    border: none;
-}
-menu div span {
-    font-size: 1.2rem;
-    font-weight: 500;
 }
 
 @media (min-width: 480px) {
