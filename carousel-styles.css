@@ -143,3 +143,27 @@
     flex-direction: column;
     border-radius: 8px;
 }
+@media (min-width: 480px) {
+    .main-gallery-carousel {
+        height: calc((150px * 1.5) + 20px);
+    }
+    .carousel-item{
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .carousel-item:hover ~ .carousel-item {
+        transform: translate3d(calc( (150px * 1.5) / 3 ), 0, 0);
+    }
+    .img1 {
+        margin-left: 25px;
+    }
+    .img10 {
+        margin-right: 150px;
+    }
+    .i-img1 {
+        margin-left: 25px;
+    }
+    .i-img10 {
+        margin-right: 150px;
+    }
+}

@@ -79,6 +79,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 15px;
     background-color: var(--grayish-cyan);
 }
 .services-promo--article {
@@ -94,6 +95,23 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     color: #FFF;
+}
+.services-info {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+}
+.services-info-text {
+    width: 62.5%;
+    height: 400px;
+}
+.services-info-text h2 {
+    font-size: 2.4rem;
+}
+.services-info-img {
+    width: 38.5vw;
+    height: 400px;
+    background-color: var(--ligth-gray);
 }
 
 footer {

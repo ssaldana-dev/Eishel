@@ -1,0 +1,90 @@
+:root {
+    --grayish-cyan:#82C6B9;
+    --light-grayish-cyan: #C2E4DE;
+    --very-dark-gray: #464646;
+    --ligth-gray: #888888;
+
+    --gallery-item-separation: 100vw / 30 ;
+    --gallery-item-width: calc((100vw / 3) - var(--gallery-item-separation));
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    min-width: 320px;
+    height: 87px;
+    background-color: var(--light-grayish-cyan);
+}
+.header-logo {
+    height: 87px;
+    width: 87px;
+    background-image: url(./assets/icons/logo-eishel.svg);
+    background-size: contain;
+    background-origin: center;
+    background-repeat: no-repeat;
+}
+.header-menu {
+    height: 75px;
+    width: 75px;
+    background-image: url(./assets/icons/nav-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px;
+}
+main {
+    width: 100%;
+    min-width: 320px;
+}
+.base-title-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 65px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: #FFF;
+    background-color: var(--grayish-cyan);
+}
+.base-button-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 210px;
+    height: 210px;
+    border-radius: 26px;
+    background-color: var(--grayish-cyan);
+}
+.base-section-styles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+}
+.base-title-anchor {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.span-anchor {
+    width: auto;
+}
