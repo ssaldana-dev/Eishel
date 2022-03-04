@@ -64,6 +64,11 @@
         display: none;
     }
 }
+@media (min-width: 780px) {
+    main {
+        display: none;
+    }
+}
 @media (min-width: 1000px) {
     .main-aboutUs-img {
         height: 360px;
