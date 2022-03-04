@@ -64,12 +64,10 @@
         display: none;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
     .main-aboutUs-img {
         height: 360px;
-        /* background-image: url(./assets/img/jovenes-colegio\(210x210\).jpg);
-        background-size: cover;
-        background-color: #A5A7A7; */
+        background-image: url(./assets/img/bugambilia-dia\(1000x360\).jpg);
     }
     .main-aboutUs-img h1 {
         height: 125px;
@@ -79,12 +77,23 @@
         line-height: 58px;
     }
     .about-us-img {
-        background-image: url(./assets/img/Instalaciones/sinagoga\(210x210\).jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     menu {
         display: none;
+    }
+    .main-aboutUs-span {
+        background-image: url(./assets/img/malania-pirinola\(320x320\).jpg);
+    }
+    .main-donations-article-img {
+        background-image: url(./assets/img/rosa-landao\(320x320\).jpg);
+    }
+}
+@media (min-width: 1200px) {
+    .main-aboutUs-img {
+        height: 420px;
+        background-image: url(./assets/img/bugambilia-dia\(1280x420\).jpg);
     }
 }
