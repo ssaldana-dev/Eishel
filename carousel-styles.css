@@ -170,8 +170,3 @@
         margin-right: 150px;
     }
 }
-@media (min-width: 780px) {
-    main {
-        display: none;
-    }
-}

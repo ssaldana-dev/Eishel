@@ -51,11 +51,3 @@ menu div span {
     font-size: 1.2rem;
     font-weight: 500;
 }
-@media (min-width: 780px) {
-    footer {
-        display: none;
-    }
-    menu {
-        display: none;
-    }
-}
