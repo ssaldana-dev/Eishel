@@ -1,0 +1,18 @@
+:root {
+    --dark-jungle-green: #0D1B1E ;
+    --outer-space-crayola: #0C2E35;
+    --beau-blue: #BFD7EA;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+html {
+    font-size: 67.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    width: 100%;
+    min-width: 320px;
+}

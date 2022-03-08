@@ -1,0 +1,40 @@
+footer {
+    margin-bottom: 75px;
+}
+
+menu {
+    position: fixed;
+    z-index: 100;
+    top: calc(100vh - 75px);
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 75px;
+    background-color: var(--dark-jungle-green);
+}
+menu > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+menu > div > a {
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.menu-icon--whatsapp {
+    width: 44px;
+    height: 42px;
+}
+.menu-icon--email {
+    width: 53px;
+    height: 37px;
+}
+.menu-icon--phone {
+    width: 51px;
+    height: 56px;
+}
