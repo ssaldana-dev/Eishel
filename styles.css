@@ -12,7 +12,7 @@
 .main-img h1 {
     width: 250px;
     height: 60px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2.5rem;
     line-height: 30.48px;
     text-align: center;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: flex-end;
     height: 370px;
-    background-color: #BFD7EA70;
+    background-color: #BFD7EA7E;
 }
 .main-aboutUs-title-container {
     position: absolute;
@@ -37,8 +37,8 @@
 }
 .main-aboutUs-title-container h2 {
     padding-right: 5px;
-    font-size: 2.3rem;
-    font-weight: 500;
+    font-size: 2.4rem;
+    font-weight: 600;
     color: #FFF;
 }
 .main-aboutUs-info-container {
@@ -74,4 +74,59 @@
     box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
     -webkit-box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
     -moz-box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
+}
+
+.main-donations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+.main-donations > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.main-donations > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    position: absolute;
+    z-index: 2;
+    height: calc(85vh - 150px);
+    width: 80vw;
+    background-color: #BFD7EACC;
+}
+.main-donations > article h3 {
+    width: 90%;
+    height: 40px;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: var(--dark-jungle-green);
+    border-radius: 7px;
+    color: #FFF;
+    text-align: center;
+}
+.donations-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.donations-button-1 {
+    width: 112px;
+    height: 112px;
+    background-color: var(--dark-jungle-green);
+    border-radius: 100%;
+}
+.donations-button-2 {
+    width: 112px;
+    height: 112px;
+    background-color: var(--dark-jungle-green);
+    border-radius: 100%;
+}
+.main-donations p {
+    font-size: 1rem;
+    font-weight: 500;
 }
