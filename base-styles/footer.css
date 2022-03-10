@@ -1,5 +1,41 @@
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 75px;
+    padding: 25px 0;
+    height: 210px;
+    color: #FFF;
+    background-color: var(--dark-jungle-green);
+}
+footer > p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.footer-direction {
+    display: flex;
+    width: 260px;
+}
+.footer-direction > p {
+    margin-left: 17px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 15.85px;
+}
+.footer-phone {
+    display: flex;
+    width: 260px;
+}
+.footer-phone > p {
+    margin-left: 13px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.footer-socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
 }
 
 menu {
@@ -34,7 +70,8 @@ menu > div > a {
     width: 53px;
     height: 37px;
 }
-.menu-icon--phone {
-    width: 51px;
-    height: 56px;
+.menu-icon--donations {
+    padding-top: 7px;
+    width: 45px;
+    height: 55px;
 }

@@ -118,6 +118,9 @@
     width: 80vw;
     background-color: #BFD7EACC;
 }
+.main-donations > article img {
+    height: 140px;
+}
 .main-donations > article h3 {
     width: 90%;
     height: 40px;
