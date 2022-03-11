@@ -9,6 +9,9 @@
     background-color: #b1b1b1;
     animation: slideBg 16s linear infinite 0s;
     animation-timing-function: ease-in-out;
+    background-image: url(./assets/img/pasillo-dalia\(760x330\).jpg);
+    background-image: url(./assets/img/azalea-dalia-noche\(760x330\).jpg);
+    background-image: url(./assets/img/azalea-dalia\(760x330\).jpg);
     background-image: url(./assets/img/bugambilia-main\(760x330\).jpg);
 }
 @keyframes slideBg {
