@@ -5,6 +5,8 @@ footer {
     align-items: center;
     margin-bottom: 75px;
     padding: 25px 0;
+    width: 100%;
+    min-width: 320px;
     height: 210px;
     color: #FFF;
     background-color: var(--dark-jungle-green);
