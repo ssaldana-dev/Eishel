@@ -155,3 +155,64 @@
     font-size: 1rem;
     font-weight: 500;
 }
+
+.main-residents {
+    height: auto;
+    background-color: rgba(191, 215, 234, 0.5);
+}
+.residents-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+}
+.residents-title > h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.residents-title > span {
+    font-size: 1.4rem;
+    font-weight: 500;
+} 
+.residents-infography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.residents-infography-object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 32vw;
+    height: 180px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--beau-blue);
+}
+.infography-object-color {
+    color: #FFF;
+    background-color: var(--dark-jungle-green);
+}
+.residents-services {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    text-align: center;
+    text-decoration: none; 
+    color: #000;
+}
+.residents-services h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.residents-services p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
