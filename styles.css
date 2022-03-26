@@ -7,7 +7,7 @@
     background-size: cover;
     background-origin: center;
     background-color: #b1b1b1;
-    animation: slideBg 16s linear infinite 0s;
+    animation: slideBg 32s linear infinite 0s;
     animation-timing-function: ease-in-out;
     background-image: url(./assets/img/pasillo-dalia\(760x330\).jpg);
     background-image: url(./assets/img/azalea-dalia-noche\(760x330\).jpg);
@@ -215,4 +215,83 @@
 .residents-services p {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.main-info--title {
+    position: relative;
+    height: 120px;
+}
+.rectangle-1 {
+    position: absolute;
+    width: 244px;
+    height: 120px;
+    background-color: rgba(17, 32, 48, 0.7);
+}
+.rectangle-2 {
+    position: absolute;
+    top: 28px;
+    left: calc(50% - 128.5px);
+    width: 257px;
+    height: 92px;
+    background-color: rgba(22, 62, 70, 0.7);
+}
+.rectangle-3 {
+    position: absolute;
+    top: 84px;
+    right: 0;
+    width: 208px;
+    height: 36px;
+    background-color: rgba(191, 215, 234, 0.7);
+}
+.main-info--title H1 {
+    position: absolute;
+    top: 48px;
+    left: 18%;
+    z-index: 2;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #FFF;
+}
+.main-info-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 125px;
+    background-color: var(--outer-space-crayola);
+}
+.main-info-text p {
+    margin: auto 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+.main-info-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--beau-blue);
+}
+.main-info-promo-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    height: 205px;
+}
+.main-info-promo-button img {
+    /* height: 75%; */
+}
+.main-info-promo-button span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-jungle-green);
+}
+.main-info-promo-button > div {
+    width: 55vw;
+    height: 3px;
+    background-color: var(--dark-jungle-green);
 }
