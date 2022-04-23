@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(44vw);
+    height: 60vw;
+    max-height: calc(100vh - 150px);
     background-size: cover;
     background-origin: center;
     background-color: #b1b1b1;
@@ -313,9 +314,6 @@
     margin-bottom: 15px;
     height: 205px;
 }
-.main-info-promo-button img {
-    /* height: 75%; */
-}
 .main-info-promo-button span {
     font-size: 1.4rem;
     font-weight: 500;
@@ -325,4 +323,24 @@
     width: 55vw;
     height: 3px;
     background-color: var(--dark-jungle-green);
+}
+.main-extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-extras-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 80px;
+    width: 100%;
+    background-color: var(--outer-space-crayola);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24.48px;
+    color: #FFF;
 }
