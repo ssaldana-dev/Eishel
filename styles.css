@@ -43,22 +43,45 @@
 .main-aboutUs {
     display: flex;
     justify-content: flex-end;
-    height: 370px;
+    height: auto;
+    min-height: 370px;
     background-color: #BFD7EA7E;
 }
-.main-aboutUs-title-container {
+.main-aboutUs-title-container-L4 {
     position: absolute;
     left: -190px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 370px;
     width: 370px;
     border-radius: 100%;
-    background-color: var(--outer-space-crayola);
+    background-color: #0C2E35E6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.main-aboutUs-title-container h2 {
-    padding-right: 5px;
+.main-aboutUs-title-container-L4 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    border-radius: 100%;
+    background-color: #0C2E3599;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main-aboutUs-title-container-L3 {
+    height: 330px;
+    width: 330px;
+}
+.main-aboutUs-title-container-L2 {
+    height: 275px;
+    width: 275px;
+}
+.main-aboutUs-title-container-L1 {
+    height: 230px;
+    width: 230px;
+}
+.main-aboutUs-title-container-L4 h2 {
+    padding-left: 220px;
     font-size: 2.4rem;
     font-weight: 600;
     color: #FFF;
@@ -136,20 +159,28 @@
 }
 .donations-buttons {
     display: flex;
-    justify-content: space-around;
-    width: 90%;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .donations-button-1 {
-    width: 112px;
-    height: 112px;
+    width: 129px;
+    height: 127px;
+    background-image: url(./assets/icon/paypal-icon.svg);
     background-color: var(--dark-jungle-green);
     border-radius: 100%;
+    background-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .donations-button-2 {
-    width: 112px;
-    height: 112px;
+    width: 129px;
+    height: 127px;
+    background-image: url(./assets/icon/bbva-icon.svg);
     background-color: var(--dark-jungle-green);
     border-radius: 100%;
+    background-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main-donations p {
     font-size: 1rem;
@@ -223,15 +254,15 @@
 }
 .rectangle-1 {
     position: absolute;
-    width: 244px;
+    width: 65%;
     height: 120px;
     background-color: rgba(17, 32, 48, 0.7);
 }
 .rectangle-2 {
     position: absolute;
     top: 28px;
-    left: calc(50% - 128.5px);
-    width: 257px;
+    left: calc(50% - (65vw / 2));
+    width: 68.5%;
     height: 92px;
     background-color: rgba(22, 62, 70, 0.7);
 }
@@ -239,7 +270,7 @@
     position: absolute;
     top: 84px;
     right: 0;
-    width: 208px;
+    width: 55%;
     height: 36px;
     background-color: rgba(191, 215, 234, 0.7);
 }
