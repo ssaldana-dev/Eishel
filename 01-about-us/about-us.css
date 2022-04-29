@@ -80,7 +80,8 @@ main {
 .base-styles-misionVision p {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--dark-jungle-green);
+    text-align: center;
+    color: #504D4D;
 }
 .mison-vision-separator {
     align-self: center;
@@ -88,18 +89,22 @@ main {
     height: 150px;
     background-color: #FFF;
 }
+.values {
+    height: 200px;
+    line-height: 37px;
+}
 
 .main-aboutUs {
     position: relative;
 }
-.main-aboutUs-h1 {
+.main-aboutUs-title {
     width: 100%;
     height: 0px;
     border-top: 93px solid rgba(191,215,234, 0.37);
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
 }
-.main-aboutUs-h1 h1 {
+.main-aboutUs-title h1 {
     position: absolute;
     z-index: 2;
     top: 10px;
@@ -108,7 +113,7 @@ main {
     font-size: 3.6rem;
     font-weight: 400;
 }
-.main-aboutUs-h1 p {
+.main-aboutUs-title p {
     position: absolute;
     top: 64px;
     left: calc(50% - 43.79px);
@@ -128,23 +133,30 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
-    height: 406px;
-    padding: 0 20px;
+    /* height: 450px; */
+    padding: 0 10px;
 }
 .info-division {
+    margin: 10px 0px;
     width: 120px;
     height: 3px;
     background-color: #FFF;
     border-radius: 4px;
 }
 .info-story h2 {
-    font-size: 1.8rem ;
+    font-size: 1.6rem ;
     font-weight: 600;
 }
 .info-story img {
     height: 196px;
 }
+.info-story span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #C4C4C4;
+}
 .info-story p {
+    margin: 15px 0px;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: right;
@@ -165,9 +177,44 @@ main {
 .info-story-right p {
     text-align: left;
 }
-
 .residents-title > h2 {
     font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.main-staff {
+    position: relative;
+    min-width: 320px;
+}
+.main-staff-title {
+    width: 100%;
+    height: 0px;
+    border-top: 110px solid rgba(191,215,234, 0.37);
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+}
+.main-staff-title h2 {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 140.095px);
+    font-family: 'Noto Serif', serif;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+.main-staff-collaborators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.main-staff-collaborators img {
+    margin: 15px 0px;
+    width: 70vw;
+    max-width: 300px;
+}
+.main-staff-collaborators span {
+    width: 70vw;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }

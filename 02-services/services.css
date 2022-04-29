@@ -2,34 +2,35 @@ main {
     width: 100%;
     min-width: 320px;
 }
-.main-info--title {
+.main-services-title {
+    position: relative;
     height: 120px;
 }
 .rectangle-1 {
     position: absolute;
-    width: 244px;
+    width: 65%;
     height: 120px;
     background-color: rgba(17, 32, 48, 0.7);
 }
 .rectangle-2 {
     position: absolute;
-    top: 104px;
-    left: calc(50% - 128.5px);
-    width: 257px;
+    top: 28px;
+    left: calc(50% - (65vw / 2));
+    width: 68.5%;
     height: 92px;
     background-color: rgba(22, 62, 70, 0.7);
 }
 .rectangle-3 {
     position: absolute;
-    top: 160px;
+    top: 84px;
     right: 0;
-    width: 208px;
+    width: 55%;
     height: 36px;
     background-color: rgba(191, 215, 234, 0.7);
 }
-.main-info--title H1 {
+.main-services-title H1 {
     position: absolute;
-    top: 123px;
+    top: 48px;
     left: 18%;
     z-index: 2;
     font-size: 2.8rem;
