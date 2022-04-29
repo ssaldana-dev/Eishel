@@ -34,10 +34,11 @@ footer > p {
     font-size: 1.4rem;
     font-weight: 500;
 }
-.footer-socialMedia {
-    display: flex;
-    justify-content: space-between;
-    width: 130px;
+.footer-privacy a{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
 }
 
 menu {
