@@ -51,7 +51,7 @@ menu {
     height: 75px;
     background-color: var(--dark-jungle-green);
 }
-menu > div {
+menu > article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -60,7 +60,7 @@ menu > div {
     font-size: 1.2rem;
     color: #FFF;
 }
-menu > div > a {
+menu > article > a {
     display: flex;
     align-items: center;
     height: 45px;
