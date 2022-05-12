@@ -189,6 +189,77 @@ main {
 #social-life .main-services-information-card-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+}
+
+.main-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 665px;
+    background-color: #BFD7EA80;
+}
+.main-promo > h2 {
+    padding: 0 40px;
+    font-size: 2.2rem;
+    line-height: 29.26px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--outer-space-crayola);
+}
+.main-promo > span {
+    font-size: 1.6rem;
+    color: var(--outer-space-crayola);
+}
+.main-promo-require {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 275px;
+}
+.main-promo-require > div {
+    display: flex;
+}
+.main-promo-require > div > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 33%;
+    text-align: center;
+    background-color: var(--beau-blue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 14.63px;
+}
+.main-promo-require > div > .another-color-promo {
+    background-color: var(--dark-jungle-green);
+    color: #FFF;
+}
+.main-promo > h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--outer-space-crayola);
+}
+.main-promo > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 215px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 18px;
+    background-color: #69BC28;
+    color: #FFF;
+}
+.main-promo > p {
+    padding: 0 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 14.65px;
+    text-align: center;
 }
