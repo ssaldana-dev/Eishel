@@ -1,0 +1,15 @@
+.title {
+    position: relative;
+}
+.title-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.title-text {
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - (44px / 2));
+    left: calc(50% - (167.08px / 2));
+    font-size: 3.6rem;
+}
