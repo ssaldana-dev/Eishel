@@ -1,3 +1,4 @@
+/*Slide animation of the main title*/
 #main-img {
     display: flex;
     justify-content: center;
@@ -32,6 +33,8 @@
         background-image: url(./assets/img/bugambilia-main\(760x330\).jpg);
     }
 }
+
+
 .main-img h1 {
     width: 250px;
     height: 60px;
@@ -373,8 +376,17 @@
     font-weight: 500;
 }
 
-@media (min-width: 800px) {
-    body {
-        display: none;
-    }
+.desktop-warning {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: 98vh;
+}
+.desktop-warning img {
+    width: 30vw;
+}
+.desktop-warning h2 {
+    width: 50vw;
+    font-size: 3vw;
 }

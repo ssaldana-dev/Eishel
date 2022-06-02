@@ -1,102 +1,21 @@
-main {
-    width: 100%;
-    min-width: 320px;
-}
-
-.main-misionVision {
-    height: auto;
-    padding: 15px;
-    background-color: rgba(191, 215, 234, 0.37);;
-}
-.main-misionVision-figure-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    height: 170px; 
-    background-color: var(--beau-blue);
-    -moz-border-radius: 1000px 1000px 0 0;
-    -webkit-border-radius: 1000px 1000px 0 0;
-    border-radius: 1000px 1000px 0 0;
-}
-.misionVision-figure-circles {
-    position: relative;
-    width: 187.5px;
-    height: 100%;
-}
-.circle-1 {
-    position: absolute;
-    bottom: 14%;
-    left: 14%;
-    width: 87px;
-    height: 87px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-.circle-2 {
-    position: absolute;
-    bottom: 14%;
-    right: 14%;
-    width: 87px;
-    height: 87px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-.circle-3 {
-    position: absolute;
-    top: 14%;
-    left: calc(50% - 43.5px);
-    width: 87px;
-    height: 87px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-.misionVision-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding-bottom: 10px;
-    background-color: var(--beau-blue);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.misionVision {
-    display: flex;
-}
-
-.base-styles-misionVision {
-    padding: 10px;
-    width: 45vw;
-    height: auto;
-}
-.base-styles-misionVision h2 {
-    font-family: 'Gelasio', serif;
-    font-size: 3.6rem;
-    font-weight: 500;
-    text-align: center;
-    color: #FFF;
-}
-.base-styles-misionVision p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-align: center;
-    color: #504D4D;
-}
-.mison-vision-separator {
-    align-self: center;
-    width: 2px;
-    height: 150px;
-    background-color: #FFF;
-}
-.values {
-    height: 200px;
-    line-height: 37px;
-}
-
 .main-aboutUs {
     position: relative;
 }
+/* Identity section */
+.main-identity {
+    position: relative;
+}
+.main-identity-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-identity-box {
+    width: 80%;
+    height: 80%;
+}
+
+/*About-us title section*/
 .main-aboutUs-title {
     width: 100%;
     height: 0px;
@@ -123,17 +42,17 @@ main {
 }
 .main-aboutUs > article {
     display: flex;
-    /* align-items: center; */
     padding: 30px 0;
     height: auto;
     background-color: rgba(191,215,234, 0.37);
 }
+
+/*History section*/
 .info-story {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
-    /* height: 450px; */
     padding: 0 10px;
 }
 .info-division {
@@ -182,6 +101,8 @@ main {
     font-weight: 500;
     text-align: center;
 }
+
+/*Staff section*/
 .main-staff {
     position: relative;
     min-width: 320px;
