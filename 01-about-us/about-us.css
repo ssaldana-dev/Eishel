@@ -6,13 +6,60 @@
     position: relative;
 }
 .main-identity-section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 275px;
 }
 .main-identity-box {
-    width: 80%;
-    height: 80%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    width: 320px;
+    height: 235px;
+    background-color: #82A6C233;
+}
+.main-identity-box-title {
+    font-family: 'gelasio', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: var(--outer-space-crayola);
+}
+.main-identity-box-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #373636;
+}
+.main-identity-mission-decoration {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: 0px solid #D4E3EE;
+    border-top: 275px solid #D4E3EE;
+    border-left: 100vw solid transparent;
+    border-bottom: 0px solid transparent;
+}
+
+.main-identity-vision-decoration {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-top: 275px solid #D4E3EE;
+    border-left: 0px solid #D4E3EE;
+    border-bottom: 0px solid transparent;
 }
 
 /*About-us title section*/
