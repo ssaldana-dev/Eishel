@@ -48,7 +48,6 @@
     border-left: 100vw solid transparent;
     border-bottom: 0px solid transparent;
 }
-
 .main-identity-vision-decoration {
     position: absolute;
     z-index: 1;
@@ -60,6 +59,57 @@
     border-top: 275px solid #D4E3EE;
     border-left: 0px solid #D4E3EE;
     border-bottom: 0px solid transparent;
+}
+
+.main-identity-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.main-identity-values-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--outer-space-crayola);
+    font-family: 'gelasio', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #FFF;
+}
+.main-identity-values-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    height: 88vw;
+    width: 88vw;
+    border: 8px solid var(--beau-blue);
+    border-radius: 7.46vw;
+}
+.main-identity-values-value-title {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74.66vw;
+    height: 12vw;
+    background-color: var(--beau-blue);
+    border-radius: 18.46vw;
+    font-family: 'gelasio', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.main-identity-values-value-text {
+    font-family: 'gelasio', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 /*About-us title section*/
