@@ -2,8 +2,15 @@ const VALUES_CONTAINER = document.getElementById('values-container');
 const TEAMWORK_CONTAIENER = document.getElementById('value-teamwork');
 const SERVICE_CONTAIENER = document.getElementById('value-service');
 const EMPATHY_CONTAIENER = document.getElementById('value-empathy');
-const ETHIC_CONTAIENER = document.getElementById('value-ethic');
+const ETHIC_CONTAIENER = document.getElementById('value-efficiency');
 const EFFICIENCY_CONTAIENER = document.getElementById('value-efficiency');
+
+const teamwork_button = document.getElementById('button-teamwork');
+teamwork_button.addEventListener('click', ShowValues);
+const service_button = document.getElementById('button-service');
+const empathy_button = document.getElementById('button-empathy');
+const ethic_button = document.getElementById('button-ethic');
+const efficiency_button = document.getElementById('button-efficiency');
 
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
@@ -24,7 +31,8 @@ teamwork.appendChild(titulo_teamwork);
 titulo_teamwork.appendChild(texto_titulo_teamwork);
 teamwork.appendChild(parrafo_teamwork);
 parrafo_teamwork.appendChild(texto_parrafo_teamwork);
-
+/*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
+    así como sus clases y rutas.     */
 let service = document.createElement('article');
 service.className = 'main-identity-values-value';
 let imagen_service = document.createElement('img');
@@ -36,12 +44,69 @@ let texto_titulo_service = document.createTextNode('Actitud de servicio');
 let parrafo_service = document.createElement('p');
 parrafo_service.className = 'main-identity-values-value-text';
 let texto_parrafo_service = document.createTextNode('Nos interesamos significativamente por los demás, donde todos salgan beneficiados.'); 
-
+/*  Se crea la estructura del artículo con appendChild  */
 service.appendChild(imagen_service);
 service.appendChild(titulo_service);
 titulo_service.appendChild(texto_titulo_service);
 service.appendChild(parrafo_service);
 parrafo_service.appendChild(texto_parrafo_service);
+/*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
+    así como sus clases y rutas.     */
+let empathy = document.createElement('article');
+empathy.className = 'main-identity-values-value';
+let imagen_empathy = document.createElement('img');
+imagen_empathy.src = './assets/icons/empathy-icon.svg'
+imagen_empathy.className = 'main-identity-values-value-img';
+let titulo_empathy = document.createElement('h3');
+titulo_empathy.className = 'main-identity-values-value-title';
+let texto_titulo_empathy = document.createTextNode('Empatía');
+let parrafo_empathy = document.createElement('p');
+parrafo_empathy.className = 'main-identity-values-value-text';
+let texto_parrafo_empathy = document.createTextNode('Comprendemos, escuchamos activamente, desarrollamos la capacidad de actuar de manera solidaria y responsable para mejorar la calidad de vida de los residentes y de nuestros compañeros.'); 
+/*  Se crea la estructura del artículo con appendChild  */
+empathy.appendChild(imagen_empathy);
+empathy.appendChild(titulo_empathy);
+titulo_empathy.appendChild(texto_titulo_empathy);
+empathy.appendChild(parrafo_empathy);
+parrafo_empathy.appendChild(texto_parrafo_empathy);
+/*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
+    así como sus clases y rutas.     */
+let ethic = document.createElement('article');
+ethic.className = 'main-identity-values-value';
+let imagen_ethic = document.createElement('img');
+imagen_ethic.src = './assets/icons/ethic-icon.svg'
+imagen_ethic.className = 'main-identity-values-value-img';
+let titulo_ethic = document.createElement('h3');
+titulo_ethic.className = 'main-identity-values-value-title';
+let texto_titulo_ethic = document.createTextNode('Ética');
+let parrafo_ethic = document.createElement('p');
+parrafo_ethic.className = 'main-identity-values-value-text';
+let texto_parrafo_ethic = document.createTextNode('Logramos diferenciar y destacar lo mejor de las personas, pues nos concentramos en los derechos y responsabilidades propios y de los demás, influyendo para solucionar conflictos con equidad.'); 
+/*  Se crea la estructura del artículo con appendChild  */
+ethic.appendChild(imagen_ethic);
+ethic.appendChild(titulo_ethic);
+titulo_ethic.appendChild(texto_titulo_ethic);
+ethic.appendChild(parrafo_ethic);
+parrafo_ethic.appendChild(texto_parrafo_ethic);
+/*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
+    así como sus clases y rutas.     */
+let efficiency = document.createElement('article');
+efficiency.className = 'main-identity-values-value';
+let imagen_efficiency = document.createElement('img');
+imagen_efficiency.src = './assets/icons/efficiency-icon.svg'
+imagen_efficiency.className = 'main-identity-values-value-img';
+let titulo_efficiency = document.createElement('h3');
+titulo_efficiency.className = 'main-identity-values-value-title';
+let texto_titulo_efficiency = document.createTextNode('Eficiencia');
+let parrafo_efficiency = document.createElement('p');
+parrafo_efficiency.className = 'main-identity-values-value-text';
+let texto_parrafo_efficiency = document.createTextNode('Logramos los objetivos con la menor cantidad de recursos.'); 
+/*  Se crea la estructura del artículo con appendChild  */
+efficiency.appendChild(imagen_efficiency);
+efficiency.appendChild(titulo_efficiency);
+titulo_efficiency.appendChild(texto_titulo_efficiency);
+efficiency.appendChild(parrafo_efficiency);
+parrafo_efficiency.appendChild(texto_parrafo_efficiency);
 
 let teamwork_counter = 0;
 let service_counter = 0;
@@ -49,8 +114,11 @@ let empathy_counter = 0;
 let ethic_counter = 0;
 let efficiency_counter = 0;
 
-function ShowValue () {
+function ShowValues () {
     TEAMWORK_CONTAIENER.appendChild(teamwork);
     SERVICE_CONTAIENER.appendChild(service);
+    EMPATHY_CONTAIENER.appendChild(empathy);
+    ETHIC_CONTAIENER    .appendChild(ethic);
+    EFFICIENCY_CONTAIENER.appendChild(efficiency);
 }
 

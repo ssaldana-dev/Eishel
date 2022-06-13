@@ -81,6 +81,20 @@
     font-weight: 400;
     color: #FFF;
 }
+.main-identity-values-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 86.66vw;
+    height: 13.33vw;
+    border-radius: 18.66vw;
+    background-color: var(--beau-blue);
+    font-family: 'Gelasio', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+}
 .main-identity-values-value {
     display: flex;
     flex-direction: column;
