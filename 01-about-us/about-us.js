@@ -2,16 +2,19 @@ const VALUES_CONTAINER = document.getElementById('values-container');
 const TEAMWORK_CONTAIENER = document.getElementById('value-teamwork');
 const SERVICE_CONTAIENER = document.getElementById('value-service');
 const EMPATHY_CONTAIENER = document.getElementById('value-empathy');
-const ETHIC_CONTAIENER = document.getElementById('value-efficiency');
+const ETHIC_CONTAIENER = document.getElementById('value-ethic');
 const EFFICIENCY_CONTAIENER = document.getElementById('value-efficiency');
 
 const teamwork_button = document.getElementById('button-teamwork');
-teamwork_button.addEventListener('click', ShowValues);
+teamwork_button.addEventListener('click', ShowValueTeamwork);
 const service_button = document.getElementById('button-service');
+service_button.addEventListener('click', ShowValueService);
 const empathy_button = document.getElementById('button-empathy');
+empathy_button.addEventListener('click', ShowValueEmpathy);
 const ethic_button = document.getElementById('button-ethic');
+ethic_button.addEventListener('click', ShowValueEthic);
 const efficiency_button = document.getElementById('button-efficiency');
-
+efficiency_button.addEventListener('click', ShowValueEfficiency);
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
 let teamwork = document.createElement('article');
@@ -108,17 +111,65 @@ titulo_efficiency.appendChild(texto_titulo_efficiency);
 efficiency.appendChild(parrafo_efficiency);
 parrafo_efficiency.appendChild(texto_parrafo_efficiency);
 
+
+
+
 let teamwork_counter = 0;
 let service_counter = 0;
 let empathy_counter = 0;
 let ethic_counter = 0;
 let efficiency_counter = 0;
 
-function ShowValues () {
-    TEAMWORK_CONTAIENER.appendChild(teamwork);
-    SERVICE_CONTAIENER.appendChild(service);
-    EMPATHY_CONTAIENER.appendChild(empathy);
-    ETHIC_CONTAIENER    .appendChild(ethic);
-    EFFICIENCY_CONTAIENER.appendChild(efficiency);
+function ShowValueTeamwork () {
+    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+    TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+}
+function ShowValueService () {
+    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+    SERVICE_CONTAIENER.replaceChild(service, service_button);
+}
+function ShowValueEmpathy () {
+    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+    EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
+}
+function ShowValueEthic () {
+    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+    ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
+}
+function ShowValueEfficiency () {
+    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+    EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
 }
 
+function ReplaceButtons () {
+    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+}
+
+function ShowCounter() {
+    console.group('Counter');
+    console.log('Teamwork: ' + teamwork_counter);
+    console.log('Service: ' + service_counter);
+    console.log('Empathy: ' + empathy_counter);
+    console.log('Ethic: ' + ethic_counter);
+    console.log('Efficiency: ' + efficiency_counter);
+    console.groupEnd();
+}

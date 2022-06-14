@@ -66,6 +66,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    transition: 500ms;
 }
 .main-identity-values-title {
     display: flex;
