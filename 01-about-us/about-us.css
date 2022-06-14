@@ -133,6 +133,11 @@
     font-weight: 500;
 }
 .main-identity-values-value-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 90%;
     font-family: 'gelasio', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
