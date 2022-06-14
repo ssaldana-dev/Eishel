@@ -66,7 +66,6 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    /* height: 190vw; */
 }
 .main-identity-values-title {
     display: flex;
@@ -96,12 +95,12 @@
     font-weight: 400;
     text-align: center;
 }
-.main-identity-values-containers {
+.main-identity-values-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* height: calc(190vw - 74px) */
+    height: calc(190vw - 74px)
 }
 .main-identity-values-value {
     display: flex;
@@ -117,7 +116,7 @@
     animation: valueExpand 850ms 1;
 }
 @keyframes valueExpand {
-    0% {height: 70vw;}
+    0% {height: 75vw;}
 }
 
 .main-identity-values-value-title {

@@ -5,6 +5,18 @@ const EMPATHY_CONTAIENER = document.getElementById('value-empathy');
 const ETHIC_CONTAIENER = document.getElementById('value-ethic');
 const EFFICIENCY_CONTAIENER = document.getElementById('value-efficiency');
 
+/*  Se agregan escuchadores de eventos a todas las secciones de la 
+    página para que se reinicien los botones cada que se da click
+    fuera de su contenedor. */
+const MISION = document.getElementById('mission');
+MISION.addEventListener('click', ReplaceButtons);
+const VISION = document.getElementById('vison');
+VISION.addEventListener('click', ReplaceButtons);
+const HISTORY = document.getElementById('history');
+HISTORY.addEventListener('click', ReplaceButtons);
+const STAFF = document.getElementById('staff');
+STAFF.addEventListener('click', ReplaceButtons);
+
 const teamwork_button = document.getElementById('button-teamwork');
 teamwork_button.addEventListener('click', ShowValueTeamwork);
 const service_button = document.getElementById('button-service');
@@ -154,7 +166,7 @@ function ShowValueTeamwork () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
     }
-
+    VALUES_CONTAINER.className = 'main-identity-values-container';
 }
 function ShowValueService () {
     if (first == 0) {
@@ -185,6 +197,8 @@ function ShowValueService () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         SERVICE_CONTAIENER.replaceChild(service, service_button);
     }
+//  Se agrega una clase al contenedor al hacer click en el botón para que mantenga su tamaño.
+    VALUES_CONTAINER.className = 'main-identity-values-container';
 }
 function ShowValueEmpathy () {
     if (first == 0) {
@@ -215,6 +229,7 @@ function ShowValueEmpathy () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
     }
+    VALUES_CONTAINER.className = 'main-identity-values-container';
 }
 function ShowValueEthic () {
     if (first == 0) {
@@ -245,6 +260,7 @@ function ShowValueEthic () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
     }
+    VALUES_CONTAINER.className = 'main-identity-values-container';
 }
 function ShowValueEfficiency () {
     if (first == 0) {
@@ -275,6 +291,7 @@ function ShowValueEfficiency () {
         ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
         EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
     }
+    VALUES_CONTAINER.className = 'main-identity-values-container';
 }
 
 function ReplaceButtons () {
@@ -283,4 +300,6 @@ function ReplaceButtons () {
     EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
     ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
     EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+
+    VALUES_CONTAINER.className = '';
 }
