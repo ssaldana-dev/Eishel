@@ -19,6 +19,7 @@ efficiency_button.addEventListener('click', ShowValueEfficiency);
     así como sus clases y rutas.     */
 let teamwork = document.createElement('article');
 teamwork.className = 'main-identity-values-value';
+teamwork.id = 'value';
 let imagen_teamwork = document.createElement('img');
 imagen_teamwork.src = './assets/icons/teamwork-icon.svg'
 imagen_teamwork.className = 'main-identity-values-value-img';
@@ -111,49 +112,169 @@ titulo_efficiency.appendChild(texto_titulo_efficiency);
 efficiency.appendChild(parrafo_efficiency);
 parrafo_efficiency.appendChild(texto_parrafo_efficiency);
 
+/*  Las siguientes funciones reemplazan el botón del valor que se selecciona por el valor desplegado 
+    y reemplazan el primer hijo de todos los demás valores por el botón de su valor correspondiente.    */
 
+/*  Hice todo lo siguiente, dado que había un error en el que al darle click al primer botón
+    se quedaba atorado el elemento hasta que se le diera click a otro botón y de regreso. 
+    No encontré como tal la raíz del error, pero repliqué la "solución" haciendo que la 
+    primera vez que se le diera click a un botón, me cargara el elemento, luego otro y de nuevo 
+    el primero, así logré que no se notara.                                                             */
 
-
-let teamwork_counter = 0;
-let service_counter = 0;
-let empathy_counter = 0;
-let ethic_counter = 0;
-let efficiency_counter = 0;
+//  Variable donde se guarda la primera vez que se da click a cualquier botón.
+let first = 0;
 
 function ShowValueTeamwork () {
-    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
-    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
-    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
-    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
-    TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+//  Condicional que verifica si es la primera vez que se da el click
+    if (first == 0) {
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service, service_button);
+
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+//  Cambia el valor de first, indicando que ya se dio el primer click
+        first = 1;
+    }
+    else {
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+    }
+
 }
 function ShowValueService () {
-    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
-    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
-    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
-    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
-    SERVICE_CONTAIENER.replaceChild(service, service_button);
+    if (first == 0) {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service, service_button);
+
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service, service_button)
+
+        first = 1;
+    }
+    else {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service, service_button);
+    }
 }
 function ShowValueEmpathy () {
-    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
-    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
-    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
-    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
-    EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
+    if (first == 0) {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
+
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
+
+        first = 1;
+    }
+    else {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
+    }
 }
 function ShowValueEthic () {
-    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
-    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
-    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
-    EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
-    ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
+    if (first == 0) {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
+
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
+
+        first = 1;
+    }
+    else {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
+    }
 }
 function ShowValueEfficiency () {
-    TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
-    SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
-    EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
-    ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
-    EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
+    if (first == 0) {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
+
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
+        TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
+
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
+
+        first = 1;
+    }
+    else {
+        TEAMWORK_CONTAIENER.replaceChild(teamwork_button, TEAMWORK_CONTAIENER.firstChild);
+        SERVICE_CONTAIENER.replaceChild(service_button, SERVICE_CONTAIENER.firstChild);
+        EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
+        ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
+        EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
+    }
 }
 
 function ReplaceButtons () {
@@ -162,14 +283,4 @@ function ReplaceButtons () {
     EMPATHY_CONTAIENER.replaceChild(empathy_button, EMPATHY_CONTAIENER.firstChild);
     ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
     EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
-}
-
-function ShowCounter() {
-    console.group('Counter');
-    console.log('Teamwork: ' + teamwork_counter);
-    console.log('Service: ' + service_counter);
-    console.log('Empathy: ' + empathy_counter);
-    console.log('Ethic: ' + ethic_counter);
-    console.log('Efficiency: ' + efficiency_counter);
-    console.groupEnd();
 }
