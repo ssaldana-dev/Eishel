@@ -2,17 +2,17 @@
     position: relative;
 }
 /* Identity section */
-.main-identity {
+.identity {
     position: relative;
 }
-.main-identity-section {
+.identity-section {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 275px;
 }
-.main-identity-box {
+.identity-box {
     position: relative;
     z-index: 2;
     display: flex;
@@ -24,19 +24,19 @@
     height: 235px;
     background-color: #82A6C233;
 }
-.main-identity-box-title {
+.identity-box-title {
     font-family: 'gelasio', sans-serif;
     font-size: 3.6rem;
     font-weight: 500;
     color: var(--outer-space-crayola);
 }
-.main-identity-box-text {
+.identity-box-text {
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
     color: #373636;
 }
-.main-identity-mission-decoration {
+.identity-mission-decoration {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -48,7 +48,7 @@
     border-left: 100vw solid transparent;
     border-bottom: 0px solid transparent;
 }
-.main-identity-vision-decoration {
+.identity-vision-decoration {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -61,13 +61,13 @@
     border-bottom: 0px solid transparent;
 }
 
-.main-identity-values {
+.identity-values {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
-.main-identity-values-title {
+.identity-values-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@
     font-weight: 400;
     color: #FFF;
 }
-.main-identity-values-button {
+.identity-values-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,14 +95,14 @@
     font-weight: 400;
     text-align: center;
 }
-.main-identity-values-container {
+.identity-values-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: calc(190vw - 74px)
 }
-.main-identity-values-value {
+.identity-values-value {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +119,7 @@
     0% {height: 75vw;}
 }
 
-.main-identity-values-value-title {
+.identity-values-value-title {
     display: block;
     display: flex;
     justify-content: center;
@@ -132,7 +132,7 @@
     font-size: 2rem;
     font-weight: 500;
 }
-.main-identity-values-value-text {
+.identity-values-value-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,18 +232,18 @@
 }
 
 /*Staff section*/
-.main-staff {
+.staff {
     position: relative;
     min-width: 320px;
 }
-.main-staff-title {
+.staff-title {
     width: 100%;
     height: 0px;
     border-top: 110px solid rgba(191,215,234, 0.37);
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
 }
-.main-staff-title h2 {
+.staff-title-text {
     position: absolute;
     top: 20px;
     left: calc(50% - 140.095px);
@@ -251,18 +251,57 @@
     font-size: 3.6rem;
     font-weight: 500;
 }
-.main-staff-collaborators {
+.staff-collaborator {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 15px;
 }
-.main-staff-collaborators img {
-    margin: 15px 0px;
-    width: 70vw;
-    max-width: 300px;
+.staff-collaborator-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.main-staff-collaborators span {
+.staff-collaborator-container-img {
+    position: absolute;
+    z-index: 2;
+    margin: 15px 0px;
+    margin-top: 80px;
+
+    transition: 500ms;
+}
+.change1 {
+    top: -80px;
+    width: 130px;
+    height: 203.69px;
+}
+.change2 {
+    top: 0;
+    width: 335px;
+    height: 530px;
+}
+.staff-collaborator-contaiener-text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    margin-top: 80px;
+    width: 335px;
+    height: 530px;
+    background-color: #E7F0F7CC;
+
+}
+.staff-collaborator-conatiner-text-paragraph {
+    margin-bottom: 30px;
+    width: 270px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.staff-collaborator-span {
     width: 70vw;
     font-size: 1.3rem;
     font-weight: 500;

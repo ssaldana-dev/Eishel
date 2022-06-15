@@ -30,16 +30,16 @@ efficiency_button.addEventListener('click', ShowValueEfficiency);
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
 let teamwork = document.createElement('article');
-teamwork.className = 'main-identity-values-value';
+teamwork.className = 'identity-values-value';
 teamwork.id = 'value';
 let imagen_teamwork = document.createElement('img');
 imagen_teamwork.src = './assets/icons/teamwork-icon.svg'
-imagen_teamwork.className = 'main-identity-values-value-img';
+imagen_teamwork.className = 'identity-values-value-img';
 let titulo_teamwork = document.createElement('h3');
-titulo_teamwork.className = 'main-identity-values-value-title';
+titulo_teamwork.className = 'identity-values-value-title';
 let texto_titulo_teamwork = document.createTextNode('Trabajo en equipo');
 let parrafo_teamwork = document.createElement('p');
-parrafo_teamwork.className = 'main-identity-values-value-text';
+parrafo_teamwork.className = 'identity-values-value-text';
 let texto_parrafo_teamwork = document.createTextNode('Somos un conjunto de personas comprometidas con nuestro rol para lograr un objetivo en común. (Personas, organización y objetivo común).');  
 /*  Se crea la estructura del artículo con appendChild  */
 teamwork.appendChild(imagen_teamwork);
@@ -50,15 +50,15 @@ parrafo_teamwork.appendChild(texto_parrafo_teamwork);
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
 let service = document.createElement('article');
-service.className = 'main-identity-values-value';
+service.className = 'identity-values-value';
 let imagen_service = document.createElement('img');
 imagen_service.src = './assets/icons/serviceAttitude-icon.svg'
-imagen_service.className = 'main-identity-values-value-img';
+imagen_service.className = 'identity-values-value-img';
 let titulo_service = document.createElement('h3');
-titulo_service.className = 'main-identity-values-value-title';
+titulo_service.className = 'identity-values-value-title';
 let texto_titulo_service = document.createTextNode('Actitud de servicio');
 let parrafo_service = document.createElement('p');
-parrafo_service.className = 'main-identity-values-value-text';
+parrafo_service.className = 'identity-values-value-text';
 let texto_parrafo_service = document.createTextNode('Nos interesamos significativamente por los demás, donde todos salgan beneficiados.'); 
 /*  Se crea la estructura del artículo con appendChild  */
 service.appendChild(imagen_service);
@@ -69,15 +69,15 @@ parrafo_service.appendChild(texto_parrafo_service);
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
 let empathy = document.createElement('article');
-empathy.className = 'main-identity-values-value';
+empathy.className = 'identity-values-value';
 let imagen_empathy = document.createElement('img');
 imagen_empathy.src = './assets/icons/empathy-icon.svg'
-imagen_empathy.className = 'main-identity-values-value-img';
+imagen_empathy.className = 'identity-values-value-img';
 let titulo_empathy = document.createElement('h3');
-titulo_empathy.className = 'main-identity-values-value-title';
+titulo_empathy.className = 'identity-values-value-title';
 let texto_titulo_empathy = document.createTextNode('Empatía');
 let parrafo_empathy = document.createElement('p');
-parrafo_empathy.className = 'main-identity-values-value-text';
+parrafo_empathy.className = 'identity-values-value-text';
 let texto_parrafo_empathy = document.createTextNode('Comprendemos, escuchamos activamente, desarrollamos la capacidad de actuar de manera solidaria y responsable para mejorar la calidad de vida de los residentes y de nuestros compañeros.'); 
 /*  Se crea la estructura del artículo con appendChild  */
 empathy.appendChild(imagen_empathy);
@@ -88,15 +88,15 @@ parrafo_empathy.appendChild(texto_parrafo_empathy);
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
 let ethic = document.createElement('article');
-ethic.className = 'main-identity-values-value';
+ethic.className = 'identity-values-value';
 let imagen_ethic = document.createElement('img');
 imagen_ethic.src = './assets/icons/ethic-icon.svg'
-imagen_ethic.className = 'main-identity-values-value-img';
+imagen_ethic.className = 'identity-values-value-img';
 let titulo_ethic = document.createElement('h3');
-titulo_ethic.className = 'main-identity-values-value-title';
+titulo_ethic.className = 'identity-values-value-title';
 let texto_titulo_ethic = document.createTextNode('Ética');
 let parrafo_ethic = document.createElement('p');
-parrafo_ethic.className = 'main-identity-values-value-text';
+parrafo_ethic.className = 'identity-values-value-text';
 let texto_parrafo_ethic = document.createTextNode('Logramos diferenciar y destacar lo mejor de las personas, pues nos concentramos en los derechos y responsabilidades propios y de los demás, influyendo para solucionar conflictos con equidad.'); 
 /*  Se crea la estructura del artículo con appendChild  */
 ethic.appendChild(imagen_ethic);
@@ -107,15 +107,15 @@ parrafo_ethic.appendChild(texto_parrafo_ethic);
 /*  Se declaran las variables que contienen los abjetos HTML y sus contenidos
     así como sus clases y rutas.     */
 let efficiency = document.createElement('article');
-efficiency.className = 'main-identity-values-value';
+efficiency.className = 'identity-values-value';
 let imagen_efficiency = document.createElement('img');
 imagen_efficiency.src = './assets/icons/efficiency-icon.svg'
-imagen_efficiency.className = 'main-identity-values-value-img';
+imagen_efficiency.className = 'identity-values-value-img';
 let titulo_efficiency = document.createElement('h3');
-titulo_efficiency.className = 'main-identity-values-value-title';
+titulo_efficiency.className = 'identity-values-value-title';
 let texto_titulo_efficiency = document.createTextNode('Eficiencia');
 let parrafo_efficiency = document.createElement('p');
-parrafo_efficiency.className = 'main-identity-values-value-text';
+parrafo_efficiency.className = 'identity-values-value-text';
 let texto_parrafo_efficiency = document.createTextNode('Logramos los objetivos con la menor cantidad de recursos.'); 
 /*  Se crea la estructura del artículo con appendChild  */
 efficiency.appendChild(imagen_efficiency);
@@ -166,7 +166,7 @@ function ShowValueTeamwork () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         TEAMWORK_CONTAIENER.replaceChild(teamwork, teamwork_button);
     }
-    VALUES_CONTAINER.className = 'main-identity-values-container';
+    VALUES_CONTAINER.className = 'identity-values-container';
 }
 function ShowValueService () {
     if (first == 0) {
@@ -198,7 +198,7 @@ function ShowValueService () {
         SERVICE_CONTAIENER.replaceChild(service, service_button);
     }
 //  Se agrega una clase al contenedor al hacer click en el botón para que mantenga su tamaño.
-    VALUES_CONTAINER.className = 'main-identity-values-container';
+    VALUES_CONTAINER.className = 'identity-values-container';
 }
 function ShowValueEmpathy () {
     if (first == 0) {
@@ -229,7 +229,7 @@ function ShowValueEmpathy () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         EMPATHY_CONTAIENER.replaceChild(empathy, empathy_button);
     }
-    VALUES_CONTAINER.className = 'main-identity-values-container';
+    VALUES_CONTAINER.className = 'identity-values-container';
 }
 function ShowValueEthic () {
     if (first == 0) {
@@ -260,7 +260,7 @@ function ShowValueEthic () {
         EFFICIENCY_CONTAIENER.replaceChild(efficiency_button, EFFICIENCY_CONTAIENER.firstChild);
         ETHIC_CONTAIENER.replaceChild(ethic, ethic_button);
     }
-    VALUES_CONTAINER.className = 'main-identity-values-container';
+    VALUES_CONTAINER.className = 'identity-values-container';
 }
 function ShowValueEfficiency () {
     if (first == 0) {
@@ -291,7 +291,7 @@ function ShowValueEfficiency () {
         ETHIC_CONTAIENER.replaceChild(ethic_button, ETHIC_CONTAIENER.firstChild);
         EFFICIENCY_CONTAIENER.replaceChild(efficiency, efficiency_button);
     }
-    VALUES_CONTAINER.className = 'main-identity-values-container';
+    VALUES_CONTAINER.className = 'identity-values-container';
 }
 
 function ReplaceButtons () {
