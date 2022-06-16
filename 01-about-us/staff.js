@@ -52,5 +52,3 @@ function changeClass4 () {
         counter_4 = 0;
     }
 }
-
-alert('funciona');
