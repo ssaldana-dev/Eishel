@@ -19,6 +19,21 @@ main {
     min-width: 320px;
 }
 
+.desktop-warning {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: 98vh;
+}
+.desktop-warning img {
+    width: 30vw;
+}
+.desktop-warning h2 {
+    width: 50vw;
+    font-size: 3vw;
+}
+
 @media (min-width: 800px) {
     header,main,footer,menu {
         display: none;
