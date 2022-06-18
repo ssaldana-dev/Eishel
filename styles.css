@@ -103,9 +103,10 @@
 }
 .main-aboutUs-info-container a{
     display: inline-block;
-    text-decoration: none;
+    margin-top: 15px;
     width: 120px;
     height: 27px;
+    text-decoration: none;
 } 
 .main-aboutUs-info-container > a > span {
     display: inline-block;
