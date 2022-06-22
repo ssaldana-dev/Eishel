@@ -1,3 +1,7 @@
+/*  Se declaran las variables que contienen cada fotografía y se le añade un escuchador de eventos a cada una 
+    que detecta un click y manda a llamar una función diferente por cada imagen. Funciones que tienen como 
+    fin hacer que la imagen crezca de tamaño, el resto queden en tamaño normal y disparar otra función en caso 
+    de darse un segundo click consecutivo en la misma imagen.                                                   */
 const instalations1 = document.getElementById('instalations-1');
 instalations1.addEventListener('click', makeItBigger1);
 const instalations2 = document.getElementById('instalations-2');
@@ -19,12 +23,22 @@ instalations9.addEventListener('click', makeItBigger9);
 const instalations10 = document.getElementById('instalations-10');
 instalations10.addEventListener('click', makeItBigger10);
 
+/*  Se declaran las variables que contienen los elementos que forman parte de la página a exepción del carrusel 
+    de fotografías y se añade un escuchador de eventos a cada uno que detecta un click y dispara la función que 
+    retorna las imágenes a su tamaño original.                                                                  */
 const title = document.getElementById('title');
 title.addEventListener('click', resetCarouselItemsSize);
 const galleryTitle = document.getElementById('gallery-title');
 galleryTitle.addEventListener('click', resetCarouselItemsSize);
 
+/*  Se declaran la variable que guardará el valor de qué imagen ha sido clickeada y se usará posteriormente para 
+    un cona condicional switch.                                                                                 */
 let whatPhotoIsClicked = 0;
+
+/*  Se declaran las variables que guardarán el valor como 1 o 0 (true o false), si se dan 2 clicks consecutivos 
+    en la misma imagen.                                                                                         */
+/* 
+                                                                                                                */
 let secondClick1 = 0;
 let secondClick2 = 0;
 let secondClick3 = 0;
@@ -36,6 +50,14 @@ let secondClick8 = 0;
 let secondClick9 = 0;
 let secondClick10 = 0;
 
+/*  Estas funciones, se disparan en el eventListener de su imagen correspondeinte. Lo que hacen es lo siguiente: 
+        1: Le da a la variable whatPhotoIsClicked el valor de su imagen correspondiente.
+        2: Se valida una condicional if que tiene como parámetro el valor de secondClick. 
+        3: En caso de ser 0 (false), dispara la función makeItBigger, que agranda el tamaño de la foto y 
+        resetea el valor de todos los secondClick a 0. Posteriormente, cambia el valor del secondClick de la 
+        fotografía correspondiente a 1.
+        4: En caso de ser 1 el valor de secondClick de la fotografía, disparará una función que mostrará la 
+        fotografía en pantalla completa, cosa que de momento se sigue trabajando.                               */
 function makeItBigger1 () {
     whatPhotoIsClicked = 1;
     if (secondClick1 == 0) {
@@ -145,51 +167,67 @@ function makeItBigger10 () {
     }
 }
 
+/*  La función makeItBigger dispara una condicional switch que toma como parámetro la variable 
+    whatPhotoIsClicked. Hay un caso para cada fotografía. En todos, se dispara primero una función que 
+    retorna a su tamaño original a todas las fotografías del carrusel, y luego se agrega una clase a la 
+    fotografía seleccionada que cambiará su tamaño a 1.5x .                                                     */
 function makeItBigger () {
     switch (whatPhotoIsClicked) {
         case 1:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations1.className = 'gallery-carousel-photo carousel-first-photo bigger-photo'
         break
         case 2:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations2.className = 'gallery-carousel-photo bigger-photo'
         break
         case 3:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations3.className = 'gallery-carousel-photo bigger-photo'
         break
         case 4:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations4.className = 'gallery-carousel-photo bigger-photo'
         break
         case 5:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations5.className = 'gallery-carousel-photo bigger-photo'
         break
         case 6:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations6.className = 'gallery-carousel-photo bigger-photo'
         break
         case 7:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations7.className = 'gallery-carousel-photo bigger-photo'
         break
         case 8:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations8.className = 'gallery-carousel-photo bigger-photo'
         break
         case 9:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations9.className = 'gallery-carousel-photo bigger-photo'
         break
         case 10:
+            resetClickValues();
             resetCarouselItemsSize();
             instalations10.className = 'gallery-carousel-photo carousel-last-photo bigger-photo'
         break
     }
 }
 
+/*  La función resetCarouselItemsSize resetea las clases de todas las fotografías del carrusel, regresándolas a 
+    su tamaño original.                                                                                         */
 function resetCarouselItemsSize () {
     instalations1.className = 'gallery-carousel-photo carousel-first-photo';
     instalations2.className = 'gallery-carousel-photo';
@@ -201,8 +239,10 @@ function resetCarouselItemsSize () {
     instalations8.className = 'gallery-carousel-photo';
     instalations9.className = 'gallery-carousel-photo';
     instalations10.className = 'gallery-carousel-photo carousel-last-photo';
-    resetClickValues();
+    resetClickValues()
 }
+
+/*  La función resetClickValues, retorna el valor de todos los secondClick a 0 (false).                         */
 function resetClickValues () {
     secondClick1 = 0;
     secondClick2 = 0;
