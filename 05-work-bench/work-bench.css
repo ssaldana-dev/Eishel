@@ -1,65 +1,79 @@
 :root {
-    --background-triangle--mid-with: calc(28.57142857142857vw / 2);
+    --background-triangle--mid-with: calc(14.28571428571429vw);
 }
 
 .title {
     position: relative;
     height: 105px;
+    overflow: hidden;
 }
 .up-background-figure {
     position: absolute;
-    z-index: 1;
+    top: -12.5px;
+    z-index: 0;
     width: 0; 
     height: 0; 
     border-left: calc(var(--background-triangle--mid-with)) solid transparent;
     border-right: calc(var(--background-triangle--mid-with)) solid transparent;
-    border-top: 70px solid #BFD7EA5E;
+    border-top: 85px solid #BFD7EA5E;
 }
 .ubf-1 {
-    left: 0;
+    left: calc(0px - var(--background-triangle--mid-with));
 }
 .ubf-2 {
-    left: var(--background-triangle--mid-with);
+    left: 0px;
 }
 .ubf-3 {
-    left: calc(var(--background-triangle--mid-with) * 2);
+    left: var(--background-triangle--mid-with);
 }
 .ubf-4 {
-    left: calc(var(--background-triangle--mid-with) * 3);
+    left: calc(var(--background-triangle--mid-with) * 2);
 }
 .ubf-5 {
-    left: calc(var(--background-triangle--mid-with) * 4);
+    left: calc(var(--background-triangle--mid-with) * 3);
 }
 .ubf-6 {
+    left: calc(var(--background-triangle--mid-with) * 4);
+}
+.ubf-7 {
     left: calc(var(--background-triangle--mid-with) * 5);
+}
+.ubf-8 {
+    left: calc(var(--background-triangle--mid-with) * 6);
 }
 .bottom-background-figure {
     position: absolute;
-    bottom: 0;
-    z-index: 1;
+    bottom: -12.5px;
+    z-index: 0;
     width: 0; 
     height: 0; 
     border-left: calc(var(--background-triangle--mid-with)) solid transparent;
     border-right: calc(var(--background-triangle--mid-with)) solid transparent;
-    border-bottom: 70px solid #BFD7EA5E;
+    border-bottom: 85px solid #BFD7EA5E;
 }
 .bbf-1 {
-    left: 0;
+    left: calc(0px - var(--background-triangle--mid-with));
 }
 .bbf-2 {
-    left: var(--background-triangle--mid-with);
+    left: 0px;
 }
 .bbf-3 {
-    left: calc(var(--background-triangle--mid-with) * 2);
+    left: var(--background-triangle--mid-with);
 }
 .bbf-4 {
-    left: calc(var(--background-triangle--mid-with) * 3);
+    left: calc(var(--background-triangle--mid-with) * 2);
 }
 .bbf-5 {
-    left: calc(var(--background-triangle--mid-with) * 4);
+    left: calc(var(--background-triangle--mid-with) * 3);
 }
 .bbf-6 {
+    left: calc(var(--background-triangle--mid-with) * 4);
+}
+.bbf-7 {
     left: calc(var(--background-triangle--mid-with) * 5);
+}
+.bbf-8 {
+    left: calc(var(--background-triangle--mid-with) * 6);
 }
 .title-text {
     position: relative;
