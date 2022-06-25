@@ -176,52 +176,52 @@ function makeItBigger () {
         case 1:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations1.className = 'gallery-carousel-photo carousel-first-photo bigger-photo'
+            instalations1.className = 'gallery-carousel-photo carousel-first-photo bigger-photo';
         break
         case 2:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations2.className = 'gallery-carousel-photo bigger-photo'
+            instalations2.className = 'gallery-carousel-photo bigger-photo';
         break
         case 3:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations3.className = 'gallery-carousel-photo bigger-photo'
+            instalations3.className = 'gallery-carousel-photo bigger-photo';
         break
         case 4:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations4.className = 'gallery-carousel-photo bigger-photo'
+            instalations4.className = 'gallery-carousel-photo bigger-photo';
         break
         case 5:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations5.className = 'gallery-carousel-photo bigger-photo'
+            instalations5.className = 'gallery-carousel-photo bigger-photo';
         break
         case 6:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations6.className = 'gallery-carousel-photo bigger-photo'
+            instalations6.className = 'gallery-carousel-photo bigger-photo';
         break
         case 7:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations7.className = 'gallery-carousel-photo bigger-photo'
+            instalations7.className = 'gallery-carousel-photo bigger-photo';
         break
         case 8:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations8.className = 'gallery-carousel-photo bigger-photo'
+            instalations8.className = 'gallery-carousel-photo bigger-photo';
         break
         case 9:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations9.className = 'gallery-carousel-photo bigger-photo'
+            instalations9.className = 'gallery-carousel-photo bigger-photo';
         break
         case 10:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations10.className = 'gallery-carousel-photo carousel-last-photo bigger-photo'
+            instalations10.className = 'gallery-carousel-photo carousel-last-photo bigger-photo';
         break
     }
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../base-styles/root.css">
     <link rel="stylesheet" href="../base-styles/header.css">
     <link rel="stylesheet" href="../base-styles/footer.css">
+    <link rel="stylesheet" href="../index-menu/header-menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,10 +20,19 @@
         <a href="../index.html">
             <img src="../assets/icon/logo-eishel.svg" alt="Eishel-logo">
         </a>
-        <nav>
-            <img src="../assets/icon/menu-icon.svg" alt="Menu icon">
+        <nav class="headerMenu">
+            <img class="headerMenu-restImage" src="../assets/icon/menu-icon.svg" alt="Menu icon" id="header-menu-img" />
         </nav>
     </header>
+    <menu class="responsiveMenu" id="header-menu-options">
+        <a class="responsiveMenu-option" href="../index.html" id="header-menu-home">INICIO</a>
+        <a class="responsiveMenu-option" href="../01-about-us/about-us.html" id="header-menu-aboutUs">CONÓCENOS</a>
+        <a class="responsiveMenu-option" href="../02-services/services.html" id="header-menu-services">SERVICIOS</a>
+        <a class="responsiveMenu-option" href="../03-gallery/gallery.html" id="header-menu-gallery">GALERÍA</a>
+        <a class="responsiveMenu-option" href="../06-collaborators/collaborators.html" id="header-menu-collaborators">COLABORADORES</a>
+        <a class="responsiveMenu-option" href="../05-work-bench/work-bench.html" id="header-menu-workBench">BOLSA DE TRABAJO</a>
+        <a class="responsiveMenu-option responsiveMenu-option--last-option" href="../04-contact/contact.html" id="header-menu-contact">CONTÁCTANOS</a>
+    </menu>
 
     <main>
         <section class="title">
@@ -94,24 +104,24 @@
         </article>
     </footer>
 
-    <menu>
-        <article>
-            <a href="https://api.whatsapp.com/send?phone=+527777177708&text=Hola. Este es un mensaje de prueba para Eishel c:">
+    <menu class="bottomMenu">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://api.whatsapp.com/send?phone=+527777177708&text=Hola. Este es un mensaje de prueba para Eishel c:">
                 <img class="menu-icon--whatsapp" src="../assets/icon/whatsapp-icon.svg" alt="whatsapp icon">
             </a>
-            <span>whatsapp</span>
+            <span class="bottomMenu-article-text">whatsapp</span>
         </article>
-        <article>
-            <a href="#">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="#">
                 <img class="menu-icon--email" src="../assets/icon/messenger-icon.svg" alt="whatsapp icon">
             </a>
-            <span>Messenger</span>
+            <span class="bottomMenu-article-text">Messenger</span>
         </article>
-        <article>
-            <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url">
                 <img class="menu-icon--donations" src="../assets/icon/donations-menu-icon.png" alt="donations icon">
             </a>
-            <span>Donaciones</span>
+            <span class="bottomMenu-article-text">Donaciones</span>
         </article>
     </menu>
 
@@ -119,5 +129,7 @@
         <img src="../assets/icon/mobile-icon.png" alt="">
         <h2>Lo sentimos, en este momento estamos trabajando en el sitio web de escritorio. De momento, puede visualizar la página en dispositivos móviles.</h2>
     </div>
+
+    <script src="../index-menu/header-menu.js"></script>
 </body>
 </html>

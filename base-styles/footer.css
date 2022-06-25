@@ -41,7 +41,7 @@ footer > p {
     text-decoration: none;
 }
 
-menu {
+.bottomMenu {
     position: fixed;
     z-index: 100;
     top: calc(100vh - 75px);
@@ -51,7 +51,7 @@ menu {
     height: 75px;
     background-color: var(--dark-jungle-green);
 }
-menu > article {
+.bottomMenu-article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -60,7 +60,7 @@ menu > article {
     font-size: 1.2rem;
     color: #FFF;
 }
-menu > article > a {
+.bottomMenu-article-option {
     display: flex;
     align-items: center;
     height: 45px;

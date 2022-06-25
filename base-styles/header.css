@@ -1,5 +1,6 @@
 header {
     position: relative;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,4 +20,7 @@ header > a > img {
 header > nav {
     height: 38px;
 }
-
+header > nav > img {
+    height: 38px;
+    width: 55px;
+}
