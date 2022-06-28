@@ -65,7 +65,7 @@ function makeItBigger1 () {
         secondClick1 = 1;
     }
     else if (secondClick1 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger2 () {
@@ -75,7 +75,7 @@ function makeItBigger2 () {
         secondClick2 = 1;
     }
     else if (secondClick2 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger3 () {
@@ -86,7 +86,7 @@ function makeItBigger3 () {
         secondClick3 = 1;
     }
     else if (secondClick3 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger4 () {
@@ -97,7 +97,7 @@ function makeItBigger4 () {
         secondClick4 = 1;
     }
     else if (secondClick4 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger5 () {
@@ -108,7 +108,7 @@ function makeItBigger5 () {
         secondClick5 = 1;
     }
     else if (secondClick5 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger6 () {
@@ -119,7 +119,7 @@ function makeItBigger6 () {
         secondClick6 = 1;
     }
     else if (secondClick6 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger7 () {
@@ -130,7 +130,7 @@ function makeItBigger7 () {
         secondClick7 = 1;
     }
     else if (secondClick7 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger8 () {
@@ -141,7 +141,7 @@ function makeItBigger8 () {
         secondClick8 = 1;
     }
     else if (secondClick8 == 1) {
-        alert('funciona');
+        openBanner();
     };
 }
 function makeItBigger9 () {
@@ -152,7 +152,7 @@ function makeItBigger9 () {
         secondClick9 = 1;
     }
     else if (secondClick9 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 function makeItBigger10 () {
@@ -163,7 +163,7 @@ function makeItBigger10 () {
         secondClick10 = 1;
     }
     else if (secondClick10 == 1) {
-        alert('funciona');
+        openBanner();
     }
 }
 
@@ -254,4 +254,14 @@ function resetClickValues () {
     secondClick8 = 0;
     secondClick9 = 0;
     secondClick10 = 0;
+}
+
+const banner =  document.getElementById('gallery-banner');
+
+function closeBanner () {
+    banner.className = 'gallery-display off';
+}
+
+function openBanner () {
+    banner.className = 'gallery-display on';
 }

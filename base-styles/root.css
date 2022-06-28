@@ -38,6 +38,12 @@ main {
     header,main,footer,menu {
         display: none;
     }
+    .bottomMenu {
+        display: none !important;
+    }
+    .responsiveMenu {
+        display: none !important;
+    }
 }
 
 @media (max-width: 800px) {
