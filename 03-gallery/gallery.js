@@ -290,6 +290,8 @@ const bannerImageSources = {
 function closeBanner () {
     bannerImage.className = 'gallery-display-container-photo';
     banner.className = 'gallery-display off';
+    resetClickValues();
+    resetCarouselItemsSize();
 }
 
 function openBanner () {

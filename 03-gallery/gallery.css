@@ -57,6 +57,8 @@
 .bigger-photo {
     height: calc(33.333333333333333vw * 1.5);
     width: calc(33.333333333333333vw * 1.5);
+    margin-left: calc((33vw / 3) - (33vw / 3));
+    margin-right: calc((33vw / 3) - (33vw / 3) - (33vw / 96));
 }
 
 /*  Gallery display */
