@@ -65,6 +65,7 @@ function makeItBigger1 () {
         secondClick1 = 1;
     }
     else if (secondClick1 == 1) {
+        currentBannerPosition = 1;
         openBanner();
     }
 }
@@ -75,6 +76,7 @@ function makeItBigger2 () {
         secondClick2 = 1;
     }
     else if (secondClick2 == 1) {
+        currentBannerPosition = 2;
         openBanner();
     }
 }
@@ -86,6 +88,7 @@ function makeItBigger3 () {
         secondClick3 = 1;
     }
     else if (secondClick3 == 1) {
+        currentBannerPosition = 3;
         openBanner();
     }
 }
@@ -97,6 +100,7 @@ function makeItBigger4 () {
         secondClick4 = 1;
     }
     else if (secondClick4 == 1) {
+        currentBannerPosition = 4;
         openBanner();
     }
 }
@@ -108,6 +112,7 @@ function makeItBigger5 () {
         secondClick5 = 1;
     }
     else if (secondClick5 == 1) {
+        currentBannerPosition = 5;
         openBanner();
     }
 }
@@ -119,6 +124,7 @@ function makeItBigger6 () {
         secondClick6 = 1;
     }
     else if (secondClick6 == 1) {
+        currentBannerPosition = 6;
         openBanner();
     }
 }
@@ -130,6 +136,7 @@ function makeItBigger7 () {
         secondClick7 = 1;
     }
     else if (secondClick7 == 1) {
+        currentBannerPosition = 7;
         openBanner();
     }
 }
@@ -141,6 +148,7 @@ function makeItBigger8 () {
         secondClick8 = 1;
     }
     else if (secondClick8 == 1) {
+        currentBannerPosition = 8;
         openBanner();
     };
 }
@@ -152,6 +160,7 @@ function makeItBigger9 () {
         secondClick9 = 1;
     }
     else if (secondClick9 == 1) {
+        currentBannerPosition = 9;
         openBanner();
     }
 }
@@ -163,6 +172,7 @@ function makeItBigger10 () {
         secondClick10 = 1;
     }
     else if (secondClick10 == 1) {
+        currentBannerPosition = 10;
         openBanner();
     }
 }
@@ -256,12 +266,149 @@ function resetClickValues () {
     secondClick10 = 0;
 }
 
+/* Construcción del banner de la galería */
+
 const banner =  document.getElementById('gallery-banner');
+const bannerImage = document.getElementById('display-photo');
+let currentBannerPosition = 0;
+
+const instalaciones1 = document.getElementById('instalations-1');
+
+
+const bannerImageSources = {
+    imagen1: './assets/imgs/instalaciones-1.jpg',
+    imagen2: './assets/imgs/instalaciones-2.jpg',
+    imagen3: './assets/imgs/instalaciones-3.jpg',
+    imagen4: './assets/imgs/instalaciones-4.jpg',
+    imagen5: './assets/imgs/instalaciones-5.jpg',
+    imagen6: './assets/imgs/instalaciones-6.jpg',
+    imagen7: './assets/imgs/instalaciones-7.jpg',
+    imagen8: './assets/imgs/instalaciones-8.jpg',
+    imagen9: './assets/imgs/instalaciones-9.jpg',
+    imagen10: './assets/imgs/instalaciones-10.jpg'
+}
 
 function closeBanner () {
     banner.className = 'gallery-display off';
 }
 
 function openBanner () {
+    switch (currentBannerPosition) {
+        case 1:
+            bannerImage.src = bannerImageSources.imagen1;
+        break
+        case 2:
+            bannerImage.src = bannerImageSources.imagen2;
+        break
+        case 3:
+            bannerImage.src = bannerImageSources.imagen3;
+        break
+        case 4:
+            bannerImage.src = bannerImageSources.imagen4;
+        break
+        case 5:
+            bannerImage.src = bannerImageSources.imagen5;
+        break
+        case 6:
+            bannerImage.src = bannerImageSources.imagen6;
+        break
+        case 7:
+            bannerImage.src = bannerImageSources.imagen7;
+        break
+        case 8:
+            bannerImage.src = bannerImageSources.imagen8;
+        break
+        case 9:
+            bannerImage.src = bannerImageSources.imagen9;
+        break
+        case 10:
+            bannerImage.src = bannerImageSources.imagen10;
+        break
+    }
+
     banner.className = 'gallery-display on';
+}
+
+function slideImageBack () {
+   if (currentBannerPosition == 1) {
+
+   }
+   else if (currentBannerPosition == 2) {
+        bannerImage.src = bannerImageSources.imagen1;
+        currentBannerPosition = 1;
+   }
+   else if (currentBannerPosition == 3) {
+        bannerImage.src = bannerImageSources.imagen2;
+        currentBannerPosition = 2;
+   }
+   else if (currentBannerPosition == 4) {
+        bannerImage.src = bannerImageSources.imagen3;
+        currentBannerPosition = 3;
+    }
+    else if (currentBannerPosition == 5) {
+        bannerImage.src = bannerImageSources.imagen4;
+        currentBannerPosition = 4;
+    }
+    else if (currentBannerPosition == 6) {
+        bannerImage.src = bannerImageSources.imagen5;
+        currentBannerPosition = 5;
+    }
+    else if (currentBannerPosition == 7) {
+        bannerImage.src = bannerImageSources.imagen6;
+        currentBannerPosition = 6;
+    }
+    else if (currentBannerPosition == 8) {
+        bannerImage.src = bannerImageSources.imagen7;
+        currentBannerPosition = 7;
+    }
+    else if (currentBannerPosition == 9) {
+        bannerImage.src = bannerImageSources.imagen8;
+        currentBannerPosition = 8;
+    }
+    else if (currentBannerPosition == 10) {
+        bannerImage.src = bannerImageSources.imagen9;
+        currentBannerPosition = 9;
+    }
+}
+
+function slideImageFront () {
+    if (currentBannerPosition == 1) {
+        bannerImage.src = bannerImageSources.imagen2;
+        currentBannerPosition = 2;
+    }
+    else if (currentBannerPosition == 2) {
+         bannerImage.src = bannerImageSources.imagen3;
+         currentBannerPosition = 3;
+    }
+    else if (currentBannerPosition == 3) {
+         bannerImage.src = bannerImageSources.imagen4;
+         currentBannerPosition = 4;
+    }
+    else if (currentBannerPosition == 4) {
+         bannerImage.src = bannerImageSources.imagen5;
+         currentBannerPosition = 5;
+     }
+     else if (currentBannerPosition == 5) {
+         bannerImage.src = bannerImageSources.imagen6;
+         currentBannerPosition = 6;
+     }
+     else if (currentBannerPosition == 6) {
+         bannerImage.src = bannerImageSources.imagen7;
+         currentBannerPosition = 7;
+     }
+     else if (currentBannerPosition == 7) {
+         bannerImage.src = bannerImageSources.imagen8;
+         currentBannerPosition = 8;
+     }
+     else if (currentBannerPosition == 8) {
+         bannerImage.src = bannerImageSources.imagen9;
+         currentBannerPosition = 9;
+     }
+     else if (currentBannerPosition == 9) {
+         bannerImage.src = bannerImageSources.imagen10;
+         currentBannerPosition = 10;
+     }
+     else if (currentBannerPosition == 10) {
+
+     }
 }
