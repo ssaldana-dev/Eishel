@@ -275,19 +275,20 @@ let currentBannerPosition = 0;
 
 
 const bannerImageSources = {
-    imagen1: './assets/imgs/instalaciones-1(775x519).jpg',
-    imagen2: './assets/imgs/instalaciones-2(775x519).jpg',
-    imagen3: './assets/imgs/instalaciones-3(775x519).jpg',
-    imagen4: './assets/imgs/instalaciones-4(775x519).jpg',
-    imagen5: './assets/imgs/instalaciones-5(775x519).jpg',
-    imagen6: './assets/imgs/instalaciones-6(775x519).jpg',
-    imagen7: './assets/imgs/instalaciones-7(775x519).jpg',
-    imagen8: './assets/imgs/instalaciones-8(775x519).jpg',
-    imagen9: './assets/imgs/instalaciones-9(775x519).jpg',
-    imagen10: './assets/imgs/instalaciones-10(775x519).jpg'
+    image1: './assets/imgs/instalaciones-1(775x519).jpg',
+    image2: './assets/imgs/instalaciones-2(775x519).jpg',
+    image3: './assets/imgs/instalaciones-3(775x519).jpg',
+    image4: './assets/imgs/instalaciones-4(775x519).jpg',
+    image5: './assets/imgs/instalaciones-5(775x519).jpg',
+    image6: './assets/imgs/instalaciones-6(775x519).jpg',
+    image7: './assets/imgs/instalaciones-7(775x519).jpg',
+    image8: './assets/imgs/instalaciones-8(775x519).jpg',
+    image9: './assets/imgs/instalaciones-9(775x519).jpg',
+    image10: './assets/imgs/instalaciones-10(775x519).jpg'
 }
 
 function closeBanner () {
+    bannerImageBack.className = 'gallery-display-container-photo-photoBack';
     bannerImage.className = 'gallery-display-container-photo';
     banner.className = 'gallery-display off';
     resetClickValues();
@@ -297,34 +298,34 @@ function closeBanner () {
 function openBanner () {
     switch (currentBannerPosition) {
         case 1:
-            bannerImage.src = bannerImageSources.imagen1;
+            bannerImage.src = bannerImageSources.image1;
         break
         case 2:
-            bannerImage.src = bannerImageSources.imagen2;
+            bannerImage.src = bannerImageSources.image2;
         break
         case 3:
-            bannerImage.src = bannerImageSources.imagen3;
+            bannerImage.src = bannerImageSources.image3;
         break
         case 4:
-            bannerImage.src = bannerImageSources.imagen4;
+            bannerImage.src = bannerImageSources.image4;
         break
         case 5:
-            bannerImage.src = bannerImageSources.imagen5;
+            bannerImage.src = bannerImageSources.image5;
         break
         case 6:
-            bannerImage.src = bannerImageSources.imagen6;
+            bannerImage.src = bannerImageSources.image6;
         break
         case 7:
-            bannerImage.src = bannerImageSources.imagen7;
+            bannerImage.src = bannerImageSources.image7;
         break
         case 8:
-            bannerImage.src = bannerImageSources.imagen8;
+            bannerImage.src = bannerImageSources.image8;
         break
         case 9:
-            bannerImage.src = bannerImageSources.imagen9;
+            bannerImage.src = bannerImageSources.image9;
         break
         case 10:
-            bannerImage.src = bannerImageSources.imagen10;
+            bannerImage.src = bannerImageSources.image10;
         break
     }
 
@@ -332,141 +333,145 @@ function openBanner () {
 }
 
 function slideImageBack () {
-   if (currentBannerPosition == 1) {
+    switch (currentBannerPosition) {
+        case 1:
 
-   }
-   else if (currentBannerPosition == 2) {
-        bannerImage.src = bannerImageSources.imagen1;
-        bannerImageBack.src = bannerImageSources.imagen2;
-        currentBannerPosition = 1;
-        backSlide();
-        fadeOut();
-   }
-   else if (currentBannerPosition == 3) {
-        bannerImage.src = bannerImageSources.imagen2;
-        bannerImageBack.src = bannerImageSources.imagen3;
-        currentBannerPosition = 2;
-        backSlide();
-        fadeOut();
-   }
-   else if (currentBannerPosition == 4) {
-        bannerImage.src = bannerImageSources.imagen3;
-        bannerImageBack.src = bannerImageSources.imagen4;
-        currentBannerPosition = 3;
-        backSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 5) {
-        bannerImage.src = bannerImageSources.imagen4;
-        bannerImageBack.src = bannerImageSources.imagen5;
-        currentBannerPosition = 4;
-        backSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 6) {
-        bannerImage.src = bannerImageSources.imagen5;
-        bannerImageBack.src = bannerImageSources.imagen6;
-        currentBannerPosition = 5;
-        backSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 7) {
-        bannerImage.src = bannerImageSources.imagen6;
-        bannerImageBack.src = bannerImageSources.imagen7;
-        currentBannerPosition = 6;
-        backSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 8) {
-        bannerImage.src = bannerImageSources.imagen7;
-        bannerImageBack.src = bannerImageSources.imagen8;
-        currentBannerPosition = 7;
-        backSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 9) {
-        bannerImage.src = bannerImageSources.imagen8;
-        bannerImageBack.src = bannerImageSources.imagen9;
-        currentBannerPosition = 8;
-        backSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 10) {
-        bannerImage.src = bannerImageSources.imagen9;
-        bannerImageBack.src = bannerImageSources.imagen10;
-        currentBannerPosition = 9;
-        backSlide();
-        fadeOut();
+        break
+        case 2:
+            bannerImage.src = bannerImageSources.image1;
+            bannerImageBack.src = bannerImageSources.image2;
+            currentBannerPosition = 1;
+            backSlide();
+            fadeOut();
+        break
+        case 3:
+            bannerImage.src = bannerImageSources.image2;
+            bannerImageBack.src = bannerImageSources.image3;
+            currentBannerPosition = 2;
+            backSlide();
+            fadeOut();
+        break
+        case 4:
+            bannerImage.src = bannerImageSources.image3;
+            bannerImageBack.src = bannerImageSources.image4;
+            currentBannerPosition = 3;
+            backSlide();
+            fadeOut();
+        break
+        case 5:
+            bannerImage.src = bannerImageSources.image4;
+            bannerImageBack.src = bannerImageSources.image5;
+            currentBannerPosition = 4;
+            backSlide();
+            fadeOut();
+        break
+        case 6:
+            bannerImage.src = bannerImageSources.image5;
+            bannerImageBack.src = bannerImageSources.image6;
+            currentBannerPosition = 5;
+            backSlide();
+            fadeOut();
+        break
+        case 7:
+            bannerImage.src = bannerImageSources.image6;
+            bannerImageBack.src = bannerImageSources.image7;
+            currentBannerPosition = 6;
+            backSlide();
+            fadeOut();
+        break
+        case 8:
+            bannerImage.src = bannerImageSources.image7;
+            bannerImageBack.src = bannerImageSources.image8;
+            currentBannerPosition = 7;
+            backSlide();
+            fadeOut();
+        break
+        case 9:
+            bannerImage.src = bannerImageSources.image8;
+            bannerImageBack.src = bannerImageSources.image9;
+            currentBannerPosition = 8;
+            backSlide();
+            fadeOut();
+        break
+        case 10:
+            bannerImage.src = bannerImageSources.image9;
+            bannerImageBack.src = bannerImageSources.image10;
+            currentBannerPosition = 9;
+            backSlide();
+            fadeOut();
+        break
     }
 }
 
 function slideImageFront () {
-    if (currentBannerPosition == 1) {
-        bannerImage.src = bannerImageSources.imagen2;
-        bannerImageBack.src = bannerImageSources.imagen1;
-        currentBannerPosition = 2;
-        frontSlide();
-        fadeOut();
-    }
-    else if (currentBannerPosition == 2) {
-         bannerImage.src = bannerImageSources.imagen3;
-         bannerImageBack.src = bannerImageSources.imagen2;
-         currentBannerPosition = 3;
-         frontSlide();
-         fadeOut();
-    }
-    else if (currentBannerPosition == 3) {
-         bannerImage.src = bannerImageSources.imagen4;
-         bannerImageBack.src = bannerImageSources.imagen3;
-         currentBannerPosition = 4;
-         frontSlide();
-         fadeOut();
-    }
-    else if (currentBannerPosition == 4) {
-         bannerImage.src = bannerImageSources.imagen5;
-         bannerImageBack.src = bannerImageSources.imagen4;
-         currentBannerPosition = 5;
-         frontSlide();
-         fadeOut();
-     }
-     else if (currentBannerPosition == 5) {
-         bannerImage.src = bannerImageSources.imagen6;
-         bannerImageBack.src = bannerImageSources.imagen5;
-         currentBannerPosition = 6;
-         frontSlide();
-         fadeOut();
-     }
-     else if (currentBannerPosition == 6) {
-         bannerImage.src = bannerImageSources.imagen7;
-         bannerImageBack.src = bannerImageSources.imagen6;
-         currentBannerPosition = 7;
-         frontSlide();
-         fadeOut();
-     }
-     else if (currentBannerPosition == 7) {
-         bannerImage.src = bannerImageSources.imagen8;
-         bannerImageBack.src = bannerImageSources.imagen7;
-         currentBannerPosition = 8;
-         frontSlide();
-         fadeOut();
-     }
-     else if (currentBannerPosition == 8) {
-         bannerImage.src = bannerImageSources.imagen9;
-         bannerImageBack.src = bannerImageSources.imagen8;
-         currentBannerPosition = 9;
-         frontSlide();
-         fadeOut();
-     }
-     else if (currentBannerPosition == 9) {
-         bannerImage.src = bannerImageSources.imagen10;
-         bannerImageBack.src = bannerImageSources.imagen9;
-         currentBannerPosition = 10;
-         frontSlide();
-         fadeOut();
-     }
-     else if (currentBannerPosition == 10) {
+    switch (currentBannerPosition) {
+        case 1:
+            bannerImage.src = bannerImageSources.image2;
+            bannerImageBack.src = bannerImageSources.image1;
+            currentBannerPosition = 2;
+            frontSlide();
+            fadeOut();
+        break
+        case 2:
+            bannerImage.src = bannerImageSources.image3;
+            bannerImageBack.src = bannerImageSources.image2;
+            currentBannerPosition = 3;
+            frontSlide();
+            fadeOut();
+        break
+        case 3:
+            bannerImage.src = bannerImageSources.image4;
+            bannerImageBack.src = bannerImageSources.image3;
+            currentBannerPosition = 4;
+            frontSlide();
+            fadeOut();
+        break
+        case 4:
+            bannerImage.src = bannerImageSources.image5;
+            bannerImageBack.src = bannerImageSources.image4;
+            currentBannerPosition = 5;
+            frontSlide();
+            fadeOut();
+        break
+        case 5:
+            bannerImage.src = bannerImageSources.image6;
+            bannerImageBack.src = bannerImageSources.image5;
+            currentBannerPosition = 6;
+            frontSlide();
+            fadeOut();
+        break
+        case 6:
+            bannerImage.src = bannerImageSources.image7;
+            bannerImageBack.src = bannerImageSources.image6;
+            currentBannerPosition = 7;
+            frontSlide();
+            fadeOut();
+        break
+        case 7:
+            bannerImage.src = bannerImageSources.image8;
+            bannerImageBack.src = bannerImageSources.image7;
+            currentBannerPosition = 8;
+            frontSlide();
+            fadeOut();
+        break
+        case 8:
+            bannerImage.src = bannerImageSources.image9;
+            bannerImageBack.src = bannerImageSources.image8;
+            currentBannerPosition = 9;
+            frontSlide();
+            fadeOut();
+        break
+        case 9:
+            bannerImage.src = bannerImageSources.image10;
+            bannerImageBack.src = bannerImageSources.image9;
+            currentBannerPosition = 10;
+            frontSlide();
+            fadeOut();
+        break
+        case 10:
 
-     }
+        break
+    }
 }
 
 let backSlideCounter = 0;
