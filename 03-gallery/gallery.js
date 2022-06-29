@@ -276,16 +276,16 @@ const instalaciones1 = document.getElementById('instalations-1');
 
 
 const bannerImageSources = {
-    imagen1: './assets/imgs/instalaciones-1.jpg',
-    imagen2: './assets/imgs/instalaciones-2.jpg',
-    imagen3: './assets/imgs/instalaciones-3.jpg',
-    imagen4: './assets/imgs/instalaciones-4.jpg',
-    imagen5: './assets/imgs/instalaciones-5.jpg',
-    imagen6: './assets/imgs/instalaciones-6.jpg',
-    imagen7: './assets/imgs/instalaciones-7.jpg',
-    imagen8: './assets/imgs/instalaciones-8.jpg',
-    imagen9: './assets/imgs/instalaciones-9.jpg',
-    imagen10: './assets/imgs/instalaciones-10.jpg'
+    imagen1: './assets/imgs/instalaciones-1(775x519).jpg',
+    imagen2: './assets/imgs/instalaciones-2(775x519).jpg',
+    imagen3: './assets/imgs/instalaciones-3(775x519).jpg',
+    imagen4: './assets/imgs/instalaciones-4(775x519).jpg',
+    imagen5: './assets/imgs/instalaciones-5(775x519).jpg',
+    imagen6: './assets/imgs/instalaciones-6(775x519).jpg',
+    imagen7: './assets/imgs/instalaciones-7(775x519).jpg',
+    imagen8: './assets/imgs/instalaciones-8(775x519).jpg',
+    imagen9: './assets/imgs/instalaciones-9(775x519).jpg',
+    imagen10: './assets/imgs/instalaciones-10(775x519).jpg'
 }
 
 function closeBanner () {
