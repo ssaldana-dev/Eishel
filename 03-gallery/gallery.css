@@ -98,9 +98,70 @@
     }
 }
 .gallery-display-container-photo {
+    position: relative;
+    z-index: 1;
+    left: 0px;
     width: 100%;
 }
+.gallery-display-container-photo-photoBack {
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+}
+.fadeOutImg1 {
+    animation: fadeOut1 750ms 1;
+}
+@keyframes fadeOut1 {
+    0% {
+        opacity: 100%;
+    }
+}
+.fadeOutImg2 {
+    animation: fadeOut2 750ms 1;
+}
+@keyframes fadeOut2 {
+    0% {
+        opacity: 100%;
+    }
+}
+.photo-backSlide1 {
+    animation: backSlide 750ms 1;
+}
+@keyframes backSlide {
+    0% {
+        left: -100vw;
+    }
+}
+.photo-backSlide2 {
+    animation: backSlide2 750ms 1;
+}
+@keyframes backSlide2 {
+    0% {
+        left: -100vw;
+    }
+}
+
+.photo-frontSlide1 {
+    animation: frontSlide1 750ms 1;
+}
+@keyframes frontSlide1 {
+    0% {
+        left: 100vw;
+    }
+}
+.photo-frontSlide2 {
+    animation: frontSlide2 750ms 1;
+}
+@keyframes frontSlide2 {
+    0% {
+        left: 100vw;
+    }
+}
 .gallery-photos-display-container-button {
+    position: absolute;
+    z-index: 2;
     width: 50px;
     height: 50px;
     background: none;
@@ -118,17 +179,14 @@
     }
 }
 .gallery-display-buttonBack {
-    position: absolute;
     top: calc(50vh - 25px);
     left: 10px;
 }
 .gallery-display-buttonFront {
-    position: absolute;
     top: calc(50vh - 25px);
     right: 10px;
 }
 .gallery-display-buttonClose {
-    position: absolute;
     top: 10px;
     right: 10px;
 }

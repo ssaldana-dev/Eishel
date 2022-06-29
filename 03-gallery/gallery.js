@@ -270,9 +270,8 @@ function resetClickValues () {
 
 const banner =  document.getElementById('gallery-banner');
 const bannerImage = document.getElementById('display-photo');
+const bannerImageBack = document.getElementById('display-photo-photoBack')
 let currentBannerPosition = 0;
-
-const instalaciones1 = document.getElementById('instalations-1');
 
 
 const bannerImageSources = {
@@ -289,6 +288,7 @@ const bannerImageSources = {
 }
 
 function closeBanner () {
+    bannerImage.className = 'gallery-display-container-photo';
     banner.className = 'gallery-display off';
 }
 
@@ -335,80 +335,171 @@ function slideImageBack () {
    }
    else if (currentBannerPosition == 2) {
         bannerImage.src = bannerImageSources.imagen1;
+        bannerImageBack.src = bannerImageSources.imagen2;
         currentBannerPosition = 1;
+        backSlide();
+        fadeOut();
    }
    else if (currentBannerPosition == 3) {
         bannerImage.src = bannerImageSources.imagen2;
+        bannerImageBack.src = bannerImageSources.imagen3;
         currentBannerPosition = 2;
+        backSlide();
+        fadeOut();
    }
    else if (currentBannerPosition == 4) {
         bannerImage.src = bannerImageSources.imagen3;
+        bannerImageBack.src = bannerImageSources.imagen4;
         currentBannerPosition = 3;
+        backSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 5) {
         bannerImage.src = bannerImageSources.imagen4;
+        bannerImageBack.src = bannerImageSources.imagen5;
         currentBannerPosition = 4;
+        backSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 6) {
         bannerImage.src = bannerImageSources.imagen5;
+        bannerImageBack.src = bannerImageSources.imagen6;
         currentBannerPosition = 5;
+        backSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 7) {
         bannerImage.src = bannerImageSources.imagen6;
+        bannerImageBack.src = bannerImageSources.imagen7;
         currentBannerPosition = 6;
+        backSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 8) {
         bannerImage.src = bannerImageSources.imagen7;
+        bannerImageBack.src = bannerImageSources.imagen8;
         currentBannerPosition = 7;
+        backSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 9) {
         bannerImage.src = bannerImageSources.imagen8;
+        bannerImageBack.src = bannerImageSources.imagen9;
         currentBannerPosition = 8;
+        backSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 10) {
         bannerImage.src = bannerImageSources.imagen9;
+        bannerImageBack.src = bannerImageSources.imagen10;
         currentBannerPosition = 9;
+        backSlide();
+        fadeOut();
     }
 }
 
 function slideImageFront () {
     if (currentBannerPosition == 1) {
         bannerImage.src = bannerImageSources.imagen2;
+        bannerImageBack.src = bannerImageSources.imagen1;
         currentBannerPosition = 2;
+        frontSlide();
+        fadeOut();
     }
     else if (currentBannerPosition == 2) {
          bannerImage.src = bannerImageSources.imagen3;
+         bannerImageBack.src = bannerImageSources.imagen2;
          currentBannerPosition = 3;
+         frontSlide();
+         fadeOut();
     }
     else if (currentBannerPosition == 3) {
          bannerImage.src = bannerImageSources.imagen4;
+         bannerImageBack.src = bannerImageSources.imagen3;
          currentBannerPosition = 4;
+         frontSlide();
+         fadeOut();
     }
     else if (currentBannerPosition == 4) {
          bannerImage.src = bannerImageSources.imagen5;
+         bannerImageBack.src = bannerImageSources.imagen4;
          currentBannerPosition = 5;
+         frontSlide();
+         fadeOut();
      }
      else if (currentBannerPosition == 5) {
          bannerImage.src = bannerImageSources.imagen6;
+         bannerImageBack.src = bannerImageSources.imagen5;
          currentBannerPosition = 6;
+         frontSlide();
+         fadeOut();
      }
      else if (currentBannerPosition == 6) {
          bannerImage.src = bannerImageSources.imagen7;
+         bannerImageBack.src = bannerImageSources.imagen6;
          currentBannerPosition = 7;
+         frontSlide();
+         fadeOut();
      }
      else if (currentBannerPosition == 7) {
          bannerImage.src = bannerImageSources.imagen8;
+         bannerImageBack.src = bannerImageSources.imagen7;
          currentBannerPosition = 8;
+         frontSlide();
+         fadeOut();
      }
      else if (currentBannerPosition == 8) {
          bannerImage.src = bannerImageSources.imagen9;
+         bannerImageBack.src = bannerImageSources.imagen8;
          currentBannerPosition = 9;
+         frontSlide();
+         fadeOut();
      }
      else if (currentBannerPosition == 9) {
          bannerImage.src = bannerImageSources.imagen10;
+         bannerImageBack.src = bannerImageSources.imagen9;
          currentBannerPosition = 10;
+         frontSlide();
+         fadeOut();
      }
      else if (currentBannerPosition == 10) {
 
      }
+}
+
+let backSlideCounter = 0;
+let frontSlideCounter = 0;
+let fadeOutCounter = 0;
+
+function backSlide () {
+    if (backSlideCounter == 0) {
+        bannerImage.className = 'gallery-display-container-photo photo-backSlide1';
+        backSlideCounter = 1;
+    }
+    else if (backSlideCounter == 1) {
+        bannerImage.className = 'gallery-display-container-photo photo-backSlide2';
+        backSlideCounter = 0;
+    }
+}
+
+function frontSlide () {
+    if (frontSlideCounter == 0) {
+        bannerImage.className = 'gallery-display-container-photo photo-frontSlide1';
+        frontSlideCounter = 1;
+    }
+    else if (frontSlideCounter == 1) {
+        bannerImage.className = 'gallery-display-container-photo photo-frontSlide2';
+        frontSlideCounter = 0;
+    }
+}
+
+function fadeOut () {
+    if (fadeOutCounter == 0) {
+        bannerImageBack.className = 'gallery-display-container-photo-photoBack fadeOutImg1';
+        fadeOutCounter = 1;
+    }
+    else if (fadeOutCounter == 1) {
+        bannerImageBack.className = 'gallery-display-container-photo-photoBack fadeOutImg2';
+        fadeOutCounter = 0;
+    }
 }
