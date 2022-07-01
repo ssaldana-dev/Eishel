@@ -22,6 +22,12 @@ const instalations9 = document.getElementById('instalations-9');
 instalations9.addEventListener('click', makeItBigger9);
 const instalations10 = document.getElementById('instalations-10');
 instalations10.addEventListener('click', makeItBigger10);
+const instalations11 = document.getElementById('instalations-11');
+instalations11.addEventListener('click', makeItBigger11);
+const instalations12 = document.getElementById('instalations-12');
+instalations12.addEventListener('click', makeItBigger12);
+const instalations13 = document.getElementById('instalations-13');
+instalations13.addEventListener('click', makeItBigger13);
 
 /*  Se declaran las variables que contienen los elementos que forman parte de la página a exepción del carrusel 
     de fotografías y se añade un escuchador de eventos a cada uno que detecta un click y dispara la función que 
@@ -49,6 +55,9 @@ let secondClick7 = 0;
 let secondClick8 = 0;
 let secondClick9 = 0;
 let secondClick10 = 0;
+let secondClick11 = 0;
+let secondClick12 = 0;
+let secondClick13 = 0;
 
 /*  Estas funciones, se disparan en el eventListener de su imagen correspondeinte. Lo que hacen es lo siguiente: 
         1: Le da a la variable whatPhotoIsClicked el valor de su imagen correspondiente.
@@ -176,6 +185,42 @@ function makeItBigger10 () {
         openBanner();
     }
 }
+function makeItBigger11 () {
+    whatPhotoIsClicked = 11;
+
+    if (secondClick11 == 0) {
+        makeItBigger();
+        secondClick11 = 1;
+    }
+    else if (secondClick11 == 1) {
+        currentBannerPosition = 11;
+        openBanner();
+    }
+}
+function makeItBigger12 () {
+    whatPhotoIsClicked = 12;
+
+    if (secondClick12 == 0) {
+        makeItBigger();
+        secondClick12 = 1;
+    }
+    else if (secondClick12 == 1) {
+        currentBannerPosition = 12;
+        openBanner();
+    }
+}
+function makeItBigger13 () {
+    whatPhotoIsClicked = 13;
+
+    if (secondClick13 == 0) {
+        makeItBigger();
+        secondClick13 = 1;
+    }
+    else if (secondClick13 == 1) {
+        currentBannerPosition = 13;
+        openBanner();
+    }
+}
 
 /*  La función makeItBigger dispara una condicional switch que toma como parámetro la variable 
     whatPhotoIsClicked. Hay un caso para cada fotografía. En todos, se dispara primero una función que 
@@ -231,7 +276,22 @@ function makeItBigger () {
         case 10:
             resetClickValues();
             resetCarouselItemsSize();
-            instalations10.className = 'gallery-carousel-photo carousel-last-photo bigger-photo';
+            instalations10.className = 'gallery-carousel-photo bigger-photo';
+        break
+        case 11:
+            resetClickValues();
+            resetCarouselItemsSize();
+            instalations11.className = 'gallery-carousel-photo bigger-photo';
+        break
+        case 12:
+            resetClickValues();
+            resetCarouselItemsSize();
+            instalations12.className = 'gallery-carousel-photo bigger-photo';
+        break
+        case 13:
+            resetClickValues();
+            resetCarouselItemsSize();
+            instalations13.className = 'gallery-carousel-photo carousel-last-photo bigger-photo';
         break
     }
 }
@@ -248,7 +308,10 @@ function resetCarouselItemsSize () {
     instalations7.className = 'gallery-carousel-photo';
     instalations8.className = 'gallery-carousel-photo';
     instalations9.className = 'gallery-carousel-photo';
-    instalations10.className = 'gallery-carousel-photo carousel-last-photo';
+    instalations10.className = 'gallery-carousel-photo';
+    instalations11.className = 'gallery-carousel-photo';
+    instalations12.className = 'gallery-carousel-photo';
+    instalations13.className = 'gallery-carousel-photo carousel-last-photo';
     resetClickValues()
 }
 
@@ -264,6 +327,9 @@ function resetClickValues () {
     secondClick8 = 0;
     secondClick9 = 0;
     secondClick10 = 0;
+    secondClick11 = 0;
+    secondClick12 = 0;
+    secondClick13 = 0;
 }
 
 /* Construcción del banner de la galería */
@@ -275,16 +341,19 @@ let currentBannerPosition = 0;
 
 
 const bannerImageSources = {
-    image1: './assets/imgs/instalaciones-1(775x519).jpg',
-    image2: './assets/imgs/instalaciones-2(775x519).jpg',
-    image3: './assets/imgs/instalaciones-3(775x519).jpg',
-    image4: './assets/imgs/instalaciones-4(775x519).jpg',
-    image5: './assets/imgs/instalaciones-5(775x519).jpg',
-    image6: './assets/imgs/instalaciones-6(775x519).jpg',
-    image7: './assets/imgs/instalaciones-7(775x519).jpg',
-    image8: './assets/imgs/instalaciones-8(775x519).jpg',
-    image9: './assets/imgs/instalaciones-9(775x519).jpg',
-    image10: './assets/imgs/instalaciones-10(775x519).jpg'
+    image1: './assets/imgs/instalaciones-1(775x518).jpg',
+    image2: './assets/imgs/instalaciones-2(775x518).jpg',
+    image3: './assets/imgs/instalaciones-3(775x518).jpg',
+    image4: './assets/imgs/instalaciones-4(775x518).jpg',
+    image5: './assets/imgs/instalaciones-5(775x518).jpg',
+    image6: './assets/imgs/instalaciones-6(775x518).jpg',
+    image7: './assets/imgs/instalaciones-7(775x518).jpg',
+    image8: './assets/imgs/instalaciones-8(775x518).jpg',
+    image9: './assets/imgs/instalaciones-9(775x518).jpg',
+    image10: './assets/imgs/instalaciones-10(775x518).jpg',
+    image11: './assets/imgs/instalaciones-11(775x518).jpg',
+    image12: './assets/imgs/instalaciones-12(775x518).jpg',
+    image13: './assets/imgs/instalaciones-13(775x518).jpg'
 }
 
 function closeBanner () {
@@ -326,6 +395,15 @@ function openBanner () {
         break
         case 10:
             bannerImage.src = bannerImageSources.image10;
+        break
+        case 11:
+            bannerImage.src = bannerImageSources.image11;
+        break
+        case 12:
+            bannerImage.src = bannerImageSources.image12;
+        break
+        case 13:
+            bannerImage.src = bannerImageSources.image13;
         break
     }
 
@@ -400,6 +478,27 @@ function slideImageBack () {
             backSlide();
             fadeOut();
         break
+        case 11:
+            bannerImage.src = bannerImageSources.image10;
+            bannerImageBack.src = bannerImageSources.image11;
+            currentBannerPosition = 10;
+            backSlide();
+            fadeOut();
+        break
+        case 12:
+            bannerImage.src = bannerImageSources.image11;
+            bannerImageBack.src = bannerImageSources.image12;
+            currentBannerPosition = 11;
+            backSlide();
+            fadeOut();
+        break
+        case 13:
+            bannerImage.src = bannerImageSources.image12;
+            bannerImageBack.src = bannerImageSources.image13;
+            currentBannerPosition = 12;
+            backSlide();
+            fadeOut();
+        break
     }
 }
 
@@ -469,6 +568,27 @@ function slideImageFront () {
             fadeOut();
         break
         case 10:
+            bannerImage.src = bannerImageSources.image11;
+            bannerImageBack.src = bannerImageSources.image10;
+            currentBannerPosition = 11;
+            frontSlide();
+            fadeOut();
+        break
+        case 11:
+            bannerImage.src = bannerImageSources.image12;
+            bannerImageBack.src = bannerImageSources.image11;
+            currentBannerPosition = 12;
+            frontSlide();
+            fadeOut();
+        break
+        case 12:
+            bannerImage.src = bannerImageSources.image13;
+            bannerImageBack.src = bannerImageSources.image12;
+            currentBannerPosition = 13;
+            frontSlide();
+            fadeOut();
+        break
+        case 13:
 
         break
     }
