@@ -2,32 +2,50 @@
     que detecta un click y manda a llamar una función diferente por cada imagen. Funciones que tienen como 
     fin hacer que la imagen crezca de tamaño, el resto queden en tamaño normal y disparar otra función en caso 
     de darse un segundo click consecutivo en la misma imagen.                                                   */
-const instalations1 = document.getElementById('instalations-1');
-instalations1.addEventListener('click', makeItBigger1);
-const instalations2 = document.getElementById('instalations-2');
-instalations2.addEventListener('click', makeItBigger2);
-const instalations3 = document.getElementById('instalations-3');
-instalations3.addEventListener('click', makeItBigger3);
-const instalations4 = document.getElementById('instalations-4');
-instalations4.addEventListener('click', makeItBigger4);
-const instalations5 = document.getElementById('instalations-5');
-instalations5.addEventListener('click', makeItBigger5);
-const instalations6 = document.getElementById('instalations-6');
-instalations6.addEventListener('click', makeItBigger6);
-const instalations7 = document.getElementById('instalations-7');
-instalations7.addEventListener('click', makeItBigger7);
-const instalations8 = document.getElementById('instalations-8');
-instalations8.addEventListener('click', makeItBigger8);
-const instalations9 = document.getElementById('instalations-9');
-instalations9.addEventListener('click', makeItBigger9);
-const instalations10 = document.getElementById('instalations-10');
-instalations10.addEventListener('click', makeItBigger10);
-const instalations11 = document.getElementById('instalations-11');
-instalations11.addEventListener('click', makeItBigger11);
-const instalations12 = document.getElementById('instalations-12');
-instalations12.addEventListener('click', makeItBigger12);
-const instalations13 = document.getElementById('instalations-13');
-instalations13.addEventListener('click', makeItBigger13);
+
+let whatPhotoIsClicked = 0;
+
+const instalations = [];
+instalations[1] = document.getElementById('instalations-1');
+instalations[2] = document.getElementById('instalations-2');
+instalations[3] = document.getElementById('instalations-3');
+instalations[4] = document.getElementById('instalations-4');
+instalations[5] = document.getElementById('instalations-5');
+instalations[6] = document.getElementById('instalations-6');
+instalations[7] = document.getElementById('instalations-7');
+instalations[8] = document.getElementById('instalations-8');
+instalations[9] = document.getElementById('instalations-9');
+instalations[10] = document.getElementById('instalations-10');
+instalations[11] = document.getElementById('instalations-11');
+instalations[12] = document.getElementById('instalations-12');
+instalations[13] = document.getElementById('instalations-13');
+
+instalations[1].addEventListener('click', function(){whatPhotoIsClicked = 1; makeItBigger()});
+instalations[2].addEventListener('click', function(){whatPhotoIsClicked = 2; makeItBigger()});
+instalations[3].addEventListener('click', function(){whatPhotoIsClicked = 3; makeItBigger()});
+instalations[4].addEventListener('click', function(){whatPhotoIsClicked = 4; makeItBigger()});
+instalations[5].addEventListener('click', function(){whatPhotoIsClicked = 5; makeItBigger()});
+instalations[6].addEventListener('click', function(){whatPhotoIsClicked = 6; makeItBigger()});
+instalations[7].addEventListener('click', function(){whatPhotoIsClicked = 7; makeItBigger()});
+instalations[8].addEventListener('click', function(){whatPhotoIsClicked = 8; makeItBigger()});
+instalations[9].addEventListener('click', function(){whatPhotoIsClicked = 9; makeItBigger()});
+instalations[10].addEventListener('click', function(){whatPhotoIsClicked = 10; makeItBigger()});
+instalations[11].addEventListener('click', function(){whatPhotoIsClicked = 11; makeItBigger()});
+instalations[12].addEventListener('click', function(){whatPhotoIsClicked = 12; makeItBigger()});
+instalations[13].addEventListener('click', function(){whatPhotoIsClicked = 13; makeItBigger()});
+
+instalations[1].value = 1;
+instalations[2].value = 2;
+instalations[3].value = 3;
+instalations[4].value = 4;
+instalations[5].value = 5;
+instalations[6].value = 6;
+instalations[7].value = 7;
+instalations[8].value = 8;
+instalations[9].value = 9;
+instalations[10].value = 10;
+instalations[11].value = 11;
+instalations[12].value = 12;
 
 /*  Se declaran las variables que contienen los elementos que forman parte de la página a exepción del carrusel 
     de fotografías y se añade un escuchador de eventos a cada uno que detecta un click y dispara la función que 
@@ -35,29 +53,31 @@ instalations13.addEventListener('click', makeItBigger13);
 const title = document.getElementById('title');
 title.addEventListener('click', resetCarouselItemsSize);
 const galleryTitle = document.getElementById('gallery-title');
-galleryTitle.addEventListener('click', resetCarouselItemsSize);
+galleryTitle.addEventListener('click', resetCarouselItemsSize,);
 
 /*  Se declaran la variable que guardará el valor de qué imagen ha sido clickeada y se usará posteriormente para 
-    un cona condicional switch.                                                                                 */
-let whatPhotoIsClicked = 0;
+    un condicional switch.                                                                                 */
+
 
 /*  Se declaran las variables que guardarán el valor como 1 o 0 (true o false), si se dan 2 clicks consecutivos 
     en la misma imagen.                                                                                         */
 /* 
                                                                                                                 */
-let secondClick1 = 0;
-let secondClick2 = 0;
-let secondClick3 = 0;
-let secondClick4 = 0;
-let secondClick5 = 0;
-let secondClick6 = 0;
-let secondClick7 = 0;
-let secondClick8 = 0;
-let secondClick9 = 0;
-let secondClick10 = 0;
-let secondClick11 = 0;
-let secondClick12 = 0;
-let secondClick13 = 0;
+
+let secondClick = [];
+secondClick[1] = 0;
+secondClick[2] = 0;
+secondClick[3] = 0;
+secondClick[4] = 0;
+secondClick[5] = 0;
+secondClick[6] = 0;
+secondClick[7] = 0;
+secondClick[8] = 0;
+secondClick[9] = 0;
+secondClick[10] = 0;
+secondClick[11] = 0;
+secondClick[12] = 0;
+secondClick[13] = 0;
 
 /*  Estas funciones, se disparan en el eventListener de su imagen correspondeinte. Lo que hacen es lo siguiente: 
         1: Le da a la variable whatPhotoIsClicked el valor de su imagen correspondiente.
@@ -67,269 +87,73 @@ let secondClick13 = 0;
         fotografía correspondiente a 1.
         4: En caso de ser 1 el valor de secondClick de la fotografía, disparará una función que mostrará la 
         fotografía en pantalla completa, cosa que de momento se sigue trabajando.                               */
-function makeItBigger1 () {
-    whatPhotoIsClicked = 1;
-    if (secondClick1 == 0) {
-        makeItBigger();
-        secondClick1 = 1;
-    }
-    else if (secondClick1 == 1) {
-        currentBannerPosition = 1;
-        openBanner();
-    }
-}
-function makeItBigger2 () {
-    whatPhotoIsClicked = 2;
-    if (secondClick2 == 0) {
-        makeItBigger();
-        secondClick2 = 1;
-    }
-    else if (secondClick2 == 1) {
-        currentBannerPosition = 2;
-        openBanner();
-    }
-}
-function makeItBigger3 () {
-    whatPhotoIsClicked = 3;
 
-    if (secondClick3 == 0) {
-        makeItBigger();
-        secondClick3 = 1;
-    }
-    else if (secondClick3 == 1) {
-        currentBannerPosition = 3;
-        openBanner();
-    }
-}
-function makeItBigger4 () {
-    whatPhotoIsClicked = 4;
-
-    if (secondClick4 == 0) {
-        makeItBigger();
-        secondClick4 = 1;
-    }
-    else if (secondClick4 == 1) {
-        currentBannerPosition = 4;
-        openBanner();
-    }
-}
-function makeItBigger5 () {
-    whatPhotoIsClicked = 5;
-
-    if (secondClick5 == 0) {
-        makeItBigger();
-        secondClick5 = 1;
-    }
-    else if (secondClick5 == 1) {
-        currentBannerPosition = 5;
-        openBanner();
-    }
-}
-function makeItBigger6 () {
-    whatPhotoIsClicked = 6;
-
-    if (secondClick6 == 0) {
-        makeItBigger();
-        secondClick6 = 1;
-    }
-    else if (secondClick6 == 1) {
-        currentBannerPosition = 6;
-        openBanner();
-    }
-}
-function makeItBigger7 () {
-    whatPhotoIsClicked = 7;
-
-    if (secondClick7 == 0) {
-        makeItBigger();
-        secondClick7 = 1;
-    }
-    else if (secondClick7 == 1) {
-        currentBannerPosition = 7;
-        openBanner();
-    }
-}
-function makeItBigger8 () {
-    whatPhotoIsClicked = 8;
-
-    if (secondClick8 == 0) {
-        makeItBigger();
-        secondClick8 = 1;
-    }
-    else if (secondClick8 == 1) {
-        currentBannerPosition = 8;
-        openBanner();
-    };
-}
-function makeItBigger9 () {
-    whatPhotoIsClicked = 9;
-
-    if (secondClick9 == 0) {
-        makeItBigger();
-        secondClick9 = 1;
-    }
-    else if (secondClick9 == 1) {
-        currentBannerPosition = 9;
-        openBanner();
-    }
-}
-function makeItBigger10 () {
-    whatPhotoIsClicked = 10;
-
-    if (secondClick10 == 0) {
-        makeItBigger();
-        secondClick10 = 1;
-    }
-    else if (secondClick10 == 1) {
-        currentBannerPosition = 10;
-        openBanner();
-    }
-}
-function makeItBigger11 () {
-    whatPhotoIsClicked = 11;
-
-    if (secondClick11 == 0) {
-        makeItBigger();
-        secondClick11 = 1;
-    }
-    else if (secondClick11 == 1) {
-        currentBannerPosition = 11;
-        openBanner();
-    }
-}
-function makeItBigger12 () {
-    whatPhotoIsClicked = 12;
-
-    if (secondClick12 == 0) {
-        makeItBigger();
-        secondClick12 = 1;
-    }
-    else if (secondClick12 == 1) {
-        currentBannerPosition = 12;
-        openBanner();
-    }
-}
-function makeItBigger13 () {
-    whatPhotoIsClicked = 13;
-
-    if (secondClick13 == 0) {
-        makeItBigger();
-        secondClick13 = 1;
-    }
-    else if (secondClick13 == 1) {
-        currentBannerPosition = 13;
-        openBanner();
-    }
-}
 
 /*  La función makeItBigger dispara una condicional switch que toma como parámetro la variable 
     whatPhotoIsClicked. Hay un caso para cada fotografía. En todos, se dispara primero una función que 
     retorna a su tamaño original a todas las fotografías del carrusel, y luego se agrega una clase a la 
     fotografía seleccionada que cambiará su tamaño a 1.5x .                                                     */
 function makeItBigger () {
-    switch (whatPhotoIsClicked) {
-        case 1:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations1.className = 'gallery-carousel-photo carousel-first-photo bigger-photo';
-        break
-        case 2:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations2.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 3:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations3.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 4:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations4.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 5:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations5.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 6:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations6.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 7:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations7.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 8:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations8.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 9:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations9.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 10:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations10.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 11:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations11.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 12:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations12.className = 'gallery-carousel-photo bigger-photo';
-        break
-        case 13:
-            resetClickValues();
-            resetCarouselItemsSize();
-            instalations13.className = 'gallery-carousel-photo carousel-last-photo bigger-photo';
-        break
+    if(secondClick[whatPhotoIsClicked] == 0) {
+        resetCarouselItemsSize();
+        instalations[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        console.log(whatPhotoIsClicked);
+        secondClick[whatPhotoIsClicked] = 1 ;
     }
+    else if (secondClick[whatPhotoIsClicked] == 1) {
+        currentBannerPosition = whatPhotoIsClicked;
+        openBanner();
+    }
+    
 }
 
 /*  La función resetCarouselItemsSize resetea las clases de todas las fotografías del carrusel, regresándolas a 
     su tamaño original.                                                                                         */
 function resetCarouselItemsSize () {
-    instalations1.className = 'gallery-carousel-photo carousel-first-photo';
-    instalations2.className = 'gallery-carousel-photo';
-    instalations3.className = 'gallery-carousel-photo';
-    instalations4.className = 'gallery-carousel-photo';
-    instalations5.className = 'gallery-carousel-photo';
-    instalations6.className = 'gallery-carousel-photo';
-    instalations7.className = 'gallery-carousel-photo';
-    instalations8.className = 'gallery-carousel-photo';
-    instalations9.className = 'gallery-carousel-photo';
-    instalations10.className = 'gallery-carousel-photo';
-    instalations11.className = 'gallery-carousel-photo';
-    instalations12.className = 'gallery-carousel-photo';
-    instalations13.className = 'gallery-carousel-photo carousel-last-photo';
+    instalations[1].className = 'gallery-carousel-photo carousel-first-photo';
+    instalations[2].className = 'gallery-carousel-photo';
+    instalations[3].className = 'gallery-carousel-photo';
+    instalations[4].className = 'gallery-carousel-photo';
+    instalations[5].className = 'gallery-carousel-photo';
+    instalations[6].className = 'gallery-carousel-photo';
+    instalations[7].className = 'gallery-carousel-photo';
+    instalations[8].className = 'gallery-carousel-photo';
+    instalations[9].className = 'gallery-carousel-photo';
+    instalations[10].className = 'gallery-carousel-photo';
+    instalations[11].className = 'gallery-carousel-photo';
+    instalations[12].className = 'gallery-carousel-photo';
+    instalations[13].className = 'gallery-carousel-photo carousel-last-photo';
+    // activities1.className = 'gallery-carousel-photo carousel-first-photo';
+    // activities2.className = 'gallery-carousel-photo';
+    // activities3.className = 'gallery-carousel-photo';
+    // activities4.className = 'gallery-carousel-photo';
+    // activities5.className = 'gallery-carousel-photo';
+    // activities6.className = 'gallery-carousel-photo';
+    // activities7.className = 'gallery-carousel-photo';
+    // activities8.className = 'gallery-carousel-photo';
+    // activities9.className = 'gallery-carousel-photo';
+    // activities10.className = 'gallery-carousel-photo';
+    // activities11.className = 'gallery-carousel-photo';
+    // activities12.className = 'gallery-carousel-photo';
+    // activities13.className = 'gallery-carousel-photo carousel-last-photo';
     resetClickValues()
 }
 
 /*  La función resetClickValues, retorna el valor de todos los secondClick a 0 (false).                         */
 function resetClickValues () {
-    secondClick1 = 0;
-    secondClick2 = 0;
-    secondClick3 = 0;
-    secondClick4 = 0;
-    secondClick5 = 0;
-    secondClick6 = 0;
-    secondClick7 = 0;
-    secondClick8 = 0;
-    secondClick9 = 0;
-    secondClick10 = 0;
-    secondClick11 = 0;
-    secondClick12 = 0;
-    secondClick13 = 0;
+    secondClick[1] = 0;
+    secondClick[2] = 0;
+    secondClick[3] = 0;
+    secondClick[4] = 0;
+    secondClick[5] = 0;
+    secondClick[6] = 0;
+    secondClick[7] = 0;
+    secondClick[8] = 0;
+    secondClick[9] = 0;
+    secondClick[10] = 0;
+    secondClick[11] = 0;
+    secondClick[12] = 0;
+    secondClick[13] = 0;
 }
 
 /* Construcción del banner de la galería */
@@ -353,7 +177,20 @@ const bannerImageSources = {
     image10: './assets/imgs/instalaciones-10(775x518).jpg',
     image11: './assets/imgs/instalaciones-11(775x518).jpg',
     image12: './assets/imgs/instalaciones-12(775x518).jpg',
-    image13: './assets/imgs/instalaciones-13(775x518).jpg'
+    image13: './assets/imgs/instalaciones-13(775x518).jpg',
+    image14: './assets/imgs/actividades-1(775x518).jpg',
+    image15: './assets/imgs/actividades-2(775x518).jpg',
+    image16: './assets/imgs/actividades-3(775x518).jpg',
+    image17: './assets/imgs/actividades-4(775x518).jpg',
+    image18: './assets/imgs/actividades-5(775x518).jpg',
+    image19: './assets/imgs/actividades-6(775x518).jpg',
+    image20: './assets/imgs/actividades-7(775x518).jpg',
+    image21: './assets/imgs/actividades-8(775x518).jpg',
+    image22: './assets/imgs/actividades-9(775x518).jpg',
+    image23: './assets/imgs/actividades-10(775x518).jpg',
+    image24: './assets/imgs/actividades-11(775x518).jpg',
+    image25: './assets/imgs/actividades-12(775x518).jpg',
+    image26: './assets/imgs/actividades-13(775x518).jpg'
 }
 
 function closeBanner () {
@@ -404,6 +241,45 @@ function openBanner () {
         break
         case 13:
             bannerImage.src = bannerImageSources.image13;
+        break
+        case 14:
+            bannerImage.src = bannerImageSources.image14;
+        break
+        case 15:
+            bannerImage.src = bannerImageSources.imag15;
+        break
+        case 16:
+            bannerImage.src = bannerImageSources.image16;
+        break
+        case 17:
+            bannerImage.src = bannerImageSources.image17;
+        break
+        case 18:
+            bannerImage.src = bannerImageSources.image18;
+        break
+        case 19:
+            bannerImage.src = bannerImageSources.image19;
+        break
+        case 20:
+            bannerImage.src = bannerImageSources.image20;
+        break
+        case 21:
+            bannerImage.src = bannerImageSources.image21;
+        break
+        case 22:
+            bannerImage.src = bannerImageSources.image22;
+        break
+        case 23:
+            bannerImage.src = bannerImageSources.image23;
+        break
+        case 24:
+            bannerImage.src = bannerImageSources.image24;
+        break
+        case 25:
+            bannerImage.src = bannerImageSources.image25;
+        break
+        case 26:
+            bannerImage.src = bannerImageSources.image26;
         break
     }
 
@@ -499,7 +375,95 @@ function slideImageBack () {
             backSlide();
             fadeOut();
         break
+        case 14:
+
+        break
+        case 15:
+            bannerImage.src = bannerImageSources.image14;
+            bannerImageBack.src = bannerImageSources.image15;
+            currentBannerPosition = 14;
+            backSlide();
+            fadeOut();
+        break
+        case 16:
+            bannerImage.src = bannerImageSources.image15;
+            bannerImageBack.src = bannerImageSources.image16;
+            currentBannerPosition = 15;
+            backSlide();
+            fadeOut();
+        break
+        case 17:
+            bannerImage.src = bannerImageSources.image16;
+            bannerImageBack.src = bannerImageSources.image17;
+            currentBannerPosition = 16;
+            backSlide();
+            fadeOut();
+        break
+        case 18:
+            bannerImage.src = bannerImageSources.image17;
+            bannerImageBack.src = bannerImageSources.image18;
+            currentBannerPosition = 17;
+            backSlide();
+            fadeOut();
+        break
+        case 19:
+            bannerImage.src = bannerImageSources.image18;
+            bannerImageBack.src = bannerImageSources.image19;
+            currentBannerPosition = 18;
+            backSlide();
+            fadeOut();
+        break
+        case 20:
+            bannerImage.src = bannerImageSources.image19;
+            bannerImageBack.src = bannerImageSources.image20;
+            currentBannerPosition = 19;
+            backSlide();
+            fadeOut();
+        break
+        case 21:
+            bannerImage.src = bannerImageSources.image20;
+            bannerImageBack.src = bannerImageSources.image21;
+            currentBannerPosition = 20;
+            backSlide();
+            fadeOut();
+        break
+        case 22:
+            bannerImage.src = bannerImageSources.image21;
+            bannerImageBack.src = bannerImageSources.image22;
+            currentBannerPosition = 21;
+            backSlide();
+            fadeOut();
+        break
+        case 23:
+            bannerImage.src = bannerImageSources.image22;
+            bannerImageBack.src = bannerImageSources.image23;
+            currentBannerPosition = 22;
+            backSlide();
+            fadeOut();
+        break
+        case 24:
+            bannerImage.src = bannerImageSources.image23;
+            bannerImageBack.src = bannerImageSources.image24;
+            currentBannerPosition = 23;
+            backSlide();
+            fadeOut();
+        break
+        case 25:
+            bannerImage.src = bannerImageSources.image24;
+            bannerImageBack.src = bannerImageSources.image25;
+            currentBannerPosition = 24;
+            backSlide();
+            fadeOut();
+        break
+        case 26:
+            bannerImage.src = bannerImageSources.image25;
+            bannerImageBack.src = bannerImageSources.image25;
+            currentBannerPosition = 25;
+            backSlide();
+            fadeOut();
+        break
     }
+    
 }
 
 function slideImageFront () {
@@ -589,6 +553,93 @@ function slideImageFront () {
             fadeOut();
         break
         case 13:
+
+        break
+        case 14:
+            bannerImage.src = bannerImageSources.image15;
+            bannerImageBack.src = bannerImageSources.image14;
+            currentBannerPosition = 15;
+            frontSlide();
+            fadeOut();
+        break
+        case 15:
+            bannerImage.src = bannerImageSources.image16;
+            bannerImageBack.src = bannerImageSources.image15;
+            currentBannerPosition = 16;
+            frontSlide();
+            fadeOut();
+        break
+        case 16:
+            bannerImage.src = bannerImageSources.image17;
+            bannerImageBack.src = bannerImageSources.image16;
+            currentBannerPosition = 17;
+            frontSlide();
+            fadeOut();
+        break
+        case 17:
+            bannerImage.src = bannerImageSources.image18;
+            bannerImageBack.src = bannerImageSources.image17;
+            currentBannerPosition = 18;
+            frontSlide();
+            fadeOut();
+        break
+        case 18:
+            bannerImage.src = bannerImageSources.image19;
+            bannerImageBack.src = bannerImageSources.image18;
+            currentBannerPosition = 19;
+            frontSlide();
+            fadeOut();
+        break
+        case 19:
+            bannerImage.src = bannerImageSources.image20;
+            bannerImageBack.src = bannerImageSources.image19;
+            currentBannerPosition = 20;
+            frontSlide();
+            fadeOut();
+        break
+        case 20:
+            bannerImage.src = bannerImageSources.image21;
+            bannerImageBack.src = bannerImageSources.image20;
+            currentBannerPosition = 21;
+            frontSlide();
+            fadeOut();
+        break
+        case 21:
+            bannerImage.src = bannerImageSources.image22;
+            bannerImageBack.src = bannerImageSources.image21;
+            currentBannerPosition = 22;
+            frontSlide();
+            fadeOut();
+        break
+        case 22:
+            bannerImage.src = bannerImageSources.image23;
+            bannerImageBack.src = bannerImageSources.image22;
+            currentBannerPosition = 23;
+            frontSlide();
+            fadeOut();
+        break
+        case 23:
+            bannerImage.src = bannerImageSources.image24;
+            bannerImageBack.src = bannerImageSources.image23;
+            currentBannerPosition = 24;
+            frontSlide();
+            fadeOut();
+        break
+        case 24:
+            bannerImage.src = bannerImageSources.image25;
+            bannerImageBack.src = bannerImageSources.image24;
+            currentBannerPosition = 25;
+            frontSlide();
+            fadeOut();
+        break
+        case 25:
+            bannerImage.src = bannerImageSources.image26;
+            bannerImageBack.src = bannerImageSources.image25;
+            currentBannerPosition = 26;
+            frontSlide();
+            fadeOut();
+        break
+        case 26:
 
         break
     }
