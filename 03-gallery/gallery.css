@@ -21,6 +21,9 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.gallery-diferent-background {
+    background-color: #BFD7EA5E;
+}
 .gallery-title {
     margin: 5px 0px;
     font-size: 2.6rem;
@@ -197,4 +200,9 @@
 }
 .off {
     display: none;
+}
+
+.video {
+    width: 90%;
+    margin-left: 20px;
 }
