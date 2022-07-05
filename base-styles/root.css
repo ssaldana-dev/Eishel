@@ -34,7 +34,7 @@ main {
     font-size: 3vw;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     header,main,footer,menu {
         display: none;
     }
@@ -46,7 +46,7 @@ main {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .desktop-warning {
         display: none;
     }

@@ -76,11 +76,6 @@ miniatures[35].addEventListener('click', function() {whatPhotoIsClicked = 35; ma
 miniatures[36].addEventListener('click', function() {whatPhotoIsClicked = 36; makeItBigger()});
 miniatures[37].addEventListener('click', function() {whatPhotoIsClicked = 37; makeItBigger()});
 
-const title = document.getElementById('title');
-title.addEventListener('click', resetCarouselItemsSize);
-const galleryTitle = document.getElementById('gallery-title');
-galleryTitle.addEventListener('click', resetCarouselItemsSize,);
-
 const secondClick = [];
 secondClick[1] = 0;
 secondClick[2] = 0;
@@ -119,6 +114,15 @@ secondClick[34] = 0;
 secondClick[35] = 0;
 secondClick[36] = 0;
 secondClick[37] = 0;
+
+const title = document.getElementById('title');
+title.addEventListener('click', resetCarouselItemsSize);
+const galleryTitleInstalations = document.getElementById('gallery-title-instalations');
+galleryTitleInstalations.addEventListener('click', resetCarouselItemsSize,);
+const galleryTitleEvents = document.getElementById('gallery-title-events');
+galleryTitleEvents.addEventListener('click', resetCarouselItemsSize,);
+const galleryTitleActivities = document.getElementById('gallery-title-activities');
+galleryTitleActivities.addEventListener('click', resetCarouselItemsSize,);
 
 function makeItBigger () {
     console.log('function makeItBigger had been activated.');
