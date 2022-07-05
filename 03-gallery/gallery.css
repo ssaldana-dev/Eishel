@@ -37,14 +37,14 @@
 }
 .gallery-decoration {
     position: absolute;
-    z-index: 2;
+    z-index: 0;
 }
 .gallery-decoration-events {
     top: 50%;
 }
 .gallery-carousel {
     position: relative;
-    z-index: 3;
+    z-index: 1;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
