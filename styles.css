@@ -153,6 +153,26 @@
 }
 .main-donations > article img {
     height: 180px;
+
+    animation: donationsInformationFadeIn 800ms 1;
+}
+.donations-flyer-container-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 180px;
+    text-align: center;
+    animation: donationsInformationFadeIn 800ms 1;
+}
+@keyframes donationsInformationFadeIn{
+    0%{
+        opacity: 0%;
+    }
+}
+.donations-flyer-container-information p {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 .main-donations > article h3 {
     width: 90%;
@@ -189,9 +209,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-donations p {
-    font-size: 1rem;
+.donations-flyer > p {
+    width: 90%;
+    font-size: 1.2rem;
     font-weight: 500;
+    text-align: center;
 }
 
 /*  Services*/

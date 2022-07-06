@@ -80,20 +80,20 @@ main {
 
 .main-services-information {
     position: relative;
-    height: 139vw;
+    height: auto;
 }
 .main-services-information-background {
     width: 100%;
 }
 .main-services-information-card {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 21.3vw;
+    top: -21.3vw;
     left: calc(50% - (86.6vw / 2));
-    width: 86.6vw;
-    height: 112vw;
+    width: 90%;
+    height: auto;
     background-color: #DDE8F1;
 }
 .main-services-information-card-container {
@@ -101,83 +101,79 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
+    margin: 10px;
     width: 94%;
     height: 92%;
     border: #0D1B1E 2px solid;
 }
 .main-services-information-card-container > figure {
     position: absolute;
-    top: -2.5px;
+    top: -5px;
     left: calc(50% - 10vw);
     width: 20vw;
-    height: 5px;
+    height: 10px;
     background-color: #DDE8F1;
 }
 .information-card-title {
     text-align: center;
 }
 .information-card-title h2 {
-    font-family: 'Noto Serif JP';
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Gelasio', sans-serif;
     font-size: 3.6rem;
     font-weight: 600;
     color: #0C2E35;
 }
-.information-card-title p {
-    font-size: 1.8rem;
-    font-weight: 300;
-}
 .information-card-list {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .information-card-list ul {
-    list-style-type: circle;
+    list-style-position: outside;
     width: 45%;
 }
 .information-card-list ul li {
-    margin-bottom: 5px;
-    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 .information-card-list ul li::marker {
-    font-size: 1.8rem;
-}
-.activities--information ul li{
-    font-size: 1.15rem;
-}
-#health-care .information-card-list--left-list li {
-    font-size: 1.15rem;
+    font-size: 2rem;
+    color: var(--outer-space-crayola);
 }
 .information-card--extra {
     position: relative;
     width: 100%;
 }
 .information-card--extra div {
-    position: relative;
-    left: -20px;
     display: flex;
+    justify-content: center;
 }
 .information-card--extra h3{
     height: 24px;
-    width: 162px;
+    width: 80%;
     background-color: #BFD7EA;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .information-card--extra ul {
     margin-top: 15px;
-    list-style: circle;
 }
 .information-card--extra ul li {
-    font-size: 1.2rem;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 .information-card--extra ul li::marker {
     font-size: 1.8rem;
+    color: var(--outer-space-crayola);
 }
 .triangulo {
     width: 0; 
