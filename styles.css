@@ -1,7 +1,5 @@
 /*  Main title*/
-
-/*  Slide animation of the main title*/
-#main-img {
+.mainTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,87 +9,84 @@
     background-size: cover;
     background-origin: center;
     background-color: #b1b1b1;
-    animation: slideBg 32s linear infinite 0s;
-    animation-timing-function: ease-in-out;
-    background-image: url(./assets/img/pasillo-dalia\(760x330\).jpg);
-    background-image: url(./assets/img/azalea-dalia-noche\(760x330\).jpg);
-    background-image: url(./assets/img/azalea-dalia\(760x330\).jpg);
-    background-image: url(./assets/img/bugambilia-main\(760x330\).jpg);
+    animation: slideBackground 25s cubic-bezier(0, 0, 0, 0.99) infinite 0s;;
+    animation-timing-function: cubic-bezier(0.82, 0.02, 0.13, 1.01);
 }
-@keyframes slideBg {
+/*  Slide animation of the main title*/
+@keyframes slideBackground {
     0% {
-        background-image: url(./assets/img/bugambilia-main\(760x330\).jpg);
+        background-image: url(./assets/img/instalations-1.jpg);
     }
     25% {
-        background-image: url(./assets/img/azalea-dalia\(760x330\).jpg);
+        background-image: url(./assets/img/instalations-2.jpg);
     }
     50% {
-        background-image: url(./assets/img/azalea-dalia-noche\(760x330\).jpg);
+        background-image: url(./assets/img/instalations-3.jpg);
     }
     75% {
-        background-image: url(./assets/img/pasillo-dalia\(760x330\).jpg);
+        background-image: url(./assets/img/instalations-4.jpg);
     }
     100% {
-        background-image: url(./assets/img/bugambilia-main\(760x330\).jpg);
+        background-image: url(./assets/img/instalations-1.jpg);
     }
 }
-.main-img h1 {
-    width: 250px;
-    height: 60px;
+.mainTitle-text {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3.4rem;
     line-height: 30.48px;
     text-align: center;
     color: #FFF;
+
+    text-shadow: 0px 4px 4px #000;
 }
-.main-aboutUs {
+/*  aboutUs Section*/
+.aboutUs {
     display: flex;
     justify-content: flex-end;
     height: auto;
     min-height: 370px;
     background-color: #BFD7EA7E;
 }
-.main-aboutUs-title-container-L4 {
+.aboutUs-titleContainer-L4,
+.aboutUs-titleContainer-L3,
+.aboutUs-titleContainer-L2,
+.aboutUs-titleContainer-L1 {
     position: absolute;
-    left: -190px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 370px;
-    width: 370px;
-    border-radius: 100%;
-    background-color: #0C2E35E6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.main-aboutUs-title-container-L4 div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10px;
+    padding-right: 20px;
     border-radius: 100%;
     background-color: #0C2E3599;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.main-aboutUs-title-container-L3 {
+.aboutUs-titleContainer-L4 {
+    left: -190px;
+    height: 370px;
+    padding: 0;
+    width: 370px;
+    background-color: #0C2E35E6;
+}
+.aboutUs-titleContainer-L3 {
     height: 330px;
     width: 330px;
 }
-.main-aboutUs-title-container-L2 {
+.aboutUs-titleContainer-L2 {
     height: 275px;
     width: 275px;
 }
-.main-aboutUs-title-container-L1 {
+.aboutUs-titleContainer-L1 {
     height: 230px;
     width: 230px;
 }
-.main-aboutUs-title-container-L4 h2 {
-    padding-left: 220px;
+.aboutUs-titleContainer-text {
+    position: relative;
+    left: 125px;
     font-size: 2.4rem;
     font-weight: 600;
     color: #FFF;
 }
-/*  Information*/
-.main-aboutUs-info-container {
+.aboutUs-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -101,18 +96,12 @@
     font-size: 1.3rem;
     line-height: 15.85px;
 }
-.main-aboutUs-info-container a{
-    display: inline-block;
-    margin-top: 15px;
-    width: 120px;
-    height: 27px;
-    text-decoration: none;
-} 
-.main-aboutUs-info-container > a > span {
+.aboutUs-info-anchor {
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
     width: 120px;
     height: 27px;
     border: #FFF solid 2px;
@@ -125,56 +114,38 @@
     box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
     -webkit-box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
     -moz-box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
-}
+} 
 
 /*  Donations*/
-.main-donations {
+.donations {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 150px);
+    min-height: 517px;
 }
-.main-donations > img {
+.donations-backgroundImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.6;
 }
-.main-donations > article {
+.donations {
+    position: relative;
+}
+.donations-flyer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center ;
     position: absolute;
     z-index: 2;
-    height: calc(85vh - 150px);
-    width: 80vw;
+    height: calc(80vh - 150px);
+    min-height: 384px;
+    width: 80%;
     background-color: #BFD7EACC;
 }
-.main-donations > article img {
-    height: 180px;
-
-    animation: donationsInformationFadeIn 800ms 1;
-}
-.donations-flyer-container-information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 180px;
-    text-align: center;
-    animation: donationsInformationFadeIn 800ms 1;
-}
-@keyframes donationsInformationFadeIn{
-    0%{
-        opacity: 0%;
-    }
-}
-.donations-flyer-container-information p {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-.main-donations > article h3 {
+.donations-flyer-title {
     width: 90%;
     height: 40px;
     font-size: 3rem;
@@ -184,14 +155,37 @@
     color: #FFF;
     text-align: center;
 }
-.donations-buttons {
+.donations-flyer-container-image {
+    height: 180px;
+
+    animation: donationsInformationFadeIn 800ms 1;
+}
+.donations-flyer-container-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 185px;
+    text-align: center;
+    animation: donationsInformationFadeIn 800ms 1;
+}
+@keyframes donationsInformationFadeIn{
+    0%{
+        opacity: 0%;
+    }
+}
+.donations-flyer-container-information-paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.donations-flyer-buttons {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-.donations-button-1 {
-    width: 129px;
-    height: 127px;
+.donations-flyer-buttons-button-1 {
+    width: 110px;
+    height: 105px;
     background-image: url(./assets/icon/paypal-icon.svg);
     background-color: var(--dark-jungle-green);
     border-radius: 100%;
@@ -199,9 +193,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.donations-button-2 {
-    width: 129px;
-    height: 127px;
+.donations-flyer-buttons-button-2 {
+    width: 110px;
+    height: 105px;
     background-image: url(./assets/icon/bbva-icon.svg);
     background-color: var(--dark-jungle-green);
     border-radius: 100%;
@@ -209,35 +203,18 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.donations-flyer > p {
-    width: 90%;
-    font-size: 1.2rem;
+.donations-flyer-paragraph {
+    position: absolute;
+    top: 90%;
+    z-index: 2;
+    width: 80%;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
 
 /*  Services*/
-.residents-services {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    text-align: center;
-    text-decoration: none; 
-    color: #000;
-}
-.residents-services h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.residents-services p {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.main-info--title {
+.info-title {
     position: relative;
     height: 120px;
 }
@@ -263,7 +240,7 @@
     height: 36px;
     background-color: rgba(191, 215, 234, 0.7);
 }
-.main-info--title H1 {
+.info-title-text {
     position: absolute;
     top: 48px;
     left: 18%;
@@ -272,7 +249,7 @@
     font-weight: 600;
     color: #FFF;
 }
-.main-info-text {
+.info-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,20 +257,20 @@
     height: 125px;
     background-color: var(--outer-space-crayola);
 }
-.main-info-text-paragraph {
+.info-text-paragraph {
     margin: auto 0;
     font-size: 1.3rem;
     font-weight: 400;
     color: #FFF;
     text-align: center;
 }
-.main-info-promo {
+.info-promo {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--beau-blue);
 }
-.main-info-promo-button {
+.info-promo-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,19 +279,24 @@
     margin-bottom: 15px;
     height: 205px;
 }
-.main-info-promo-button span {
+.info-promo-button-anchor {
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--dark-jungle-green);
 }
-.main-info-promo-button > div {
+.info-promo-button-division {
     width: 55vw;
     height: 3px;
     background-color: var(--dark-jungle-green);
 }
+.info-promo-button-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--outer-space-crayola);
+}
 
 /*  Residents-promotion*/
-.main-residents {
+.residents {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,14 +306,14 @@
     width: 100%;
     background-color: var(--outer-space-crayola);
 }
-.main-residents-title {
+.residents-title {
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     line-height: 24.48px;
     color: #FFF;
 }
-.main-residents-button {
+.residents-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +327,7 @@
 }
 
 /*  Extras*/
-.main-extras-anchors {
+.extras-directions {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -353,14 +335,26 @@
     width: 100%;
     height: 680px;
 }
-.main-extras-anchors article{
+.extras-directions-article{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 200px;
 }
-.main-extras-anchors article p {
+.extras-directions-article-paragraph {
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media (min-width: 440px) {
+    .mainTitle-text {
+        width: 70%;
+    }
+}
+@media (min-width: 580px) {
+    .aboutUs-info-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
 }
