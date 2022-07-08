@@ -122,7 +122,7 @@
     justify-content: center;
     align-items: center;
     height: calc(100vh - 150px);
-    min-height: 517px;
+    min-height: 600px;
 }
 .donations-backgroundImage {
     width: 100%;
@@ -141,7 +141,7 @@
     position: absolute;
     z-index: 2;
     height: calc(80vh - 150px);
-    min-height: 384px;
+    min-height: 445px;
     width: 80%;
     background-color: #BFD7EACC;
 }
@@ -277,22 +277,20 @@
     justify-content: space-between;
     padding-top: 15px;
     margin-bottom: 15px;
-    height: 205px;
-}
-.info-promo-button-anchor {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--dark-jungle-green);
-}
-.info-promo-button-division {
-    width: 55vw;
-    height: 3px;
-    background-color: var(--dark-jungle-green);
+    height: 230px;
+    width: 40vw;
 }
 .info-promo-button-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
+    text-align: center;
     color: var(--outer-space-crayola);
+}
+.info-promo-button-division {
+    width: 230px;
+    height: 3px;
+    background-color: var(--dark-jungle-green);
+    transition: 500ms;
 }
 
 /*  Residents-promotion*/
@@ -351,10 +349,71 @@
     .mainTitle-text {
         width: 70%;
     }
+    .residents-title {
+        font-size: 2.5rem;
+        line-height: 35px;
+        width: 400px;
+    }
 }
 @media (min-width: 580px) {
     .aboutUs-info-paragraph {
         font-size: 1.8rem;
         line-height: 2.3rem;
+    }
+    .donations-flyer-buttons-button-1 {
+        width: 125px;
+        height: 125px;
+    }
+    .donations-flyer-buttons-button-2 {
+        width: 125px;
+        height: 125px;
+    }
+    .donations-flyer-container-image {
+        height: 200px;
+    }
+    .donations-flyer-container-information {
+        height: 200px;
+    }
+    .donations-flyer-container-information-paragraph {
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 640px) {
+    .mainTitle-text {
+        width: 60%;
+        font-size: 4rem;
+        line-height: 48px;
+    }
+    .aboutUs-titleContainer-L4 {
+        left: -100px;
+    }
+    .aboutUs-info {
+        width: calc(100vw - 270px);
+    }
+    .aboutUs-titleContainer-text {
+        font-size: 3.4rem;
+        left: 40px;
+    }
+    .aboutUs-titleContainer-L3,
+    .aboutUs-titleContainer-L2,
+    .aboutUs-titleContainer-L1 {
+        padding-right: 0;
+    }
+    .donations-flyer-paragraph {
+        font-size: 1.5rem;
+    }
+    .info-title-text {
+        font-size: 3.4rem;
+    }
+    .info-text-paragraph {
+        font-size: 1.6rem;
+    }
+    .info-promo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .info-promo-button {
+        width: 40vw;
     }
 }
