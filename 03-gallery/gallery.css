@@ -124,7 +124,6 @@
 .gallery-display-container-photo-photoBack {
     position: absolute;
     z-index: 0;
-    left: 0px;
     width: 100%;
     opacity: 0;
 }
@@ -224,4 +223,15 @@
 }
 .video {
     width: 90%;
+}
+
+@media (min-width: 500px) {
+    .gallery-display-container-photo {
+        width: auto;
+        height: 100%;
+    }
+    .gallery-display-container-photo-photoBack {
+        width: auto;
+        height: 100%;
+    }
 }
