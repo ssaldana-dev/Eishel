@@ -45,9 +45,9 @@ main {
         display: none !important;
     }
 }
-
+ */
 @media (max-width: 1000px) {
     .desktop-warning {
         display: none;
     }
-} */
+}
