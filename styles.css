@@ -218,7 +218,7 @@
     text-align: center;
 }
 
-/*  Services*/
+/*  Information*/
 .info-title {
     position: relative;
     height: 120px;
@@ -231,7 +231,7 @@
 }
 .rectangle-2 {
     position: absolute;
-    top: 28px;
+    bottom: 0px;
     left: calc(50% - (65vw / 2));
     width: 68.5%;
     height: 92px;
@@ -239,7 +239,7 @@
 }
 .rectangle-3 {
     position: absolute;
-    top: 84px;
+    bottom: 0px;
     right: 0;
     width: 55%;
     height: 36px;
@@ -345,7 +345,7 @@
     align-items: center;
     height: 200px;
 }
-.extras-directions-article-paragraph {
+.extras-directions {
     font-size: 2rem;
     font-weight: 500;
 }
@@ -354,7 +354,6 @@
     .residents-title {
         font-size: 2.5rem;
         line-height: 35px;
-        width: 400px;
     }
 }
 @media (min-width: 580px) {
@@ -595,5 +594,78 @@
     }
     .info-promo-button-text {
         font-size: 2.4rem;
+    }
+    .info-title {
+        height: 190px;
+    }
+    .rectangle-1 {
+        width: 56.25vw;
+        height: 190px;
+    }
+    .rectangle-2 {
+        width: 62.5vw;
+        height: 140px;
+        left: 7.8vw;
+    }
+    .rectangle-3 {
+        width: 80vw;
+        height: 75px;
+    }
+    .info-title-text {
+        font-size: 6.4rem;
+    }
+    .info-text {
+        height: 180px;
+    }
+    .info-text-paragraph {
+        font-size: 2.8rem;
+    }
+    .residents {
+        height: 190px;
+    }
+    .residents-title {
+        font-size: 4rem;
+    }
+    .residents-button {
+        width: 380px;
+        height: 50px;
+        font-size: 2.8rem;
+        border-radius: 32px;
+        font-weight: 500;
+    }
+
+    .donations {
+        min-height: 720px;
+    }
+    .donations-flyer {
+        padding: 50px 0px;
+        height: 90%;
+    }
+    .donations-flyer-title {
+        font-size: 6.4rem;
+        width: 75%;
+    }
+    .donations-flyer-container-image {
+        min-height: 250px;
+    }
+    .donations-flyer-container-information {
+        min-height: 250px;
+    }
+    .donations-flyer-buttons-button-1 {
+        width: 145px;
+        height: 145px;
+    }
+    .donations-flyer-buttons-button-1 {
+        width: 145px;
+        height: 145px;
+    }
+    .extras-directions {
+        height: 365px;
+    }
+    .extras-directions {
+        font-size: 2.4rem;
+    }
+    .extras-directions-article-anchor-image {
+        height: 195px;
     }
 }
