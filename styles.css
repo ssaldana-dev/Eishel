@@ -545,6 +545,9 @@
 }
 @media (min-width: 1280px) {
     .mainTitle {
+        height: calc(100vh - 128px);
+    }
+    .mainTitle-text {
         font-size: 6.4rem;
         line-height: 78px;
         font-weight: 700;
@@ -576,6 +579,7 @@
         padding-top: 50px;
         padding-left: 25px;
         width: calc(100vw - 455px);
+        max-width: 780px;
     }
     .aboutUs-info-paragraph {
         font-size: 2.3rem;
@@ -585,6 +589,7 @@
     }
     .info-promo-button {
         height: 310px;
+        max-width: 310px;
     }
     .info-promo-button-anchor-image {
         width: 250px;
@@ -599,16 +604,16 @@
         height: 190px;
     }
     .rectangle-1 {
-        width: 56.25vw;
+        width: 720px;
         height: 190px;
     }
     .rectangle-2 {
-        width: 62.5vw;
+        width: 800px;
         height: 140px;
-        left: 7.8vw;
+        left: 100px;
     }
     .rectangle-3 {
-        width: 80vw;
+        width: 1024px;
         height: 75px;
     }
     .info-title-text {
@@ -667,5 +672,30 @@
     }
     .extras-directions-article-anchor-image {
         height: 195px;
+    }
+}
+@media (min-width:1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainTitle {
+        /* width: 1280px; */
+    }
+    .aboutUs {
+        width: 1280px;
+    }
+    .donations {
+        width: 1280px;
+    }
+    .info {
+        width: 1280px;
+    }
+    .residents {
+        width: 1280px;
+    }
+    .extras {
+        width: 1280px;
     }
 }
