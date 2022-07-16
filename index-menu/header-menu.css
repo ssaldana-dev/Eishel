@@ -110,3 +110,43 @@
 @keyframes up7 {
     0% {top: calc(70px * 7);}
 }
+
+@media (min-width: 1024px) {
+    .responsiveMenu {
+        top: 0px;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 5;
+        width: calc(100vw - 120px);
+        height: 90px;
+    }
+    .responsiveMenu-option {
+        position: relative;
+        top: 20px;
+        width: auto;
+        height: 35px;
+        font-size: 1.5rem;
+        color: #FFF;
+        background-color: transparent;
+        border: none;
+        border-bottom: transparent solid 3px;
+        transition: 300ms;
+    }
+    .responsiveMenu:hover .responsiveMenu-option {
+        color: #000;
+    }
+    .responsiveMenu .responsiveMenu-option:hover {
+        color: #FFF;
+        border-bottom: #FFF solid 3px;
+    }
+}
+@media (min-width: 1280px) {
+    .responsiveMenu {
+        height: 128px;
+        width: calc(100vw - 150px);
+    }
+    .responsiveMenu-option {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}

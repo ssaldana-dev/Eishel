@@ -41,6 +41,7 @@
 }
 /*  aboutUs Section*/
 .aboutUs {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     height: auto;
@@ -95,6 +96,9 @@
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 15.85px;
+}
+.aboutUs-info-cards-display {
+    display: none;
 }
 .aboutUs-info-anchor {
     display: inline-block;
@@ -182,6 +186,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    cursor: pointer;
 }
 .donations-flyer-buttons-button-1 {
     width: 110px;
@@ -346,9 +351,6 @@
 }
 
 @media (min-width: 440px) {
-    .mainTitle-text {
-        width: 70%;
-    }
     .residents-title {
         font-size: 2.5rem;
         line-height: 35px;
@@ -393,7 +395,6 @@
 }
 @media (min-width: 640px) {
     .mainTitle-text {
-        width: 60%;
         font-size: 4rem;
         line-height: 48px;
     }
@@ -444,5 +445,155 @@
         width: 130px;
         height: 40px;
         font-size: 1.4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .mainTitle {
+        max-height: calc(100vh - 90px);
+    }
+    .mainTitle-text {
+        font-size: 5.4rem;
+        line-height: 70px;
+    }
+
+    .aboutUs {
+        height: 850px;
+        align-items: flex-start;
+    }
+    .aboutUs-titleContainer-L4 {
+        left: -10px;
+        top: -140px;
+    }
+    .aboutUs-titleContainer-text {
+        left: 0px;
+        font-size: 4.5rem;
+    }
+    .aboutUs-info {
+        width: calc(100vw - 360px);
+    }
+    .aboutUs-info-paragraph {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+    .aboutUs-info-cards-display {
+        display: block;
+    }
+    .aboutUs-info-cards {
+        position: absolute;
+        left: 0px;
+        top: 240px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .aboutUs-info-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        width: 25vw;
+        height: 500px;
+        background-color: var(--beau-blue-50);
+    }
+    .aboutUs-info-card-title {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 36.57px;
+        text-align: center;
+        color: var(--outer-space-crayola);
+    }
+    .aboutUs-info-card-division {
+        width: 75%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #FFF;
+    }
+    .aboutUs-info-card-date {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #FFF;
+    }
+    .aboutUs-info-card-photo {
+        width: 225px;
+        height: 187.5px;
+        background-position: center;
+        background-size: cover;
+    }
+    .aboutUs-info-card-paragraph {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 20px;
+    }
+    .aboutUs-info-anchor {
+        position: absolute;
+        left: calc(50% - 145px);
+        bottom: 30px;
+        width: 290px;
+        height: 55px;
+        font-size: 2.4rem;
+        border: 5px #FFF solid;
+    }
+    .info-promo-button {
+        width: 24vw;
+    }
+    .extras-directions {
+        flex-direction: row;
+        height: 250px;
+    }
+}
+@media (min-width: 1280px) {
+    .mainTitle {
+        font-size: 6.4rem;
+        line-height: 78px;
+        font-weight: 700;
+    }
+    .aboutUs {
+        height: 900px;
+    }
+    .aboutUs-titleContainer-L4 {
+        top: -195px;
+        width: 455px;
+        height: 455px;
+    }
+    .aboutUs-titleContainer-L3 {
+        width: 370px;
+        height: 370px;
+    }
+    .aboutUs-titleContainer-L2 {
+        width: 250px;
+        height: 250px;
+    }
+    .aboutUs-titleContainer-L1 {
+        width: 180px;
+        height: 180px;
+    }
+    .aboutUs-titleContainer-text {
+        font-size: 6.4rem;
+    }
+    .aboutUs-info {
+        padding-top: 50px;
+        padding-left: 25px;
+        width: calc(100vw - 455px);
+    }
+    .aboutUs-info-paragraph {
+        font-size: 2.3rem;
+    }
+    .aboutUs-info-cards {
+        top: 285px;
+    }
+    .info-promo-button {
+        height: 310px;
+    }
+    .info-promo-button-anchor-image {
+        width: 250px;
+    }
+    .info-promo-button-division {
+        display: none;
+    }
+    .info-promo-button-text {
+        font-size: 2.4rem;
     }
 }

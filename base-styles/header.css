@@ -10,17 +10,37 @@ header {
     height: 75px;
     background-color: var(--beau-blue) ;
 }
-header > a {
+.header-logoAnchor {
     height: auto;
 }
-header > a > img {
-    width: 75px;
+.header-logoAnchor-image {
+    /* width: 75px; */
     height: 80px;
 }
-header > nav {
+.headerMenu {
     height: 38px;
 }
-header > nav > img {
+.headerMenu-restImage {
     height: 38px;
     width: 55px;
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 90px;
+    }
+    .header-logoAnchor-image {
+        height: 90px;
+    }
+    .headerMenu-restImage {
+        display: none;
+    }
+}
+@media (min-width: 1280px) {
+    header {
+        height: 128px;
+    }
+    .header-logoAnchor-image {
+        height: 128px;
+    }
 }

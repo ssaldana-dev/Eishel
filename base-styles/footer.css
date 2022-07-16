@@ -78,3 +78,32 @@ footer {
     width: 45px;
     height: 55px;
 }
+
+@media (min-width: 1024px) {
+    footer {
+        margin-bottom: 0px;
+    }
+    .bottomMenu {
+        display: none;
+    }
+    .footer-paragraph {
+        font-size: 2.8rem;
+    }
+    .footer-direction {
+        width: 350px;
+    }
+    .footer-direction-paragraph {
+        font-size: 1.6rem;
+        line-height: 15.85px;
+    }
+    .footer-phone {
+        width: 350px;
+    }
+    .footer-phone-paragraph {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .footer-privacy-anchor {
+        font-size: 1.6rem;
+    }
+}
