@@ -1,9 +1,17 @@
-.main-aboutUs {
+.aboutUs {
     position: relative;
 }
+#header-menu-aboutUs {
+    color: #FFF;
+}
+
 /* Identity section */
 .identity {
     position: relative;
+}
+.identity-misionVision {
+    display: flex;
+    flex-direction: column;
 }
 .identity-section {
     position: relative;
@@ -20,7 +28,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 25px;
-    width: 320px;
+    width: 85%;
     height: 235px;
     background-color: #82A6C233;
 }
@@ -87,7 +95,7 @@
     align-items: center;
     margin-bottom: 20px;
     width: 86.66vw;
-    height: 13.33vw;
+    height: 50px;
     border-radius: 18.66vw;
     background-color: var(--beau-blue);
     font-family: 'Gelasio', sans-serif;
@@ -100,7 +108,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: calc(190vw - 74px)
+    height: 630px;
+}
+.static-values {
+    display: none;
 }
 .identity-values-value {
     display: flex;
@@ -108,7 +119,7 @@
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
-    height: 88vw;
+    height: 330px;
     width: 88vw;
     border: 8px solid var(--beau-blue);
     border-radius: 7.46vw;
@@ -116,7 +127,7 @@
     animation: valueExpand 850ms 1;
 }
 @keyframes valueExpand {
-    0% {height: 75vw;}
+    0% {height: 300px;}
 }
 
 .identity-values-value-title {
@@ -125,7 +136,7 @@
     justify-content: center;
     align-items: center;
     width: 74.66vw;
-    height: 12vw;
+    height: 50px;
     background-color: var(--beau-blue);
     border-radius: 18.46vw;
     font-family: 'gelasio', sans-serif;
@@ -145,14 +156,14 @@
 }
 
 /*About-us title section*/
-.main-aboutUs-title {
+.aboutUs-title {
     width: 100%;
     height: 0px;
-    border-top: 93px solid rgba(191,215,234, 0.37);
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
+    border-top: 93px solid transparent;
+    border-left: 50vw solid rgba(191,215,234, 0.37);
+    border-right: 50vw solid rgba(191,215,234, 0.37);
 }
-.main-aboutUs-title h1 {
+.aboutUs-title-text {
     position: absolute;
     z-index: 2;
     top: 10px;
@@ -161,7 +172,7 @@
     font-size: 3.6rem;
     font-weight: 400;
 }
-.main-aboutUs-title p {
+.aboutUs-title-paragraph {
     position: absolute;
     top: 64px;
     left: calc(50% - 43.79px);
@@ -169,7 +180,7 @@
     font-size: 1.8rem;
     font-weight: 300;
 }
-.main-aboutUs > article {
+.aboutUs-info {
     display: flex;
     padding: 30px 0;
     height: auto;
@@ -177,6 +188,12 @@
 }
 
 /*History section*/
+.aboutUs-info-left {
+    height: auto;
+}
+.aboutUs-info-right {
+    height: auto;
+}
 .info-story {
     display: flex;
     flex-direction: column;
@@ -185,34 +202,37 @@
     padding: 0 10px;
 }
 .info-division {
-    margin: 10px 0px;
+    margin: 10px -10px;
     width: 120px;
-    height: 3px;
+    height: 5px;
     background-color: #FFF;
     border-radius: 4px;
 }
-.info-story h2 {
+.info-story-title {
     font-size: 1.6rem ;
     font-weight: 600;
+    color: var(--outer-space-crayola);
 }
-.info-story img {
-    height: 196px;
+.info-story-image {
+    width: 140px;
+    height: 255px;
+    object-fit: cover;
 }
-.info-story span {
+.info-story-date {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #C4C4C4;
+    color: #112A30B2;
 }
-.info-story p {
+.info-story-paragraph {
     margin: 15px 0px;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: right;
 }
-.main-aboutUs-info-division {
+.aboutUs-info-division {
     align-self: center;
     width: 0px;
-    height: 1100px;
+    height: 1200px;
     border: 2px solid white;
     border-radius: 4px;
 }
@@ -307,4 +327,167 @@
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
+}
+@media (min-width: 580px) {
+    .identity-box-title {
+        font-size: 4rem;
+    }
+    .identity-box-text {
+        font-size: 1.8rem;
+    }
+    .identity-values-title {
+        height: 70px;
+        font-size: 4rem;
+    }
+    .identity-values-container {
+        height: 730px;
+    }
+    .identity-values-button {
+        height: 70px;
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+    .identity-values-value-title {
+        height: 70px;
+        font-size: 2.8rem;
+    }
+    .identity-values-value-text {
+        font-size: 1.8rem;
+    }
+    .aboutUs-title-text {
+        font-size: 4rem;
+    }
+    .aboutUs-title-paragraph {
+        font-size: 2rem;
+    }
+    .info-story-title {
+        font-size: 1.8rem;
+    }
+    .info-story-date {
+        font-size: 1.6rem;
+    }
+    .info-story-paragraph {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .info-story-image {
+        height: 255px;
+        width: 200px;
+    }
+    .staff-title-text {
+        left: calc(50% - 155px);
+        font-size: 4rem;
+    }
+}
+@media (min-width: 768px) {
+    .identity-misionVision {
+        flex-direction: row;
+    }
+    .identity-section {
+        width: 50%;
+        height: 320px;
+    }
+    .identity-box-text {
+        display: flex;
+        align-items: center;
+        height: 80%;
+    }
+    .identity-mission-decoration {
+        border-top: 320px solid #D4E3EE;
+        border-left: 50vw solid transparent;
+    }
+    .identity-vision-decoration {
+        border-top: 320px solid #D4E3EE;
+        border-right: 50vw solid transparent;
+    }
+    .identity-box-text {
+        font-size: 1.5rem;
+    }
+    .aboutUs-info {
+        padding: 30px 10%;
+    }
+    .staff-colabollators {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .staff-collaborator {
+        width: 50%;
+    }
+    .staff-collaborator-span {
+        width: 50%;
+    }
+}
+@media (min-width: 1024px) {
+    .identity-values-button {
+        display: none;
+    }
+    .aboutUs-title {
+        max-width: 100%;
+        overflow: hidden;
+        height: 0px;
+        border-top: 93px solid transparent;
+        border-left: 49vw solid rgba(191,215,234, 0.37);
+        border-right: 49vw solid rgba(191,215,234, 0.37);
+    }
+    .staff-title {
+        width: 100%;
+        height: 0px;
+        border-top: 110px solid rgba(191,215,234, 0.37);
+        border-left: 49vw solid transparent;
+        border-right: 49vw solid transparent;
+    }
+    .identity-mission-decoration {
+        border-top: 320px solid #D4E3EE;
+        border-left: 49vw solid transparent;
+    }
+    .identity-vision-decoration {
+        border-top: 320px solid #D4E3EE;
+        border-right: 49vw solid transparent;
+    }
+    .identity-values-value {
+        border: none;
+        width: 32%;
+    }
+    .identity-values-value-title {
+        width: 90%;
+        height: 50px;
+        font-size: 2.4rem;
+    }
+    .static-values {
+        display: block;
+    }
+    .static-values-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+@media (min-width: 1280px) {
+    .identity-misionVision {
+        height: 540px;
+    }
+    .identity-section {
+        height: auto;
+    }
+    .identity-box {
+        height: 445px;
+        width: 540px;
+    }
+    .identity-box-title {
+        font-size: 6.4rem;
+    }
+    .identity-box-text {
+        font-size: 2.4rem;
+    }
+    .identity-mission-decoration {
+        border-top: 540px solid #D4E3EE;
+    }
+    .identity-vision-decoration {
+        border-top: 540px solid #D4E3EE;
+    }
+    .identity-values-title {
+        height: 100px;
+        font-size: 6.4rem;
+    }
 }

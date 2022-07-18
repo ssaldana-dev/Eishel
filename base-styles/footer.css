@@ -3,11 +3,11 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 75px;
     padding: 25px 0;
+    padding-bottom: 100px;
     width: 100%;
     min-width: 320px;
-    height: 210px;
+    height: 280px;
     color: #FFF;
     background-color: var(--dark-jungle-green);
 }
@@ -82,6 +82,8 @@ footer {
 @media (min-width: 1024px) {
     footer {
         margin-bottom: 0px;
+        padding-bottom: 25px;
+        height: 210px;
     }
     .bottomMenu {
         display: none;
