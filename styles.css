@@ -492,6 +492,7 @@
         align-items: center;
         padding: 20px;
         width: 25vw;
+        max-width: 320px;
         height: 500px;
         background-color: var(--beau-blue-50);
     }
