@@ -289,6 +289,7 @@
     margin: 15px 0px;
     margin-top: 80px;
     object-fit: cover;
+    cursor: pointer;
 
     transition: 500ms;
 }
@@ -323,7 +324,7 @@
     font-weight: 400;
 }
 .staff-collaborator-span {
-    width: 70vw;
+    width: 335px;
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
@@ -409,12 +410,7 @@
     .staff-colabollators {
         display: flex;
         flex-wrap: wrap;
-    }
-    .staff-collaborator {
-        width: 50%;
-    }
-    .staff-collaborator-span {
-        width: 50%;
+        justify-content: space-around;
     }
 }
 @media (min-width: 1024px) {
@@ -482,12 +478,107 @@
     }
     .identity-mission-decoration {
         border-top: 540px solid #D4E3EE;
+        border-left: 630px solid transparent;
     }
     .identity-vision-decoration {
         border-top: 540px solid #D4E3EE;
+        border-right: 630px solid transparent;
     }
     .identity-values-title {
         height: 100px;
         font-size: 6.4rem;
+    }
+    .aboutUs-title {
+        width: 1280px;
+        border-top: 250px solid transparent;
+        border-left: 640px solid rgba(191,215,234, 0.37);
+        border-right: 640px solid rgba(191,215,234, 0.37);
+    }
+    .aboutUs-title-text {
+        left: calc(50% - 293.365px);
+        top: 30px;
+        font-size: 9.6rem;
+        color: var(--outer-space-crayola);
+    }
+    .aboutUs-title-paragraph {
+        left: calc(50% - 97.305px);
+        top: 150px;
+        font-size: 4rem;
+    }
+    .aboutUs-info {
+        max-width: 1280px;
+    }
+    .info-story {
+        padding: 0px 30px;
+        width: 515px;
+    }
+    .info-story-title {
+        font-size: 3rem;
+    }
+    .info-story-date {
+        font-size: 2.8rem;
+    }
+    .info-division {
+        margin: 10px -30px;
+        width: 300px;
+    }
+    .info-story-image {
+        width: 445px;
+        height: 325px;
+    }
+    .info-story-paragraph {
+        font-size: 2.4rem;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    .aboutUs-info-division {
+        height: 2300px;
+    }
+    .staff-title {
+        border-top: 340px solid rgba(191,215,234, 0.37);
+        border-left: 640px solid transparent;
+        border-right: 640px solid transparent;
+    }
+    .staff-title-text {
+        left: calc(50% - 311.315px);
+        top: 160px;
+        font-size: 8rem;
+    }
+    .staff-collaborator-contaiener-text {
+        margin-top: 150px;
+        width: 300px;
+        height: 400px;
+    }
+    .staff-collaborator-container-img {
+        margin-top: 150px;
+    }
+    .change2 {
+        width: 300px;
+        height: 400px;
+    }
+    .change1 {
+        top: -150px;
+        width: 150px;
+        height: 200px;
+    }
+    .staff-collaborator-span {
+        width: 300px;
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .identity {
+        max-width: 1280px;
+    }
+    .history {
+        max-width: 1280px;
+    }
+    .staff {
+        max-width: 1280px;
     }
 }
