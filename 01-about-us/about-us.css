@@ -1,9 +1,6 @@
 .aboutUs {
     position: relative;
 }
-#header-menu-aboutUs {
-    color: #FFF;
-}
 
 /* Identity section */
 .identity {
@@ -414,31 +411,77 @@
     }
 }
 @media (min-width: 1024px) {
+    .identity-section {
+        height: 440px;
+    }
     .identity-values-button {
         display: none;
+    }
+    .identity-box {
+        height: 320px;
+    }
+    .identity-box-title {
+        font-size: 5.2rem;
+    }
+    .identity-box-text {
+        font-size: 2rem;
+    }
+    .identity-mission-decoration {
+        border-top: 440px solid #D4E3EE;
+        border-left: 49vw solid transparent;
+    }
+    .identity-vision-decoration {
+        border-top: 440px solid #D4E3EE;
+        border-right: 49vw solid transparent;
     }
     .aboutUs-title {
         max-width: 100%;
         overflow: hidden;
         height: 0px;
-        border-top: 93px solid transparent;
+        border-top: 135px solid transparent;
         border-left: 49vw solid rgba(191,215,234, 0.37);
         border-right: 49vw solid rgba(191,215,234, 0.37);
+    }
+    .aboutUs-title-text {
+        left: calc(50% - 152.795px);
+        top: 40px;
+        font-size: 5rem;
+    }
+    .aboutUs-title-paragraph {
+        left: calc(50% - 68.115px);
+        top: 100px;
+        font-size: 2.8rem;
+    }
+    .info-story-title {
+        font-size: 2.5rem;
+    }
+    .info-story-date {
+        font-size: 2.2rem;
+    }
+    .info-story-image {
+        width: 300px;
+        height: 255px;
+    }
+    .info-story-paragraph {
+        font-size: 1.8rem;
+    }
+    .aboutUs-info-division {
+        height: 1720px;
     }
     .staff-title {
         width: 100%;
         height: 0px;
-        border-top: 110px solid rgba(191,215,234, 0.37);
+        border-top: 135px solid rgba(191,215,234, 0.37);
         border-left: 49vw solid transparent;
         border-right: 49vw solid transparent;
     }
-    .identity-mission-decoration {
-        border-top: 320px solid #D4E3EE;
-        border-left: 49vw solid transparent;
+    .staff-title-text {
+        top: 50px;
+        left: calc(50% - 194.57px);
+        font-size: 5rem;
     }
-    .identity-vision-decoration {
-        border-top: 320px solid #D4E3EE;
-        border-right: 49vw solid transparent;
+    .staff-collaborator-span {
+        font-size: 1.6rem;
     }
     .identity-values-value {
         border: none;
