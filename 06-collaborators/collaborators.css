@@ -69,4 +69,12 @@ main {
     border: 1px solid var(--beau-blue);
     border-radius: 7px;
     background-color: var(--outer-space-crayola);
+    cursor: pointer;
+    transition: 300ms;
+}
+.access-button:hover {
+    background-color: #15535f;
+}
+.access-button:active {
+    background-color: #208194;
 }

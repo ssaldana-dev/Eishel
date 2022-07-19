@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eishel | Colaboradores</title>
+    <link rel="stylesheet" href="./suport.css">
+    <link rel="stylesheet" href="../base-styles/root.css">
+    <link rel="stylesheet" href="../base-styles/header.css">
+    <link rel="stylesheet" href="../base-styles/footer.css">
+    <link rel="stylesheet" href="../index-menu/header-menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a class="header-logoAnchor" href="../index.html">
+            <img class="header-logoAnchor-image" src="../assets/icon/logo-eishel.svg" alt="Eishel-logo" />
+        </a>
+        <nav class="headerMenu">
+            <img class="headerMenu-restImage" src="../assets/icon/menu-icon.svg" alt="Menu icon" id="header-menu-img" />
+        </nav>
+    </header>
+    <menu class="responsiveMenu" id="header-menu-options">
+        <a class="responsiveMenu-option" href="../index.html" id="header-menu-home">INICIO</a>
+        <a class="responsiveMenu-option" href="../01-about-us/about-us.html" id="header-menu-aboutUs">CONÓCENOS</a>
+        <a class="responsiveMenu-option" href="../02-services/services.html" id="header-menu-services">SERVICIOS</a>
+        <a class="responsiveMenu-option" href="../03-gallery/gallery.html" id="header-menu-gallery">GALERÍA</a>
+        <a class="responsiveMenu-option" href="../06-collaborators/collaborators.html" id="header-menu-collaborators">COLABORADORES</a>
+        <a class="responsiveMenu-option" href="../05-work-bench/work-bench.html" id="header-menu-workBench">BOLSA DE TRABAJO</a>
+        <a class="responsiveMenu-option responsiveMenu-option--last-option" href="../04-contact/contact.html" id="header-menu-contact">CONTÁCTANOS</a>
+    </menu>
+
+    <main id="main-support">
+        <section class="ticket">
+            <h1 class="ticket-title">
+                Soporte Eishel.
+            </h1>
+            <p class="ticket-paragraph">
+                Favor de especificar el lugar y las personas que requieren asistencia, así como el problema.
+            </p>
+            <form class="ticket-form" action="soporteti@eishel.org" method="get">
+                <label class="ticket-form-text" for="name">Nombre</label>
+                <input class="ticket-form-input" type="text" id="name" />
+                <label class="ticket-form-text" for="department">Departamento</label>
+                <select class="ticket-form--departments" name="" id="department">
+                    <option class="departments-option" value="">. . .</option>
+                    <option class="departments-option" value="mantenimiento">Mantenimiento</option>
+                    <option class="departments-option" value="tecnologías de la información">Tecnologías</option>
+                </select>
+                <label class="ticket-form-text" for="email">Correo</label>
+                <input class="ticket-form-input" type="email" name="" id="email" />
+                <label class="ticket-form-text" for="message">Mensaje</label>
+                <textarea class="ticket-form-input ticket-form-input--message" name="message" id="message" cols="30" rows="10"></textarea>
+                <input class="ticket-form--submit" type="submit" id="submit" value="Enviar" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-paragraph">CONTACTO</p>
+        <article class="footer-direction">
+            <a class="footer-direction-anchor" href="https://goo.gl/maps/P869gwWPdsUtx6Za7"><img src="../assets/icon/ubication-icon.svg" alt="ubication icon"></a>
+            <p class="footer-direction-paragraph">Calle Francisco I. Madero 402, Miraval, 62270 Cuernavaca, Mor.</p>
+        </article>
+        <article class="footer-phone">
+            <a class="footer-phone-anchor" href="tel: 777 804 92 32"> <img src="../assets/icon/small-phone-icon.svg" alt="phone icon"></a>
+            <p class="footer-phone-paragraph">777 804 91 32</p>
+        </article>
+        <article class="footer-privacy">
+            <a class="footer-privacy-anchor" href="https://www.eishel.org/aviso-de-privacidad/">
+                <p class="footer-privacy-anchor-paragraph">AVISO DE PRIVACIDAD</p>
+            </a>
+        </article>
+    </footer>
+
+    <menu class="bottomMenu">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://api.whatsapp.com/send?phone=+527777177708&text=Hola. Este es un mensaje de prueba para Eishel c:">
+                <img class="menu-icon--whatsapp" src="../assets/icon/whatsapp-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">whatsapp</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="#">
+                <img class="menu-icon--email" src="../assets/icon/messenger-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">Messenger</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url">
+                <img class="menu-icon--donations" src="../assets/icon/donations-menu-icon.png" alt="donations icon">
+            </a>
+            <span class="bottomMenu-article-text">Donaciones</span>
+        </article>
+    </menu>
+
+    <script src="./support.js"></script>
+    <script src="../index-menu/header-menu.js"></script>
+</body>
+</html>

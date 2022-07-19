@@ -1,0 +1,66 @@
+.ticket {
+    padding: 30px;
+}
+.ticket-title {
+    font-size: 2.8rem;
+}
+.ticket-paragraph {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 100%;
+}
+.ticket-form-text {
+    font-size: 1.8rem;
+    margin: 10px 0px;
+}
+.ticket-form-input {
+    padding: 10px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0c2e3538;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    outline: none;
+}
+.ticket-form--submit {
+    align-self: center;
+    margin-top: 25px;
+    width: 100px;
+    height: 50px;
+    border: #0c2e3538 solid 3px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.ticket-form-input--message {
+    padding: 30px;
+    width: 80vw;
+    height: 300px;
+    text-align: start;
+}
+.ticket-form--departments {
+    padding-left: 10px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0c2e3538;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    outline: none;
+}
