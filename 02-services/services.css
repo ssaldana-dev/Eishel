@@ -2,6 +2,8 @@ main {
     width: 100%;
     min-width: 320px;
 }
+
+/*  Services title*/
 .services {
     display: flex;
     flex-direction: row;
@@ -11,6 +13,7 @@ main {
 .services-title {
     position: relative;
     height: 120px;
+    width: 100%;
 }
 .rectangle-1 {
     position: absolute;
@@ -43,22 +46,8 @@ main {
     font-weight: 600;
     color: #FFF;
 }
-.info-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-    height: 125px;
-    background-color: var(--outer-space-crayola);
-}
-.info-text-paragraph {
-    margin: auto 0;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #FFF;
-    text-align: center;
-}
 
+/*  Services information cards  */
 .services-information {
     position: relative;
 }
@@ -70,8 +59,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -80px;
-    left: calc(50% - (86.6vw / 2));
+    top: -20%;
+    margin-bottom: -15%;
+    left: calc(50% - (90% / 2));
     width: 90%;
     background-color: #DDE8F1;
 }
@@ -154,20 +144,11 @@ main {
     font-size: 1.8rem;
     color: var(--outer-space-crayola);
 }
-.triangulo {
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid #BFD7EA;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent; 
-}
-#social-life .services-information-card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.information-card-list-ul-li--health {
+    font-size: 1.2rem;
 }
 
+/*  Services promotion  */
 .promo {
     display: flex;
     flex-direction: column;
@@ -238,19 +219,7 @@ main {
     line-height: 14.65px;
     text-align: center;
 }
-@media (min-width: 425px) {
-    .services-information {
-        width: 425px;
-    }
-    .services-information-card {
-        width: 370px;
-        left: calc(50% - 185px);
-    }
-    .services-information-card-container-decoration {
-        left: calc(50% - 40px);
-        width: 80px;
-    }
-}
+
 @media (min-width: 580px) {
     .services-title {
         height: 160px;
@@ -271,6 +240,24 @@ main {
         left: 17%;
         font-size: 3.8rem;
     }
+
+    .information-card-title-text {
+        font-size: 3.8rem;
+    }
+    .information-card-list-ul-li {
+        font-size: 1.8rem;
+    }
+    .information-card--extra-title {
+        height: 35px;
+        font-size: 2rem;
+    }
+    .information-card--extra-ul-li {
+        font-size: 1.8rem;
+    }
+    .information-card-list-ul-li--health {
+        font-size: 1.6rem;
+    }
+
     .promo-title {
         font-size: 2.8rem;
     }
@@ -278,7 +265,7 @@ main {
         font-size: 2.2rem;
     }
     .promo-require {
-        height: 350px;
+        height: 330px;
     }
     .promo-require-paragraph {
         padding: 10px;
@@ -299,13 +286,63 @@ main {
         font-size: 1.5rem;
     }
 }
+@media (min-width: 650) {
+    .services-information-card {
+        top: -200px;
+        left: calc(50% - 272.5px);
+        margin-bottom: -150px;
+        width: 545px;
+        height: 650px;
+    }
+    .services-information-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .information-card-title {
+        width: 80%;
+    }
+    .information-card-title-text {
+        font-size: 4.8rem;
+    }
+    .information-card-list-ul {
+        margin-left: 15px;
+    }
+    .information-card-list-ul-li {
+        font-size: 2rem;
+    }
+    .information-card-list-ul-li::marker {
+        font-size: 3rem;
+    }
+    .information-card-list-ul-li--health {
+        font-size: 1.6rem;
+    }
+    .information-card--extra-title-text {
+        width: 385px;
+        height: 45px;
+        font-size: 2.4rem;
+    }
+    .information-card--extra-ul {
+        margin-left: 15px;
+    }
+    .information-card--extra-ul-li {
+        font-size: 2rem;
+    }
+    .information-card--extra-ul-li::marker {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 768px) {
+    
+}
 @media (min-width: 1024px) {
     .services {
         justify-content: space-around;
     }
     .services-information {
         width: 49vw;
-        max-width: 650px;
+        max-width: 630px;
     }
 }
 @media (min-width: 1280px) {
@@ -331,5 +368,98 @@ main {
         top: 118px;
         width: 1035px;
         height: 72px;
+    }
+
+    .services-information-card {
+        top: -200px;
+        left: calc(50% - 272.5px);
+        margin-bottom: -150px;
+        width: 545px;
+        height: 650px;
+    }
+    .services-information-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .information-card-title {
+        width: 80%;
+    }
+    .information-card-title-text {
+        font-size: 4.8rem;
+    }
+    .information-card-list-ul {
+        margin-left: 15px;
+    }
+    .information-card-list-ul-li {
+        font-size: 2rem;
+    }
+    .information-card-list-ul-li::marker {
+        font-size: 3rem;
+    }
+    .information-card-list-ul-li--health {
+        font-size: 1.6rem;
+    }
+    .information-card--extra-title-text {
+        width: 385px;
+        height: 45px;
+        font-size: 2.4rem;
+    }
+    .information-card--extra-ul {
+        margin-left: 15px;
+    }
+    .information-card--extra-ul-li {
+        font-size: 2rem;
+    }
+    .information-card--extra-ul-li::marker {
+        font-size: 3rem;
+    }
+
+    .promo-title {
+        font-size: 4.5rem;
+    }
+    .promo-span {
+        font-size: 3.2rem;
+    }
+    .promo-require {
+        height: auto;
+    }
+    .promo-require-paragraph {
+        margin: 12.5px;
+        width: 395px;
+        height: 95px;
+        font-size: 2rem;
+        line-height: 25px;
+    }
+    .promo-require-paragraph--bottomLeft {
+        font-size: 1.6rem;
+    }
+    .promo-subtitle {
+        font-size: 3.2rem;
+    }
+    .promo-button {
+        width: 380px;
+        height: 55px;
+        font-size: 2.4rem;
+    }
+    .promo-paragraph {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-title {
+        max-width: 1280px;
+    }
+    .services {
+        max-width: 1280px;
+    }
+    .promo {
+        max-width: 1280px;
     }
 }
