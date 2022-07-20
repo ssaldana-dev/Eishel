@@ -13,6 +13,7 @@
     top: calc(50% - (44px / 2));
     left: calc(50% - (167.08px / 2));
     font-size: 3.6rem;
+    color: var(--outer-space-crayola);
 }
 /*  Gallery */
 .gallery {
@@ -31,6 +32,9 @@
     font-family: 'Gelasio', sans-serif;
     font-weight: 600;
     color: #82A6C2CC;
+}
+.mobile-background {
+    display: none;
 }
 .gallery-title-different-color {
     color: #0C2E35;
@@ -63,6 +67,7 @@
     margin-left: calc(33.333333333333333vw / 6);
     margin-right: calc(33vw / 6);
     transition: 450ms;
+    cursor: pointer;
 }
 .carousel-first-photo {
     margin-left: calc(33.333333333333333vw / 3);
@@ -77,7 +82,7 @@
     margin-right: calc((33vw / 3) - (33vw / 3) - (33vw / 96));
 }
 
-/*  Gallery display */
+/*  Gallery banner  */
 .gallery-display {
     position: fixed;
     z-index: 5;
@@ -187,6 +192,7 @@
     font-size: 32px;
     font-weight: 400;
     color: #FFF;
+    cursor: pointer;
 
     animation: fadeIn 1250ms 1;
 }
@@ -224,7 +230,11 @@
 .video {
     width: 90%;
 }
-
+@media (min-width: 425px) {
+    .gallery-decoration {
+        width: 100%;
+    }
+}
 @media (min-width: 500px) {
     .gallery-display-container-photo {
         width: auto;
@@ -233,5 +243,69 @@
     .gallery-display-container-photo-photoBack {
         width: auto;
         height: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .desktop-background {
+        display: none;
+    }
+    .mobile-background {
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title-text {
+        top: 55px;
+        left: calc(50% - 222.775px);
+        font-size: 9.6rem;
+    }
+    .gallery {
+        position: relative;
+    }
+    .gallery-title {
+        position: relative;
+        top: 50px;
+        font-size: 4.8rem;
+    }
+    .gallery-carousel {
+        margin-top: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 1000px;
+    }
+    .gallery-carousel-photo {
+        width: 250px;
+        height: 250px;
+        margin: 25px;
+    }
+    .gallery-carousel-photo:hover {
+        width: 300px;
+        height: 300px;
+        margin: 0px 0px;
+    }
+    .video-gallery {
+        height: 800px;
+    }
+    .video-gallery-video {
+        width: 875px;
+    }
+}
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        max-width: 1280px;
+    }
+    .gallery {
+        max-width: 1280px;
+    }
+    .video-gallery {
+        width: 1280px;
+        max-width: 1280px;
     }
 }

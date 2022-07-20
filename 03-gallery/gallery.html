@@ -36,7 +36,8 @@
 
     <main>
         <section class="title" id="title">
-            <img src="./assets/icons/gallery-head.svg" alt="" class="title-image">
+            <img src="./assets/icons/gallery-head.svg" alt="decorative mobile background" class="title-image mobile-background">
+            <img src="./assets/icons/gallery-head-desktop.svg" alt="decorative desktop background" class="title-image desktop-background">
             <h1 class="title-text">GALERÍA</h1>
         </section>
         <section class="gallery">
@@ -53,10 +54,10 @@
                 <img class="gallery-carousel-photo" src="./assets/imgs/mini/instalaciones-9(200x200).jpg" alt="Eishel instaltiones, benefactors garden" id="instalations-9" />
                 <img class="gallery-carousel-photo" src="./assets/imgs/mini/instalaciones-10(200x200).jpg" alt="Eishel instaltiones, benefactors garden" id="instalations-10" />
                 <img class="gallery-carousel-photo" src="./assets/imgs/mini/instalaciones-11(200x200).jpg" alt="Eishel instaltiones, benefactors garden" id="instalations-11" />
-                <img class="gallery-carousel-photo" src="./assets/imgs/mini/instalaciones-12(200x200).jpg" alt="Eishel instaltiones, benefactors garden" id="instalations-12" />
-                <img class="gallery-carousel-photo carousel-last-photo" src="./assets/imgs/mini/instalaciones-13(200x200).jpg" alt="Eishel instalations, Goldberg building" id="instalations-13" />
+                <img class="gallery-carousel-photo carousel-last-photo" src="./assets/imgs/mini/instalaciones-12(200x200).jpg" alt="Eishel instaltiones, benefactors garden" id="instalations-12" />
             </section>
-            <img class="gallery-decoration gallery-decoration-instalations" src="./assets/icons/instalations-bg.svg" alt="decorative boxes">
+            <img class="gallery-decoration gallery-decoration-instalations desktop-background" src="./assets/icons/instalations-bg-desktop.svg" alt="decorative boxes">
+            <img class="gallery-decoration gallery-decoration-instalations mobile-background" src="./assets/icons/instalations-bg.svg" alt="decorative boxes">
         </section>
         <section class="gallery gallery-diferent-background">
             <h2 class="gallery-title gallery-title-different-color" id="gallery-title-events">EVENTOS</h2>
@@ -95,11 +96,11 @@
         </section>
         <section class="video-gallery gallery-diferent-background">
             <h2 class="gallery-title gallery-title-different-color">ENTREVISTAS</h2>
-            <video width="90%" class="video" src="./assets/videos/fortune-y-enrique-milstein.mp4" poster="./assets/videos/fortune-y-enrique-milstein-poster.png" controls muted></video>
+            <video class="video-gallery-video" width="90%" class="video" src="./assets/videos/fortune-y-enrique-milstein.mp4" poster="./assets/videos/fortune-y-enrique-milstein-poster.png" controls muted></video>
         </section>
         <section class="video-gallery gallery-diferent-background">
             <h2 class="gallery-title">EVENTOS</h2>
-            <video width="90%" class="video" src="./assets/videos/evento-dia-del-padre.mp4" poster="./assets/videos/evento-dia-del-padre-poster.jpg" muted="false" controls muted></video>
+            <video class="video-gallery-video" width="90%" class="video" src="./assets/videos/evento-dia-del-padre.mp4" poster="./assets/videos/evento-dia-del-padre-poster.jpg" muted="false" controls muted></video>
         </section>
 
         <section id="gallery-banner" class="gallery-display off">
@@ -152,11 +153,6 @@
             <span class="bottomMenu-article-text">Donaciones</span>
         </article>
     </menu>
-
-    <div class="desktop-warning">
-        <img src="../assets/icon/mobile-icon.png" alt="">
-        <h2>Lo sentimos, en este momento estamos trabajando en el sitio web de escritorio. De momento, puede visualizar la página en dispositivos móviles.</h2>
-    </div>
     
     <script src="./gallery.js"></script>
     <script src="../index-menu/header-menu.js"></script>

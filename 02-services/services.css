@@ -333,9 +333,6 @@ main {
         font-size: 3rem;
     }
 }
-@media (min-width: 768px) {
-    
-}
 @media (min-width: 1024px) {
     .services {
         justify-content: space-around;
