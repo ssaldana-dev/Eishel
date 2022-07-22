@@ -8,7 +8,7 @@ header {
     width: 100%;
     min-width: 320px;
     height: 75px;
-    background-color: var(--beau-blue) ;
+    background-color: var(--beau-blue);
 }
 .header-logoAnchor {
     height: auto;

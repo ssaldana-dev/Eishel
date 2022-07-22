@@ -43,3 +43,6 @@ function retractElements () {
     work_bench.className = 'responsiveMenu-option responsiveMenu-option--workBench-hidden';
     contact.className = 'responsiveMenu-option responsiveMenu-option--last-option responsiveMenu-option--contact-hidden';
 }
+
+// Testing ... 
+

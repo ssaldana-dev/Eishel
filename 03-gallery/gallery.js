@@ -9,6 +9,9 @@ galleryTitleInstalations.addEventListener('click', resetCarouselItemsSize,);
 galleryTitleEvents.addEventListener('click', resetCarouselItemsSize,);
 galleryTitleActivities.addEventListener('click', resetCarouselItemsSize,);
 
+let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
+
 let whatPhotoIsClicked = 0;
 const miniatures = [];
 /*  Cicle que guarda las miniaturas del HTML en un array.   */
@@ -42,7 +45,26 @@ if (window.innerWidth >= galleryBreakPoint) {
 function makeItBigger () {
     if (secondClick[whatPhotoIsClicked] == false) {
         resetCarouselItemsSize();
-        miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        if (whatPhotoIsClicked === 1) {
+            miniatures[whatPhotoIsClicked + 1].className = 'gallery-carousel-photo bigger-photo-right-item';
+            miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        }  else if (whatPhotoIsClicked === 12) {
+            miniatures[whatPhotoIsClicked - 1].className = 'gallery-carousel-photo bigger-photo-left-item';
+            miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        } else if (whatPhotoIsClicked === 13) {
+            miniatures[whatPhotoIsClicked + 1].className = 'gallery-carousel-photo bigger-photo-right-item';
+            miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        } else if (whatPhotoIsClicked === 25) {
+            miniatures[whatPhotoIsClicked + 1].className = 'gallery-carousel-photo bigger-photo-right-item';
+            miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        } else if (whatPhotoIsClicked === 36) {
+            miniatures[whatPhotoIsClicked - 1].className = 'gallery-carousel-photo bigger-photo-left-item';
+            miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        } else {
+            miniatures[whatPhotoIsClicked - 1].className ='gallery-carousel-photo bigger-photo-left-item';
+            miniatures[whatPhotoIsClicked + 1].className = 'gallery-carousel-photo bigger-photo-right-item';
+            miniatures[whatPhotoIsClicked].className ='gallery-carousel-photo bigger-photo';
+        }
         secondClick[whatPhotoIsClicked] = true;
     } else if (secondClick[whatPhotoIsClicked] == true) {
         currentBannerPosition = whatPhotoIsClicked;
