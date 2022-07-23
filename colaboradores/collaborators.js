@@ -13,7 +13,7 @@ const correctPassword = 'User2022';
 
 function verifyUser () {
     if (user.value == correctUser && password.value == correctPassword) {
-        window.location.href = "../07-support/support.html";
+        window.location.href = "../soporte/";
     }
     else {
         alert('Usuario o contraseña inválidos');
