@@ -143,12 +143,20 @@
     right: 10%;
     width: 90px;
 }
-.vacancies-callButton {
+.vacancies-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.vacancies-button {
     align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 25px;
+    margin: 15px 0px;
+    margin-right: 25px;
     width: 125px;
     height: 40px;
     background-color: #062635;
@@ -158,6 +166,9 @@
     text-decoration: none;
 
     color: #FFF;
+}
+.vacancies-buttons--whatsapp {
+    width: 130px;
 }
 .vacancies-callButton img {
     margin-right: 5px;

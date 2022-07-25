@@ -28,7 +28,7 @@
         <a class="responsiveMenu-option" href="../conócenos/" id="header-menu-aboutUs">CONÓCENOS</a>
         <a class="responsiveMenu-option" href="../servicios/" id="header-menu-services">SERVICIOS</a>
         <a class="responsiveMenu-option" href="../galería/" id="header-menu-gallery">GALERÍA</a>
-        <a class="responsiveMenu-option" href="../colaboradores/" id="header-menu-collaborators">COLABORADORES</a>
+        <a class="responsiveMenu-option actual" href="../colaboradores/" id="header-menu-collaborators">COLABORADORES</a>
         <a class="responsiveMenu-option" href="../bolsa-de-trabajo/" id="header-menu-workBench">BOLSA DE TRABAJO</a>
         <a class="responsiveMenu-option responsiveMenu-option--last-option" href="../contacto/" id="header-menu-contact">CONTÁCTANOS</a>
     </menu>
@@ -41,20 +41,28 @@
             <p class="ticket-paragraph">
                 Favor de especificar el lugar y las personas que requieren asistencia, así como el problema.
             </p>
-            <form class="ticket-form" action="" method="post">
+            <form class="ticket-form" action="mail.php" method="post">
                 <label class="ticket-form-text" for="name">Nombre</label>
-                <input class="ticket-form-input" type="text" id="name" />
+                <input class="ticket-form-input" type="text" name="name" id="name" required/>
+
                 <label class="ticket-form-text" for="department">Departamento</label>
-                <select class="ticket-form--departments" name="" id="department">
+                <select class="ticket-form--departments" name="department" id="department" required>
                     <option class="departments-option" value="">. . .</option>
-                    <option class="departments-option" value="mantenimiento">Mantenimiento</option>
-                    <option class="departments-option" value="tecnologías de la información">Tecnologías</option>
+                    <option class="departments-option" value="Mantenimiento">Mantenimiento</option>
+                    <option class="departments-option" value="Limpieza general">Limpieza general</option>
+                    <option class="departments-option" value="Tecnologías de la información">Tecnologías de la información</option>
                 </select>
+
                 <label class="ticket-form-text" for="email">Correo</label>
-                <input class="ticket-form-input" type="email" name="" id="email" />
+                <input class="ticket-form-input" type="email" name="email" required id="email" />
+
+                <label class="ticket-form-text" for="issue">Asunto</label>
+                <input class="ticket-form-input" type="text" name="issue" id="email" required/>
+
                 <label class="ticket-form-text" for="message">Mensaje</label>
-                <textarea class="ticket-form-input ticket-form-input--message" name="message" id="message" cols="30" rows="10"></textarea>
-                <input class="ticket-form--submit" type="submit" id="submit" value="Enviar" />
+                <textarea class="ticket-form-input ticket-form-input--message" name="message" id="message" cols="30" rows="10" style="resize: none ;" required></textarea>
+
+                <button class="ticket-form--submit" id="submit">Enviar</button>
             </form>
         </section>
     </main>

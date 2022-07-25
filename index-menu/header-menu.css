@@ -126,16 +126,19 @@
         width: auto;
         height: 35px;
         font-size: 1.5rem;
-        color: #FFF;
+        color: #000;
         background-color: transparent;
         border: none;
         border-bottom: transparent solid 3px;
         transition: 300ms;
     }
-    .responsiveMenu:hover .responsiveMenu-option {
-        color: #000;
-    }
     .responsiveMenu .responsiveMenu-option:hover {
+        color: #FFF;
+        border-bottom: #FFF solid 3px;
+
+        
+    }
+    .actual {
         color: #FFF;
         border-bottom: #FFF solid 3px;
     }
