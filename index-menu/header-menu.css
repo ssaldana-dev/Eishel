@@ -120,7 +120,7 @@
         flex-direction: row;
         justify-content: space-around;
         z-index: 5;
-        width: calc(100vw - 120px);
+        width: 905px;
         height: 90px;
     }
     .responsiveMenu-option {
@@ -166,7 +166,7 @@
 @media (min-width: 1280px) {
     .responsiveMenu {
         height: 128px;
-        width: calc(100vw - 150px);
+        width: 1024px;
     }
     .responsiveMenu-option-anchor {
         font-size: 1.8rem;

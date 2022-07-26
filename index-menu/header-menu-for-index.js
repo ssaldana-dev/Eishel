@@ -5,7 +5,7 @@ const home = document.getElementById('header-menu-home');
 const about_us = document.getElementById('header-menu-aboutUs');
 const services = document.getElementById('header-menu-services');
 const gallery = document.getElementById('header-menu-gallery');
-const collaborators = document.getElementById('header-menu-collaborators');
+const collaborators = document.getElementById('header-menu-support');
 const work_bench = document.getElementById('header-menu-workBench');
 const contact = document.getElementById('header-menu-contact');
 
