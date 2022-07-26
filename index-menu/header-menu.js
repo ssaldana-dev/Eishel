@@ -25,23 +25,23 @@ function deployMenu () {
 }
 
 function deployElements () {
-    home.className = 'responsiveMenu-option responsiveMenu-option--home';
-    about_us.className = 'responsiveMenu-option responsiveMenu-option--aboutUs';
-    services.className = 'responsiveMenu-option responsiveMenu-option--services';
-    gallery.className = 'responsiveMenu-option responsiveMenu-option--gallery';
-    collaborators.className = 'responsiveMenu-option responsiveMenu-option--collaborators';
-    work_bench.className = 'responsiveMenu-option responsiveMenu-option--workBench';
-    contact.className = 'responsiveMenu-option responsiveMenu-option--contact responsiveMenu-option--last-option';
+    home.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--home';
+    about_us.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--aboutUs';
+    services.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--services';
+    gallery.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--gallery';
+    collaborators.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--collaborators';
+    work_bench.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--workBench';
+    contact.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--contact responsiveMenu-option-anchor--last-option';
 }
 
 function retractElements () {
-    home.className = 'responsiveMenu-option responsiveMenu-option--home-hidden';
-    about_us.className = 'responsiveMenu-option responsiveMenu-option--aboutUs-hidden';
-    services.className = 'responsiveMenu-option responsiveMenu-option--services-hidden';
-    gallery.className = 'responsiveMenu-option responsiveMenu-option--gallery-hidden';
-    collaborators.className = 'responsiveMenu-option responsiveMenu-option--collaborators-hidden';
-    work_bench.className = 'responsiveMenu-option responsiveMenu-option--workBench-hidden';
-    contact.className = 'responsiveMenu-option responsiveMenu-option--last-option responsiveMenu-option--contact-hidden';
+    home.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--home-hidden';
+    about_us.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--aboutUs-hidden';
+    services.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--services-hidden';
+    gallery.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--gallery-hidden';
+    collaborators.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--collaborators-hidden';
+    work_bench.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--workBench-hidden';
+    contact.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--last-option responsiveMenu-option-anchor--contact-hidden';
 }
 
 // Testing ... 

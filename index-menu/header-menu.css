@@ -8,7 +8,10 @@
     align-items: center;
     transition: 500ms;
 }
-.responsiveMenu-option {
+/* .responsiveMenu-option-decoration {
+    display: none;
+} */
+.responsiveMenu-option-anchor {
     position: absolute;
     z-index: 3;
     right: 0;
@@ -25,35 +28,35 @@
     color: #FFF;
 }
 
-.responsiveMenu-option--last-option {
+.responsiveMenu-option-anchor--last-option {
     border: none;
 }
 
-.responsiveMenu-option--home {
+.responsiveMenu-option-anchor--home {
     top: 70px;
     animation: drop 850ms 1;
 }
-.responsiveMenu-option--aboutUs {
+.responsiveMenu-option-anchor--aboutUs {
     top: calc(70px * 2);
     animation: drop 850ms 1;
 }
-.responsiveMenu-option--services {
+.responsiveMenu-option-anchor--services {
     top: calc(70px * 3);
     animation: drop 850ms 1;
 }
-.responsiveMenu-option--gallery {
+.responsiveMenu-option-anchor--gallery {
     top: calc(70px * 4);
     animation: drop 850ms 1;
 }
-.responsiveMenu-option--collaborators {
+.responsiveMenu-option-anchor--collaborators {
     top: calc(70px * 5);
     animation: drop 850ms 1;
 }
-.responsiveMenu-option--workBench {
+.responsiveMenu-option-anchor--workBench {
     top: calc(70px * 6);
     animation: drop 850ms 1;
 }
-.responsiveMenu-option--contact {
+.responsiveMenu-option-anchor--contact {
     top: calc(70px * 7);
     animation: drop 850ms 1;
 }
@@ -61,49 +64,49 @@
     0% {top: 0;}
 }
 
-.responsiveMenu-option--home-hidden {
+.responsiveMenu-option-anchor--home-hidden {
     top: 0;
     animation: up1 850ms 1;
 }
 @keyframes up1 {
     0% {top: 70px}
 }
-.responsiveMenu-option--aboutUs-hidden {
+.responsiveMenu-option-anchor--aboutUs-hidden {
     top: 0;
     animation: up2 850ms 1;
 }
 @keyframes up2 {
     0% {top: calc(70px * 2);}
 }
-.responsiveMenu-option--services-hidden {
+.responsiveMenu-option-anchor--services-hidden {
     top: 0;
     animation: up3 850ms 1;
 }
 @keyframes up3 {
     0% {top: calc(70px * 3);}
 }
-.responsiveMenu-option--gallery-hidden {
+.responsiveMenu-option-anchor--gallery-hidden {
     top: 0;
     animation: up4 850ms 1;
 }
 @keyframes up4 {
     0% {top: calc(70px * 4);}
 }
-.responsiveMenu-option--collaborators-hidden {
+.responsiveMenu-option-anchor--collaborators-hidden {
     top: 0;
     animation: up5 850ms 1;
 }
 @keyframes up5 {
     0% {top: calc(70px * 5);}
 }
-.responsiveMenu-option--workBench-hidden {
+.responsiveMenu-option-anchor--workBench-hidden {
     top: 0;
     animation: up6 850ms 1;
 }
 @keyframes up6 {
     0% {top: calc(70px * 6);}
 }
-.responsiveMenu-option--contact-hidden {
+.responsiveMenu-option-anchor--contact-hidden {
     top: 0;
     animation: up7 850ms 1;
 }
@@ -121,6 +124,13 @@
         height: 90px;
     }
     .responsiveMenu-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+    }
+    .responsiveMenu-option-anchor {
         position: relative;
         top: 20px;
         width: auto;
@@ -129,18 +139,28 @@
         color: #000;
         background-color: transparent;
         border: none;
-        border-bottom: transparent solid 3px;
         transition: 300ms;
     }
-    .responsiveMenu .responsiveMenu-option:hover {
+    .responsiveMenu-option-bottomBar {
+        position: relative;
+        top: 20px;
+        height: 3px;
+        width: 0px;
+        background-color: #FFF;
+        border-radius: 5px;
+        transition: 300ms;
+    }
+    .responsiveMenu .responsiveMenu-option:hover .responsiveMenu-option-anchor {
         color: #FFF;
-        border-bottom: #FFF solid 3px;
-
-        
+    }
+    .responsiveMenu .responsiveMenu-option:hover .responsiveMenu-option-bottomBar {
+        width: 90%;
     }
     .actual {
         color: #FFF;
-        border-bottom: #FFF solid 3px;
+    }
+    .actual ~ .responsiveMenu-option-bottomBar {
+        width: 80%;
     }
 }
 @media (min-width: 1280px) {
@@ -148,7 +168,7 @@
         height: 128px;
         width: calc(100vw - 150px);
     }
-    .responsiveMenu-option {
+    .responsiveMenu-option-anchor {
         font-size: 1.8rem;
         font-weight: 600;
     }
