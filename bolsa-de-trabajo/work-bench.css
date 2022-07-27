@@ -5,6 +5,7 @@
 .title {
     position: relative;
     height: 105px;
+    width: 100%;
     overflow: hidden;
 }
 .up-background-figure {
@@ -78,8 +79,6 @@
 .title-text {
     position: relative;
     top: calc(50% - 43.875px);
-    left: calc(50% - 97.5px);
-    width: 195px;
     z-index: 2;
     font-size: 3.6rem;
     line-height: 43.88px;
@@ -116,30 +115,35 @@
     color: #1F5460E5;
 }
 .vacancies-card-title-span {
+    display: block;
+    margin-bottom: 15px;
     font-size: 2rem;
     font-weight: 600;
     color: #1F5460E5
 }
 .vacancies-card-info {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     padding: 15px;
     height: calc(100% - 70px);
 }
-.vacancies-card-info-title {
+.vacancies-card-info-block-title {
+    display: block;
+    margin-bottom: 5px;
     font-size: 1.6rem;
     font-weight: 600;
     color: #1F5460E5;
 }
-.vacancies-card-info-list {
+.vacancies-card-info-block-list {
     font-size: 1.3rem;
     font-weight: 600;
     margin-left: 25px;
 }
 .vacancies-card-icon {
     position: absolute;
-    top: 60%;
+    bottom: 16%;
     right: 10%;
     width: 90px;
 }
@@ -148,7 +152,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: 340px;
 }
 .vacancies-button {
     align-self: flex-end;
@@ -156,8 +160,6 @@
     justify-content: center;
     align-items: center;
     margin: 15px 0px;
-    margin-right: 25px;
-    width: 125px;
     height: 40px;
     background-color: #062635;
     border-radius: 5px;
@@ -167,9 +169,98 @@
 
     color: #FFF;
 }
-.vacancies-buttons--whatsapp {
+.vacancies-button-icon {
+    margin-right: 5px;
+}
+.vacancies-buttons--call {
+    margin-right: 25px;
     width: 130px;
+}
+.vacancies-buttons--whatsapp {
+    width: 150px;
 }
 .vacancies-callButton img {
     margin-right: 5px;
+}
+
+@media(min-width: 1280px) {
+    .title {
+        height: 340px;
+    }
+    .up-background-figure {
+        border-top: 250px solid #BFD7EA5E;
+    }
+    .bottom-background-figure {
+        border-bottom: 250px solid #BFD7EA5E;
+    }
+    .title-text {
+        top: calc(50% - 98px);
+        font-size: 8rem;
+        line-height: 98px;
+    }
+
+    .vacancies-card {
+        width: 1125px;
+        height: 590px;
+    }
+    .vacancies-card-title {
+        height: 115px;
+    }
+    .vacancies-card-title-text {
+        font-size: 4.8rem;
+    }
+    .vacancies-card-title-span {
+        font-size: 3.6rem;
+    }
+    .vacancies-card-info {
+        height: calc(100% - 115px);
+        padding: 30px 85px;
+    }
+    .order-change {
+        order: 3;
+    }
+    .margin-left-auto {
+        margin-left: auto;
+    }
+    .vacancies-card-info-block {
+        width: 50%;
+    }
+    .vacancies-card-info-block-title {
+        margin-bottom: 10px;
+        font-size: 3.2rem;
+    }
+    .vacancies-card-info-block-list {
+        font-size: 2rem;
+    }
+    .vacancies-card-icon {
+        bottom: 5%;
+        right: 20%;
+        width: 240px;
+    }
+    .vacancies-buttons {
+        width: 1125px;
+    }
+    .vacancies-button {
+        height: 70px;
+        font-size: 2.8rem;
+    }
+    .vacancies-button-icon {
+        width: 28px;
+    }
+    .vacancies-buttons--call {
+        width: 180px;
+    }
+    .vacancies-buttons--whatsapp {
+        width: 230px;
+    }
+}
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vacancies {
+        width: 1280px;
+    }
 }
