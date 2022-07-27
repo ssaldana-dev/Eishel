@@ -17,6 +17,11 @@
     border-left: calc(var(--background-triangle--mid-with)) solid transparent;
     border-right: calc(var(--background-triangle--mid-with)) solid transparent;
     border-top: 85px solid #BFD7EA5E;
+
+    animation: slideLeft 2000ms 1;
+}
+@keyframes slideLeft {
+    0% {left: 0px;}
 }
 .ubf-1 {
     left: calc(0px - var(--background-triangle--mid-with));
@@ -51,6 +56,11 @@
     border-left: calc(var(--background-triangle--mid-with)) solid transparent;
     border-right: calc(var(--background-triangle--mid-with)) solid transparent;
     border-bottom: 85px solid #BFD7EA5E;
+
+    animation: slideLeft 2000ms 1;
+}
+@keyframes slideLeft {
+    0% {left: 0px;}
 }
 .bbf-1 {
     left: calc(0px - var(--background-triangle--mid-with));
@@ -185,7 +195,7 @@
 
 @media(min-width: 1280px) {
     .title {
-        height: 340px;
+        height: 230px;
     }
     .up-background-figure {
         border-top: 250px solid #BFD7EA5E;

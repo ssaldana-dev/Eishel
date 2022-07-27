@@ -4,12 +4,17 @@
 }
 .title-figure-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .figure {
     position: relative;
     width: 32%;
     height: auto;
+
+    animation: widthChange 2000ms 1;
+}
+@keyframes widthChange {
+    0%{width: 0px;}
 }
 .form {
     background-color: #BFD7EA5E;
@@ -109,4 +114,81 @@
 }
 .map-text-paragraph {
     font-size: 1.4rem;
+}
+
+@media (min-width: 1280px) {
+    .title {
+        height: 200px;
+    }
+    .figure-form-1 {
+        height: 200px;
+    }
+    .figure-form-2 {
+        height: 230px;
+    }
+    .figure-form-3 {
+        height: 200px;
+    }
+    .title-text {
+        top: calc(50% - 48.5px);
+        font-size: 8rem;
+    }
+
+    .buttons-text {
+        margin-top: 70px;
+        font-size: 4rem;
+        line-height: 47px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        height: 450px;
+    }
+    .buttons-button {
+        height: auto;
+    }
+    .buttons-button-anchor-image {
+        width: 320px;
+    }
+    .button-text {
+        font-size: 4.8rem;
+    }
+
+    .map {
+        height: 650px;
+    }
+    .map-container {
+        width: 405px;
+        height: 405px;
+    }
+    .map-tab {
+        width: 300px;
+        height: 300px;
+    }
+    .map-maps {
+        width: 380px;
+        height: 380px;
+    }
+    .map-text-title {
+        font-size: 4.8rem;
+    }
+    .map-text-paragraph {
+        font-size: 2.8rem;
+    }
+}
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        width: 1280px;
+    }
+    .buttons {
+        width: 1280px;
+    }
+    .map {
+        width: 1280px;
+    }
 }

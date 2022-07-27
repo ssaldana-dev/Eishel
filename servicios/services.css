@@ -20,6 +20,11 @@ main {
     width: 65%;
     height: 120px;
     background-color: rgba(17, 32, 48, 0.7);
+
+    animation: appear 2000ms 1;
+}
+@keyframes appear {
+    0% {height: 0px;}
 }
 .rectangle-2 {
     position: absolute;
@@ -28,6 +33,11 @@ main {
     width: 68.5%;
     height: 92px;
     background-color: rgba(22, 62, 70, 0.7);
+
+    animation: appear 2000ms 1;
+}
+@keyframes appear {
+    0% {height: 0px;}
 }
 .rectangle-3 {
     position: absolute;
@@ -36,6 +46,11 @@ main {
     width: 55%;
     height: 36px;
     background-color: rgba(191, 215, 234, 0.7);
+
+    animation: appear 2000ms 1;
+}
+@keyframes appear {
+    0% {height: 0px;}
 }
 .services-title-text {
     position: absolute;
@@ -45,6 +60,10 @@ main {
     font-size: 2.8rem;
     font-weight: 600;
     color: #FFF;
+    animation: fromBlackToWhite 2000ms 1;
+}
+@keyframes fromBlackToWhite {
+    0% {color: #000;}
 }
 
 /*  Services information cards  */
