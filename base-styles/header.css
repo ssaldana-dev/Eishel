@@ -10,18 +10,8 @@ header {
     height: 75px;
     background-color: var(--beau-blue);
 }
-.header-logoAnchor {
-    height: auto;
-}
 .header-logoAnchor-image {
     height: 80px;
-}
-.headerMenu {
-    height: 38px;
-}
-.headerMenu-restImage {
-    height: 38px;
-    width: 55px;
 }
 
 @media (min-width: 1024px) {
@@ -30,9 +20,6 @@ header {
     }
     .header-logoAnchor-image {
         height: 90px;
-    }
-    .headerMenu-restImage {
-        display: none;
     }
 }
 @media (min-width: 1280px) {

@@ -124,6 +124,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
 
+    cursor: pointer;
     outline: none;
 }
 .ticket-form-input--message {
