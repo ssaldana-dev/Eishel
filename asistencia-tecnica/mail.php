@@ -15,5 +15,5 @@
     $headers .= 'Reply-To: ' . $correo;
 
     mail($destino, $asuntoCompleto, $mensajeCompleto, $headers);
-    header("Location:../soporte");
+    header("Location:../asistencia-tecnica/enviado.html");
 ?>

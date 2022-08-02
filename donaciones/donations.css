@@ -1,0 +1,134 @@
+.donations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 150px);
+}
+.donations-backgroundImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.donations-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 2;
+    width: 87%;
+    height: 80%;
+    background-color: var(--beau-blue-80);
+    animation: appear 1000ms 1;
+}
+@keyframes appear {
+    0% {
+        width: 0%;
+        opacity: 20%;
+    }
+}
+.donations-banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    font-size: 3.6rem;
+    color: #FFF;
+    border-radius: 7px;
+    background-color: var(--outer-space-crayola);
+}
+.donations-banner-switch {
+    height: 40%;
+    animation: fadeIn 800ms 1;
+}
+.donations-banner-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    animation: fadeIn 800ms 1;
+}
+@keyframes fadeIn {
+    0%{opacity: 0;}
+}
+.donations-banner-information-paragraph {
+    width: 90vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.donations-banner-switch-image {
+    height: 100%;
+}
+.donations-banner-buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 28%;
+    width: 100%;
+    animation: buttonsFadeIn 2000ms;
+}
+@keyframes buttonsFadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.button {
+    height: 100%;
+}
+.donations-banner-paragraph {
+    position: absolute;
+    bottom: -40px;
+    width: 90%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px #000;
+    color: #FFF;
+    animation: paragraphFadeIn 2000ms;
+}
+@keyframes paragraphFadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.bbvaButton {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .donations-banner-information-paragraph {
+        font-size: 2rem;
+    }
+    .donations-banner-paragraph {
+        font-size: 2rem;
+    }
+}
+@media(min-width: 1024px) {
+    .donations {
+        height: calc(100vh - 90px);
+    }
+    .donations-banner-title {
+        height: 80px;
+        font-size: 5rem;
+        border-radius: 14px;
+    }
+}
+@media(min-width: 1280px) {
+    .donations {
+        height: calc(100vh - 128px);
+    }
+}
+@media(min-width: 1281px) {
+    .donations-banner {
+        width: 800px;
+    }
+}

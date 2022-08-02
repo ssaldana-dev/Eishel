@@ -4,7 +4,7 @@
     --beau-blue: #BFD7EA;
     --beau-blue-37: #BFD7EA5E;
     --beau-blue-50: #BFD7EA80;
-
+    --beau-blue-80: #BFD7EACC;
 }
 * {
     box-sizing: border-box;
@@ -33,10 +33,4 @@ main {
 .desktop-warning h2 {
     width: 50vw;
     font-size: 3vw;
-}
-
-@media (max-width: 1000px) {
-    .desktop-warning {
-        display: none;
-    }
 }

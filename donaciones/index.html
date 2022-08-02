@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="../assets/icon/logo-eishel.svg" />
+    <title>Eishel | Donaciones</title>
+    <link rel="stylesheet" href="./donations.css">
+    <link rel="stylesheet" href="../base-styles/root.css">
+    <link rel="stylesheet" href="../base-styles/header.css">
+    <link rel="stylesheet" href="../base-styles/footer.css">
+    <link rel="stylesheet" href="../index-menu/header-menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a class="header-logoAnchor" href="../">
+            <img class="header-logoAnchor-image" src="../assets/icon/logo-eishel.svg" alt="Eishel-logo" />
+        </a>
+        <nav class="headerMenu">
+            <div class="responsiveMenu-container" id="menu">
+                <figure class="responsiveMenu-container-hamburguer" id="menu-hamburguer"></figure>
+            </div>
+        </nav>
+    </header>
+    <menu class="responsiveMenu" id="header-menu-options">
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../" id="header-menu-home">INICIO</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden actual" href="../donaciones/" id="header-menu-aboutUs">DONACIONES</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../conócenos/" id="header-menu-aboutUs">CONÓCENOS</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../servicios/" id="header-menu-services">SERVICIOS</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../galería/" id="header-menu-gallery">GALERÍA</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../asistencia-tecnica/" id="header-menu-support">SOPORTE</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../bolsa-de-trabajo/" id="header-menu-workBench">BOLSA DE TRABAJO</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor responsiveMenu-option-anchor--last-option hidden" href="../contacto/" id="header-menu-contact">CONTÁCTANOS</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+    </menu>
+
+    <main>
+        <section class="donations">
+            <section class="donations-banner">
+                <h1 class="donations-banner-title">DONACIONES</h1>
+                <article class="donations-banner-switch">
+                    <img class="donations-banner-switch-image" src="./assets/donations-icon.png" alt="Ícono de donativos" />
+                </article> 
+                <article class="donations-banner-buttons">
+                    <a href="https://goo.su/DTOX">
+                        <img class="button paypalButton" src="./assets/paypal-icon.svg" alt="Paypal button icon" />
+                    </a>
+                    <img class="button bbvaButton" src="./assets/bbva-icon.svg" alt="BBVA button" />
+                </article>
+                <p class="donations-banner-paragraph">EMITIMOS RECIBOS OFICIALES DE SUS DONATIVOS</p>
+            </section>
+            <img class="donations-backgroundImage" src="../assets/img/bg-slide-1.jpg" alt="Fotografía de residente con asistente geriátrico" />
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-paragraph">CONTACTO</p>
+        <article class="footer-direction">
+            <a class="footer-direction-anchor" href="https://goo.gl/maps/P869gwWPdsUtx6Za7"><img src="../assets/icon/ubication-icon.svg" alt="ubication icon"></a>
+            <p class="footer-direction-paragraph">Calle Francisco I. Madero 402, Miraval, 62270 Cuernavaca, Mor.</p>
+        </article>
+        <article class="footer-phone">
+            <a class="footer-phone-anchor" href="tel: 777 804 92 32"> <img src="../assets/icon/small-phone-icon.svg" alt="phone icon"></a>
+            <p class="footer-phone-paragraph">777 804 91 32</p>
+        </article>
+        <article class="footer-privacy">
+            <a class="footer-privacy-anchor" href="https://www.eishel.org/aviso-de-privacidad/">
+                <p class="footer-privacy-anchor-paragraph">AVISO DE PRIVACIDAD</p>
+            </a>
+        </article>
+    </footer>
+
+    <menu class="bottomMenu">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://api.whatsapp.com/send?phone=+527777177708&text=Hola. Este es un mensaje de prueba para Eishel c:">
+                <img class="menu-icon--whatsapp" src="../assets/icon/whatsapp-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">whatsapp</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="#">
+                <img class="menu-icon--email" src="../assets/icon/messenger-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">Messenger</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url">
+                <img class="menu-icon--donations" src="../assets/icon/donations-menu-icon.png" alt="donations icon">
+            </a>
+            <span class="bottomMenu-article-text">Donaciones</span>
+        </article>
+    </menu>
+
+    <script src="./donations.js"></script>
+    <script src="../index-menu/header-menu.js"></script>
+</body>
+</html>
