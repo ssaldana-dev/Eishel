@@ -3,6 +3,7 @@ menu.addEventListener('click', deployMenu);
 const hamburguer = document.getElementById('menu-hamburguer')
 
 const home = document.getElementById('header-menu-home');
+const donations = document.getElementById('header-menu-donations');
 const about_us = document.getElementById('header-menu-aboutUs');
 const services = document.getElementById('header-menu-services');
 const gallery = document.getElementById('header-menu-gallery');
@@ -27,6 +28,7 @@ function deployMenu () {
 
 function deployElements () {
     home.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--home';
+    donations.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--donations'
     about_us.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--aboutUs';
     services.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--services';
     gallery.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--gallery';
@@ -37,6 +39,7 @@ function deployElements () {
 
 function retractElements () {
     home.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--home hidden';
+    donations.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--donations hidden';
     about_us.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--aboutUs hidden';
     services.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--services hidden';
     gallery.className = 'responsiveMenu-option-anchor responsiveMenu-option-anchor--gallery hidden';
